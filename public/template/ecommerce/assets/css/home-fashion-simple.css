@@ -1,0 +1,62 @@
+/*****************************************
+* collection section
+*****************************************/
+.kalles-fashion-simple__categories-section {
+    margin: 0 auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-fashion-simple__categories-section {
+        margin: 0 auto 60px;
+    }
+}
+
+/*****************************************
+* new products section
+*****************************************/
+
+.kalles-fashion-simple__new-products {
+    margin: 0 auto 90px;
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-fashion-simple__new-products {
+        margin: 0 auto 60px;
+        padding: 0 15px;
+    }
+}
+
+/*****************************************
+* banners section
+*****************************************/
+.kalles-fashion-simple__banner-promotion .item__position {
+    padding-top: 52.63157894736842%
+}
+
+.kalles-fashion-simple__banner-promotion {
+    margin: 50px auto;
+}
+
+.kalles-fashion-simple__banner-promotion .nt_promotion h3,
+.kalles-fashion-simple__banner-promotion .nt_promotion h4 {
+    color: #ffffff;
+}
+
+.kalles-fashion-simple__banner-promotion .nt_promotion > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+/*****************************************
+* trending of the week section
+*****************************************/
+.kalles-fashion-simple__tab-section {
+    margin: 0 auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-fashion-simple__tab-section {
+        margin: 0 auto 60px;
+    }
+}

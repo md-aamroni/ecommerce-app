@@ -1,0 +1,11 @@
+.dev_view_cat.dev_desktop a.view_3,
+.dev_view_cat.dev_tablet a.view_3,
+.dev_view_cat.dev_mobile a.view_6 {
+    color: #222
+}
+
+.dark-mode .dev_view_cat.dev_desktop a.view_3,
+.dark-mode .dev_view_cat.dev_tablet a.view_3,
+.dark-mode .dev_view_cat.dev_mobile a.view_6 {
+    color: #fff
+}

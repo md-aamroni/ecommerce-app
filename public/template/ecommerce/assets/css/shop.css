@@ -1,0 +1,189 @@
+:root {
+    --primary: #56cfe1;
+    --progress-bar-color: #56cfe1;
+}
+
+.noUi-handle:before, .noUi-handle:after,
+.noUi-connect {
+    background-color: var(--progress-bar-color);
+}
+
+.cat-shop {
+    border-top: 1px solid #dedede
+}
+
+.cat-shop > a {
+    display: block;
+    padding: 10px 15px
+}
+
+@media (min-width: 1025px) {
+    .cat-shop > a {
+        display: none
+    }
+}
+
+.page_head_ {
+    padding: 50px 0;
+}
+
+.page_head_:before {
+    background-color: #000;
+    opacity: 0.54;
+}
+
+.page_head_ .parallax-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+.dev_view_cat.dev_desktop a.view_2,
+.dev_view_cat.dev_tablet a.view_3,
+.dev_view_cat.dev_mobile a.view_6 {
+    color: #222;
+}
+
+.dark-mode .dev_view_cat.dev_desktop a.view_2,
+.dark-mode .dev_view_cat.dev_tablet a.view_3,
+.dark-mode .dev_view_cat.dev_mobile a.view_6 {
+    color: #fff;
+}
+
+.cat_filter {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.type_toolbar_filter {
+    display: block;
+}
+
+a:hover > .filter-swatch, .nt_filter_color li.active .filter-swatch {
+    border-color: var(--main-color);
+}
+
+.btn_sidebar {
+    opacity: 1;
+}
+
+.type_toolbar_sidebar {
+    display: block;
+}
+
+.page_head_shop {
+    padding: 50px 0
+}
+
+.page_head_shop:before {
+    background-color: #000;
+    opacity: 0.54
+}
+
+.page_head_shop .parallax-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+/**********************************************
+* section cookies law
+***********************************************/
+#kalles-section-cookies_law {
+    position: fixed;
+    top: auto;
+    z-index: 999;
+    padding: 15px 35px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .14);
+    transition: -webkit-transform .35s ease;
+    transition: transform .35s ease;
+    transition: transform .35s ease,
+    -webkit-transform .35s ease;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+#kalles-section-cookies_law.pp_onshow {
+    -webkit-transform: none;
+    transform: none;
+}
+
+#kalles-section-cookies_law.pp_onhide {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+a.pp_cookies_more_btn {
+    border-bottom: 2px solid #f6f6f8;
+    color: #222;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 20px;
+    transition: all .25s ease;
+}
+
+a.pp_cookies_more_btn:focus, a.pp_cookies_more_btn:hover {
+    opacity: .7;
+}
+
+a.pp_cookies_accept_btn {
+    font-weight: 500;
+    padding: 10px 14px;
+    font-size: 12px;
+    background-color: #56cfe1;
+    color: #fff;
+    transition: all .25s ease;
+}
+
+a.pp_cookies_accept_btn:focus, a.pp_cookies_accept_btn:hover {
+    background-color: #007e91;
+}
+
+@media (max-width: 767px) {
+    .popup_cookies_text {
+        margin-bottom: 15px;
+    }
+}
+
+/**********************************************
+* wishlist page
+***********************************************/
+#kalles-section-wishlist_page .product-image .nt_add_cp > a,
+#kalles-section-wishlist_page .product-image .nt_add_w > a {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: #222;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)
+}
+
+#kalles-section-wishlist_page .wis_remove i:before {
+    font-size: 17.5px
+}
+
+#kalles-section-wishlist_page .product-image .nt_add_w + .nt_add_cp {
+    top: 48px
+}
+
+#kalles-section-wishlist_page .products:not(.prs_wis) .product-image .nt_add_w {
+    display: none;
+}
+
+#kalles-section-wishlist_page .products:not(.prs_wis) .product-image .nt_add_cp {
+    top: 12px;
+}
+
+#kalles-section-wishlist_page .variations_button .nt_add_w {
+    display: none;
+}

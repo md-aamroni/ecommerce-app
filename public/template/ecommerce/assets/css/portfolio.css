@@ -1,0 +1,163 @@
+.nt_single_ptf .ptf_nt_loop {
+    margin-bottom: 30px;
+}
+
+.portfolio_filter a {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    padding: 0 20px;
+}
+
+.portfolio_filter a:focus, .portfolio_filter a:hover {
+    color: #222;
+}
+
+.portfolio_filter a.selected {
+    color: #222;
+    border-color: #222;
+}
+
+.blg_count_false .blg_count {
+    display: none
+}
+
+.portfolio-item .mask:before {
+    content: '';
+    position: absolute;
+    background: rgba(246, 246, 246, .9);
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.portfolio-item .portfolio-title.pa {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 100%;
+    padding: 0 30px;
+    -webkit-transform: translate(-50%, -120%);
+    -ms-transform: translate(-50%, -120%);
+    -o-transform: translate(-50%, -120%);
+    transform: translate(-50%, -120%);
+    z-index: 2;
+}
+
+.portfolio-item:hover .mask:before {
+    top: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-title.pa {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/************************************************
+* gallery
+*************************************************/
+/*.nt_se_gallery {*/
+/*    margin: 20px auto;*/
+/*}*/
+
+.nt_gallery_item .nt_bg_lz {
+    padding-top: 127.5217933%;
+}
+
+#kalles-section-article-template > div:first-child, #comments > .comment:last-child {
+    margin: 0
+}
+
+#kalles-section-article-template > div:last-of-type {
+    margin-bottom: 60px
+}
+
+#CommentForm-body {
+    min-height: 230px
+}
+
+.comment__content p {
+    margin-bottom: 5px
+}
+
+.col_avatar_cm {
+    padding-right: 5px
+}
+
+.rtl .col_avatar_cm {
+    padding-right: 0;
+    padding-left: 5px
+}
+
+.blog-navigation a {
+    font-size: 40px
+}
+
+.social_des_2 .nt-social a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+}
+
+.portfolio-meta [class*=col-]:not(:last-child) {
+    border-right: 1px solid #d3d3d3;
+}
+
+/**************************************************************
+* pinner portfolio with lookbook
+***************************************************************/
+.pin__type .pin_tt {
+    background-color: #f0807f;
+}
+
+.pin__type_single-001 {
+    transform: translate(-20%, -3%);
+    top: 3%;
+    left: 20%;
+}
+
+.pin__type_single-002 {
+    transform: translate(-12%, -50%);
+    top: 50%;
+    left: 12%;
+}
+
+.pin__type_single-003 {
+    transform: translate(-20%, -52%);
+    top: 52%;
+    left: 20%;
+}
+
+.pin__type_single-004 {
+    transform: translate(-20%, -90%);
+    top: 90%;
+    left: 20%;
+}
+
+.pin__type_single-005 {
+    transform: translate(-50%, -37%);
+    top: 37%;
+    left: 50%;
+}
+
+.pin__type_single-006 {
+    transform: translate(-87%, -62%);
+    top: 62%;
+    left: 87%;
+}
+
+.nt_se_lookbook_img {
+    margin: 50px auto;
+}

@@ -1,0 +1,1562 @@
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #878787;
+    font-weight: 400;
+}
+
+.f_body,
+.nt_action .tcount,
+.lazyloaded h4.f_body {
+    font-family: Poppins, sans-serif;
+}
+
+footer .txt_title,
+.lazyloaded h1,
+.lazyloaded h2,
+.lazyloaded h3,
+.lazyloaded h4,
+.lazyloaded h5,
+.lazyloaded h6,
+.lazyloaded .f__mont,
+.lazyloaded .f_heading {
+    font-family: Playfair Display, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.f__mont,
+.f_heading,
+.h3 {
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 0;
+    line-height: 1.428;
+}
+
+.lazyloaded .sub-title,
+.lazyloaded .f__libre,
+.lazyloaded blockquote,
+.lazyloaded em {
+    font-family: Poppins, sans-serif;
+}
+
+.sub-title,
+.section-subtitle {
+    color: #878787;
+}
+
+.section-title {
+    font-size: 25.5px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+}
+
+.nt_pr h3.product-title {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.widget-title {
+    font-weight: 500;
+}
+
+.hover_button .nt_add_qv,
+.hover_button .pr_atc {
+    text-transform: capitalize;
+}
+
+.nt_pr .product-info {
+    margin-top: 15px;
+}
+
+.nt_pr .product-info .price {
+    font-size: 15px;
+}
+
+.nt_menu > li > a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.menu_auto .nav_dropdown > .nav_dropdown_col > a:hover,
+.menu_auto .nav_dropdown > .nav_dropdown_col > a:focus,
+.menu_auto .nav_dropdown_default li > a:hover,
+.menu_auto .nav_dropdown_default li > a:focus,
+.nav_dropdown > .nav_dropdown_col li > a:hover,
+.nav_dropdown > .nav_dropdown_col li > a:focus {
+    color: #fc4a1a;
+}
+
+.cp,
+.chp:hover,
+.currencies .selected,
+.languages .selected,
+.color_primary_dark a:hover,
+.color_primary_dark a:active,
+.color_primary_dark a:focus,
+#kalles-section-nt_filter .nt_filter_block .active a,
+#kalles-section-nt_filter .nt_filter_block a:hover,
+a:hover,
+a:active,
+.cp,
+.chp:hover,
+#nt_sortby .wrap_sortby a.selected,
+.nt_filter_block li.active > a,
+.widget_product_categories .btn_cats_toggle:hover i,
+.widget_product_categories .btn_cats_toggle.active i,
+.widget_product_categories li.current-cat > a,
+.product-image .nt_add_w > a:hover,
+.product-image .nt_add_cp > a:hover,
+.header-text > a:not(.cg):hover,
+.header-text > .cg:hover,
+.nt_mb_menu .sub-menu li a.selected,
+.nt_mb_menu .current_item > a,
+.title_7 + .tt_divider > i.clprtrue,
+.widget .product_list_widget a.product-title:hover,
+.widget .product_list_widget a.product-title:active,
+.widget .post_list_widget a.article-title:hover,
+.widget .post_list_widget a.article-title:active,
+.swatch.is-label .nt_lt_fake .swatch_pr_item:not(.is-selected):hover .swatch__value_pr,
+#cat_kalles ul li.current-cat > a,
+#cat_kalles .sub-menu li > a:hover,
+.mfp-content #cat_kalles li.current-cat > a.cat_link,
+.tab_cat_title.des_tab_4 > li > a.tt_active,
+.tab_cat_title.des_tab_8 > li > a.tt_active,
+.tab_cat_title.des_tab_7 > li > a.tt_active,
+.clhovermq .cart_pos_dropdown:not(.template-cart) .icon_cart:hover a,
+.tab_cat_title.des_tab_11 > li > a,
+.quantity .tc button:hover,
+.type_feature_columns a.button.btn--style-3:hover,
+.dark_mode_true .on_list_view_true .pr_list_item .product-info__btns > a.nt_add_qv {
+    color: #000000;
+}
+
+.nt_menu > li > a:hover,
+.nt_action > a:hover,
+.nt_action > div > a:hover,
+.nt_action .ssw-topauth .push_side:hover,
+.nt_menu > li > a:focus,
+.nt_action > a:focus,
+.nt_action > div > a:focus,
+.nt_action .ssw-topauth .push_side:focus {
+    color: #000000 !important;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a.button:hover,
+.bgcp,
+.jas-ajax-load a:hover,
+.widget .tagcloud a:hover,
+.widget .tagcloud a.active,
+#kalles-section-nt_filter .widget .tagcloud a:hover,
+#kalles-section-nt_filter .widget .tagcloud a:active,
+.single_add_to_cart_button,
+.variations.style__radio li.is-selected span.radio_styled:after,
+.variations.style__radio li.is-selected-nt span.radio_styled:after,
+.video-control__play,
+.signup-newsletter-form .submit-btn:hover,
+.mb_nav_title:after,
+.title_4 span:after,
+.title_3:after,
+ul.nt_filter_styleck > li.active > a:before,
+.js_agree_ck:checked + label:before,
+.css_agree_ck:checked + label:before,
+.widget .tagcloud a:hover,
+.widget .tagcloud a.active,
+.nt_filter_styletag a:hover,
+.nt_filter_styletag .active a,
+.button.button_primary,
+.address-edit-toggle:focus,
+.shipping_calculator input.get_rates,
+input.button.btn_back,
+.prev_next_3 .flickity-button,
+.dot_color_3 .flickity-page-dots .dot,
+.dot_color_3 .flickity-page-dots .dot:after,
+.tab_cat_title > li > a:hover > span:after,
+.tab_cat_title > li > a.tt_active > span:after,
+.nt_shipping.nt_icon_circle .icon:not(.ship_img):before,
+.pr_deal_dt.des_4,
+.title_9 span:after,
+.h_search_btn,
+.js_fbt_ck:checked + label:before,
+.progress_bar .current_bar,
+.mini_cart_footer .button.btn-checkout,
+body.template-cart .shipping_calculator input.get_rates,
+.shipping_calculator input.get_rates,
+input.button.btn_back,
+.cat_design_7 .cat_grid_item__wrapper,
+.about_us_img.border_true > span:after,
+.about_us_img.border_true > span:before,
+.des_title_13::after,
+.noUi-handle:before,
+.noUi-handle:after,
+.noUi-connect,
+.bgp,
+.bghp:hover,
+.dark_mode_true .on_list_view_true .pr_list_item .product-info__btns > a,
+.dark_mode_true .mini_cart_footer .button.btn-checkout,
+.dark_mode_true .single_add_to_cart_button,
+.dark_mode_true .button.button_primary,
+.dark_mode_true .address-edit-toggle:focus,
+.dark_mode_true .shipping_calculator input.get_rates,
+.dark_mode_true input.button.btn_back {
+    background-color: #000000;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a.button:hover,
+.jas-ajax-load a:hover,
+.widget .tagcloud a:hover,
+.widget .tagcloud a.active,
+#kalles-section-nt_filter .widget .tagcloud a:hover,
+#kalles-section-nt_filter .widget .tagcloud a:active,
+.variations_button .nt_add_w:hover,
+.variations_button .nt_add_cp:hover,
+.single_add_to_cart_button,
+.variations.style__radio .swatch:not(.is-color) li:hover,
+.variations.style__radio .swatch:not(.is-color) li.is-selected,
+.variations.style__radio .swatch:not(.is-color) li.is-selected-nt,
+.variations.style__radio li:hover span.radio_styled,
+.variations.style__radio li.is-selected span.radio_styled,
+.variations.style__radio li.is-selected-nt span.radio_styled,
+.video-control__play,
+ul.nt_filter_styleck > li.active > a:before,
+.js_agree_ck:checked + label:before,
+.css_agree_ck:checked + label:before,
+.widget .tagcloud a:hover,
+.widget .tagcloud a.active,
+.nt_filter_styletag a:hover,
+.nt_filter_styletag .active a,
+.button.button_primary,
+.address-edit-toggle:focus,
+.shipping_calculator input.get_rates,
+.shipping_calculator input.get_rates:focus,
+.mini_cart_note input.btn_back:focus,
+.prev_next_3 .flickity-button,
+.tab_name,
+.js_fbt_ck:checked + label:before,
+body.template-cart .shipping_calculator input.get_rates,
+input.button.btn_back,
+.dark_mode_true .button.button_primary,
+.tab_cat_title.des_tab_11 > li > a.tt_active,
+.tab_cat_title.des_tab_11 > li > a:hover {
+    border-color: #000000;
+}
+
+.wrap_sortby a:hover,
+.wrap_sortby a.selected,
+.nt_lt_fake ul > li:hover,
+.nt_lt_fake ul > li.is-selected,
+.nt_lt_fake ul > li.is-selected-nt {
+    background: rgba(0, 0, 0, 0.08);
+    color: #000000;
+}
+
+.pr_choose_wrap > .pr_choose_item.t4_chosen {
+    border: 2px solid #000000;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.pswp_thumb_item.pswp_tb_active,
+.pswp_tp_light .pswp_thumb_item.pswp_tb_active {
+    box-shadow: 0 0 0 2px #000000;
+}
+
+.on_list_view_true .pr_list_item .product-info__btns > a {
+    background-color: #007e91;
+}
+
+.on_list_view_true .pr_list_item .product-info__btns > a.nt_add_qv {
+    color: #007e91;
+}
+
+.nt_label,
+.nt_label.on,
+.qs_label.onsale {
+    background-color: #eec200;
+}
+
+.nt_label.out-of-stock {
+    background-color: #fcede6;
+}
+
+.nt_label.new,
+.lb_new {
+    background-color: #ff4e00;
+}
+
+h3.product-title,
+h3.product-title > a,
+h1.product_title.entry-title,
+.widget .product_list_widget .product-title,
+.widget .post_list_widget .article-title {
+    color: #000000;
+}
+
+.price,
+.price_range,
+.grouped-pr-list-item__price {
+    color: #383838;
+}
+
+.price ins,
+.price_range ins,
+.order-discount,
+.sticky_atc_price,
+.kl_fbt_price,
+.grouped-pr-list-item__price ins,
+.widget .product_list_widget ins {
+    color: #ec0101;
+}
+
+.widget .product_list_widget del,
+.price del,
+.price_range del,
+.sticky_atc_price del,
+.kl_fbt_wrap del {
+    color: #696969;
+}
+
+.order-discount.order-discount--title {
+    color: #5e8e3e;
+}
+
+.nt_bg_lz.lazyload,
+.nt_bg_lz.lazyloading,
+.nt_load.lazyloaded,
+.nt_fk_lz {
+    background-color: #f5f5f5;
+}
+
+.nt_bg_lz.lazyload:before,
+.nt_bg_lz.lazyloading:before,
+.nt_load.lazyloaded:before,
+.nt_fk_lz:before,
+.lds_bginfinity:before,
+.nt_mini_cart.loading .mini_cart_content,
+.drift-zoom-pane-loader {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100px%22%20height%3D%22100px%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M24.3%2C30C11.4%2C30%2C5%2C43.3%2C5%2C50s6.4%2C20%2C19.3%2C20c19.3%2C0%2C32.1-40%2C51.4-40%20C88.6%2C30%2C95%2C43.3%2C95%2C50s-6.4%2C20-19.3%2C20C56.4%2C70%2C43.6%2C30%2C24.3%2C30z%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%22205.271142578125%2051.317785644531256%22%3E%3Canimate%20attributeName%3D%22stroke-dashoffset%22%20calcMode%3D%22linear%22%20values%3D%220%3B256.58892822265625%22%20keyTimes%3D%220%3B1%22%20dur%3D%221%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+}
+
+.product-image a.db:before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.hover_button .pr_atc {
+    background: #fff;
+    color: #222;
+}
+
+.product-image .pr_atc:hover {
+    background: #222;
+    color: #fff;
+}
+
+.hover_button .nt_add_qv {
+    background: #fff;
+    color: #000000;
+}
+
+.product-image .nt_add_qv:hover {
+    background: #000000;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .pr_grid_item .product-image .hover_button,
+    .pr_grid_item .product-image:hover .hover_button {
+        background: #fff;
+    }
+}
+
+.product-image .nt_add_w > a {
+    color: #ec0101;
+}
+
+.product-image .nt_add_cp > a {
+    color: #fff;
+}
+
+.product-image .product-attr {
+    color: #fff;
+}
+
+.single_add_to_cart_button {
+    background: #c3935b;
+    color: #fff;
+}
+
+.single_add_to_cart_button:hover {
+    background: #c99152;
+    color: #fff;
+}
+
+.variations_form .kalles-payment-button__button--unbranded {
+    background: #000000;
+    color: #fff;
+}
+
+.variations_form .kalles-payment-button__button--unbranded:hover:not([disabled]),
+.variations_form .kalles-payment-button__button--unbranded:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.ttip_nt .tt_txt {
+    background: #000000;
+    color: #fff;
+}
+
+.rtl_false .tooltip_top_left:before,
+.rtl .tooltip_top_right:before {
+    border-top-color: #000;
+}
+
+.rtl_false .tooltip_top_right:before,
+.rtl .tooltip_top_left:before {
+    border-top-color: #000;
+}
+
+.tooltip_top:before {
+    border-top-color: #000;
+}
+
+.rtl_false .tooltip_bottom_left:before,
+.rtl .tooltip_bottom_right:before {
+    border-bottom-color: #000;
+}
+
+.rtl_false .tooltip_bottom_right:before,
+.rtl .tooltip_bottom_left:before {
+    border-bottom-color: #000;
+}
+
+.tooltip_bottom:before {
+    border-bottom-color: #000;
+}
+
+.rtl_false .tooltip_left:before,
+.rtl .tooltip_right:before {
+    border-left-color: #000;
+}
+
+.rtl_false .tooltip_right:before,
+.rtl .tooltip_left:before {
+    border-right-color: #000;
+}
+
+.ntheader .nt_menu > li > a,
+.ntheader .nt_action > a,
+.nt_action .ssw-topauth .push_side,
+.ntheader .nt_action > div > a,
+.ntheader .sp_header_mid .nt-social a,
+.ntheader .cus_txt_h,
+.ntheader .header_categories,
+.ntheader .branding > a {
+    color: #000;
+}
+
+.push-menu-btn > svg {
+    fill: #000;
+}
+
+.ntheader .nt_menu > li.has-children > a > i {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ntheader .nt_menu > li.has-children > a:after {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.sp_header_mid {
+    background-color: #fff;
+}
+
+.ntheader.live_stuck .push-menu-btn > svg {
+    fill: #000;
+}
+
+.ntheader.live_stuck .sp_header_mid {
+    background-color: #fff;
+}
+
+.ntheader.live_stuck .nt_menu > li > a,
+.ntheader.live_stuck .nt_action > a,
+.ntheader.live_stuck .nt_action .ssw-topauth .push_side,
+.ntheader.live_stuck .nt_action > div > a,
+.ntheader.live_stuck .sp_header_mid .nt-social a,
+.ntheader.live_stuck .cus_txt_h,
+.ntheader.live_stuck .header_categories,
+.ntheader.live_stuck .branding > a {
+    color: #000;
+}
+
+.ntheader.live_stuck .nt_menu > li.has-children > a > i {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ntheader.live_stuck .nt_menu > li.has-children > a:after {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .push-menu-btn > svg {
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .sp_header_mid {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu > li > a,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action > a,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action > div > a,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .sp_header_mid .nt-social a,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .cus_txt_h,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .header_categories,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .js_cat_ttprice,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .branding > a {
+    color: #000;
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu > li.has-children > a > i {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu > li.has-children > a:after {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input,
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input:focus {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.45);
+}
+
+.nt_action .tcount,
+.toolbar_count {
+    background-color: #c3935b;
+    color: #fff;
+}
+
+input[type="submit"]:hover,
+button:hover,
+a.button:hover,
+.address-edit-toggle:focus {
+    color: #fff;
+}
+
+#ld_cl_bar,
+.ld_bar_search,
+.ld_cart_bar {
+    background: #000;
+}
+
+@media (min-width: 1025px) {
+    .wrapper_cus .container,
+    .wrapper_cus #ntheader .container,
+    .wrapper_cus .caption-w-1,
+    .wrapper_boxed .container,
+    .wrapper_boxed #ntheader .container,
+    .wrapper_boxed .caption-w-1 {
+        max-width: 1420px;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    #nt_wrapper {
+        background-color: #fff;
+    }
+
+    .css_mb {
+        display: block;
+    }
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl .tl,
+.rtl .mfp-content,
+.rtl .cat_sortby.tr .nt_sortby,
+.rtl .nt_menu > li .sub-menu,
+.rtl .nt_sortby {
+    text-align: right;
+}
+
+.rtl .tr {
+    text-align: left;
+}
+
+.rtl .variations_form .quantity,
+.rtl i.mr__10,
+.rtl .css_agree_ck + label:before,
+.rtl .js_agree_ck + label:before,
+.rtl ul.nt_filter_styleck > li > a:before {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.rtl .variations_button .nt_add_w {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.rtl .sticky_atc_btn .quantity {
+    margin-right: 10px;
+}
+
+.rtl .mr__5,
+.rtl .flagst4.lazyloaded:before,
+.rtl .filter-swatch {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.rtl .mr__5.ml__5 {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.rtl .lbc_nav {
+    right: auto;
+    left: -5px;
+}
+
+.rtl .popup_slpr_wrap a.pa {
+    right: auto;
+    left: 5px;
+}
+
+.rtl .mfp-close {
+    right: auto;
+    left: 0;
+}
+
+.rtl .widget h5.widget-title:after,
+.rtl a.clear_filter:after,
+.rtl a.clear_filter:before,
+.rtl #ld_cl_bar,
+.rtl .ld_bar_search,
+.rtl .ld_cart_bar {
+    left: auto;
+    right: 0;
+}
+
+.rtl .facl-right:before {
+    content: "\f177";
+}
+
+.rtl .result_clear > .clear_filter {
+    margin-left: 15px;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 15px;
+    border-right: 0;
+    border-left: 1px solid #e5e5e5;
+}
+
+.rtl .result_clear > a.clear_filter {
+    padding-right: 16px;
+}
+
+.rtl .result_clear > a.clear_filter:last-child {
+    padding-left: 0;
+    border: 0;
+    margin-left: 0;
+}
+
+.rtl .facl-angle-right:before {
+    content: "\f104";
+}
+
+.rtl .la-angle-left:before {
+    content: "\f105";
+}
+
+.rtl .la-angle-right:before {
+    content: "\f104";
+}
+
+.rtl .la-arrow-right:before {
+    content: "\f060";
+}
+
+.rtl .la-arrow-left:before {
+    content: "\f061";
+}
+
+.rtl .p_group_btns {
+    right: auto;
+    left: 10px;
+}
+
+.rtl .nt_labels {
+    right: auto;
+    left: 15px;
+}
+
+.rtl .sp-single .product-images .nt_labels {
+    right: auto;
+    left: 30px;
+}
+
+.rtl [data-kl-full-width] {
+    left: auto;
+    right: -15px;
+}
+
+.rtl #nt_backtop {
+    right: auto;
+    left: 10px;
+}
+
+.rtl .popup_slpr_wrap {
+    left: auto;
+    right: 35px;
+}
+
+.rtl .product-image .nt_add_w {
+    left: auto;
+    right: 12px;
+}
+
+.rtl .ml__5 {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.rtl .mr__10 {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.rtl .ml__15 {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.rtl .footer__top i {
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+.rtl .nt_shipping.tl .icon {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.rtl .nt_shipping.tr .icon,
+.rtl .mini_cart_img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.rtl .mr__10.ml__10 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.rtl .fade_flick_1.flickity-rtl .slideshow__slide {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.rtl .has_icon.mgr > i {
+    margin-right: 0;
+    margin-left: 0.2em;
+}
+
+.rtl .mfp-content #kalles-section-nt_filter > h3,
+.rtl .mfp-content #kalles-section-sidebar_shop > h3,
+.rtl .nt_mini_cart .mini_cart_header {
+    padding: 5px 20px 5px 0;
+}
+
+.rtl .nt_sortby h3 {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.rtl .has_icon > i {
+    margin-left: 0;
+    margin-right: 0.2em;
+}
+
+.rtl .pe-7s-angle-right:before {
+    content: "\e686";
+}
+
+.rtl .pe-7s-angle-left:before {
+    content: "\e684";
+}
+
+.rtl .nt_full .flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 15px;
+}
+
+.rtl .nt_full .flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 15px;
+}
+
+.rtl input.search_header__input:not([type="submit"]):not([type="checkbox"]) {
+    padding: 0 20px 0 50px;
+}
+
+.rtl .search_header__submit {
+    right: auto;
+    left: 2px;
+}
+
+.rtl select {
+    padding: 0 15px 0 30px;
+    background-position: left 10px top 50%;
+}
+
+.rtl .slpr_has_btns .popup_slpr_info {
+    padding-right: 0 !important;
+    padding-left: 30px !important;
+}
+
+.rtl .css_agree_ck ~ svg,
+.rtl .js_agree_ck ~ svg {
+    left: auto;
+    right: 2px;
+}
+
+.rtl .page-numbers li {
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .rtl #content_quickview .kalles-section-pr_summary {
+        padding: 30px 0 30px 40px;
+    }
+
+    .rtl .cat_sortby > a {
+        padding: 7px 15px 7px 7px;
+    }
+
+    .rtl .p_group_btns {
+        left: 20px;
+    }
+
+    .rtl #nt_backtop {
+        right: auto;
+        left: 35px;
+    }
+
+    .rtl .title_2 > span {
+        margin: 0 30px;
+    }
+
+    .rtl .tr_md {
+        text-align: left;
+    }
+
+    .rtl .tl_md {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1025px) {
+    .rtl.des_header_7 #nt_menu_canvas {
+        display: none;
+    }
+
+    .rtl.des_header_7 #nt_wrapper {
+        padding-left: 0;
+        padding-right: 280px;
+    }
+
+    .rtl .header_7 {
+        margin-left: 0;
+        margin-right: -280px;
+        border-right: 0;
+        border-left: 2px solid rgba(150, 150, 150, 0.15);
+    }
+
+    .rtl.des_header_7 .nt_fk_canvas {
+        left: auto !important;
+        right: 280px !important;
+        -webkit-transform: translate3d(104%, 0, 0);
+        transform: translate3d(104%, 0, 0);
+    }
+
+    .rtl.des_header_7 .popup_slpr_wrap {
+        right: auto;
+        left: 125px;
+    }
+
+    .rtl .thumb_left .col_thumb {
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+
+    .rtl .thumb_left .col_nav {
+        padding-right: 15px;
+        padding-left: 5px;
+    }
+
+    .rtl .cl_h7_btns {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .rtl .tr_lg {
+        text-align: left;
+    }
+
+    .rtl .tl_lg {
+        text-align: right;
+    }
+
+    .rtl .nt_full .flickity-rtl .flickity-prev-next-button.previous {
+        right: 30px;
+    }
+
+    .rtl .nt_full .flickity-rtl .flickity-prev-next-button.next {
+        left: 30px;
+    }
+
+    .rtl .nt_fk_full .frm_search_input {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .rtl .nt_fk_full .mini_search_frm .close_pp {
+        left: 0;
+        right: auto;
+    }
+
+    .rtl .nt_fk_full .mini_search_frm i.iccl.iccl-search {
+        left: 30px;
+        right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rtl [data-kl-full-width] {
+        left: auto;
+        right: calc((-100vw - -1170px) / 2);
+    }
+}
+
+@media (max-width: 1024px) {
+    .rtl .nt_labels,
+    .rtl .pr_grid_item .product-image .hover_button,
+    .rtl .pr_grid_item .product-image:hover .hover_button {
+        right: auto;
+        left: 10px;
+    }
+
+    .rtl .product-image .nt_add_w {
+        left: auto;
+        right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rtl .popup_slpr_wrap {
+        left: auto;
+        right: 3px;
+    }
+}
+
+@media (max-width: 575px) {
+    .rtl .sticky_atc_btn .quantity {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .rtl .popup_slpr_wrap {
+        left: auto;
+        right: 0;
+    }
+}
+
+a.button:not(.nt_cat_lm),
+button:not(.single_add_to_cart_button):not(.flickity-button):not(.submit-btn),
+input[type="submit"],
+select,
+.hover_button .nt_add_qv,
+.hover_button .pr_atc,
+.mini_cart_actions .quantity,
+.btnt4_style_1 .frm_cart_page .mini_cart_actions .quantity,
+.btnt4_style_1.template-cart .shipping_calculator input[type="text"],
+.btnt4_style_1.template-cart .shipping_calculator select,
+.btnt4_style_1.template-cart .shipping_calculator input.get_rates,
+input.search_header__input:not([type="submit"]):not([type="checkbox"]),
+#cart-form_qs .single_add_to_cart_button,
+#cart-form_qs .quantity,
+.p-thumb .flickity-button,
+.header_8 .h_search_frm,
+.shipping_calculator input.get_rates,
+input.button.btn_back,
+.shipping_calculator select,
+.shipping_calculator input[type="text"] {
+    border-radius: 0;
+}
+
+.header_10 .h_search_btn.js_btn_search {
+    border-radius: 40px !important;
+}
+
+@media (min-width: 768px) {
+    .ul_tabs li.tab_title_block a {
+        border-radius: 0;
+    }
+}
+
+/*********************************************
+* header
+*********************************************/
+.header__mid .css_h_se {
+    min-height: 62px;
+}
+
+.nt_menu > li > a {
+    height: 62px;
+}
+
+/*********************************************
+* main slide
+*********************************************/
+.kalles-jewelry__main-slide {
+    background-color: #efefef !important;
+}
+
+.kalles-jewelry__main-slide__slide-type-01 .nt_img_txt > a:after {
+    background-color: #9fadae;
+    opacity: 0.15;
+}
+
+.kalles-jewelry__main-slide__slide-type-01 .pa_txts {
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide__slide-type-01 .pa_txts {
+        top: 50%;
+        width: auto;
+        left: 8%;
+        transform: translate(-8%, -50%);
+        right: auto;
+    }
+}
+
+.kalles-jewelry__main-slide-type-01__sup-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-01__sup-title {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-01__brk-01 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-01__brk-01 {
+        height: 15px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-01__title-big {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-01__title-big {
+        font-size: 50px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-01__brk-02 {
+    height: 15px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-01__brk-02 {
+        height: 20px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-01__btn.button {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.kalles-jewelry__main-slide-type-01__btn.button.btn_icon_true:after {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-01__btn.button {
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        min-height: 50px;
+        font-size: 14px;
+    }
+}
+
+.kalles-jewelry__main-slide__slide-type-02 .nt_img_txt > a:after {
+    background-color: #9fadae;
+    opacity: 0.15;
+}
+
+.kalles-jewelry__main-slide__slide-type-02 .pa_txts {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide__slide-type-02 .pa_txts {
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+    }
+}
+
+.kalles-jewelry__main-slide-type-02__sup-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-02__sup-title {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-02__brk-01 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-02__brk-01 {
+        height: 15px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-02__title-big {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-02__title-big {
+        font-size: 50px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-02__brk-02 {
+    height: 15px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-02__brk-02 {
+        height: 20px;
+    }
+}
+
+.kalles-jewelry__main-slide-type-02__btn.button {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.kalles-jewelry__main-slide-type-02__btn.button.btn_icon_true:after {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__main-slide-type-02__btn.button {
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        min-height: 50px;
+        font-size: 14px;
+    }
+}
+
+/*********************************************
+* banner collection
+*********************************************/
+.kalles-jewelry__banner-collection {
+    margin: 50px auto;
+}
+
+/*********************************************
+* bestselling products section
+*********************************************/
+.kalles-jewelry__tabs-section {
+    margin: 0 auto 100px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-jewelry__tabs-section {
+        margin: 60px auto 60px;
+    }
+}
+
+/*********************************************
+* banner promotion
+*********************************************/
+.kalles-jewelry__banner-promotion-wrap {
+    margin: 50px auto;
+}
+
+.kalles-jewelry__banner-promotion-01 .nt_promotion > a:after {
+    background-color: #000000;
+    opacity: 0.1;
+}
+
+.kalles-jewelry__banner-promotion-01 .nt_promotion_html {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kalles-jewelry__banner-promotion-01 .mb_img_slide.nt_bg_lz {
+    padding-top: 61.59822419533851%;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01 .nt_promotion_html {
+        top: 80%;
+        width: auto;
+        left: 10%;
+        transform: translate(-10%, -80%);
+        right: auto;
+    }
+
+    .kalles-jewelry__banner-promotion-01 .dek_img_slide.nt_bg_lz {
+        padding-top: 61.59822419533851%;
+    }
+}
+
+.kalles-jewelry__banner-promotion-01__sup-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01__sup-title {
+        font-size: 16px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-01__br-01 {
+    height: 5px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01__br-01 {
+        height: 10px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-01__title-big {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01__title-big {
+        font-size: 36px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-01__br-02 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01__br-02 {
+        height: 20px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-01__btn.button {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.kalles-jewelry__banner-promotion-01__btn.button.btn_icon_true:after {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-01__btn.button {
+        font-weight: 400;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02 .nt_promotion > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.kalles-jewelry__banner-promotion-02 .nt_promotion_html {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kalles-jewelry__banner-promotion-02 .mb_img_slide.nt_bg_lz {
+    padding-top: 61.59822419533851%;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02 .nt_promotion_html {
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+    }
+
+    .kalles-jewelry__banner-promotion-02 .dek_img_slide.nt_bg_lz {
+        padding-top: 61.59822419533851%;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02__sup-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02__sup-title {
+        font-size: 14px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02__br-01 {
+    height: 5px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02__br-01 {
+        height: 10px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02__title-big {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02__title-big {
+        font-size: 36px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02__br-02 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02__br-02 {
+        height: 20px;
+    }
+}
+
+.kalles-jewelry__banner-promotion-02__btn.button {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.kalles-jewelry__banner-promotion-02__btn.button.btn_icon_true:after {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .kalles-jewelry__banner-promotion-02__btn.button {
+        font-weight: 400;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+/*********************************************
+* trending products
+*********************************************/
+.kalles-jewelry__trending-products {
+    margin: 80px auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-jewelry__trending-products {
+        margin: 50px auto;
+    }
+}
+
+/*********************************************
+* blog post section
+*********************************************/
+.kalles-jwelry__blog-post-wrap {
+    margin: 50px auto;
+}
+
+/*********************************************
+* instagram section
+*********************************************/
+.kalles-jewelry__instagram-wrap {
+    margin: 50px auto 0;
+}
+
+/*********************************************
+* shipping info section
+*********************************************/
+.kalles-jewelry__shipping-info {
+    padding: 50px 0 25px;
+}
+
+.kalles-jewelry__shipping-info .use_border_true .nt_shipping:after {
+    border-color: #dddddd;
+}
+
+.kalles-jewelry__shipping-info .icon {
+    color: #9e9e9e;
+}
+
+.kalles-jewelry__shipping-info .content {
+    color: #878787;
+}
+
+.kalles-jewelry__shipping-info .content h3 {
+    color: #222222;
+}
+
+.footer__top a:hover {
+    color: #56cfe1;
+}
+
+/*********************************************
+* footer section
+*********************************************/
+.footer__top .signup-newsletter-form,
+.footer__top .signup-newsletter-form input.input-text {
+    background-color: transparent;
+}
+
+.footer__top .signup-newsletter-form input.input-text {
+    color: #878787;
+}
+
+.footer__top .signup-newsletter-form .submit-btn {
+    background-color: #000000;
+}
+
+.footer__top .widget-title {
+    color: #222222;
+}
+
+.footer__top a:not(:hover) {
+    color: #878787;
+}
+
+.footer__top .signup-newsletter-form {
+    border-color: #d5d8d9;
+}
+
+.footer__top .nt_bg_overlay:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.footer__top_wrap {
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #000000;
+}
+
+.footer__bot_wrap a:hover {
+    color: #56cfe1;
+}
+
+.footer__bot_wrap {
+    background-color: #ffffff;
+    color: #878787;
+}
+
+.footer__bot a:not(:hover) {
+    color: #878787;
+}

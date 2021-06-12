@@ -1,0 +1,126 @@
+/************************************************
+* gallery
+*************************************************/
+/*.nt_se_gallery {*/
+/*    margin: 50px auto;*/
+/*}*/
+
+.type_collection_list .kalles-container__category-in-blog-post.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.nt_gallery_item .nt_bg_lz {
+    padding-top: 127.5217933%;
+}
+
+.page_head_article-heading {
+    padding: 50px 0
+}
+
+.page_head_article-heading:before {
+    background-color: #000;
+    opacity: 0.54
+}
+
+.page_head_article-heading .parallax-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+
+#kalles-section-article-template > div:first-child, #comments > .comment:last-child {
+    margin: 0
+}
+
+#kalles-section-article-template > div:last-of-type {
+    margin-bottom: 60px
+}
+
+#CommentForm-body {
+    min-height: 230px
+}
+
+.comment__content p {
+    margin-bottom: 5px
+}
+
+.col_avatar_cm {
+    padding-right: 5px
+}
+
+.rtl_true .col_avatar_cm {
+    padding-right: 0;
+    padding-left: 5px
+}
+
+.blog-navigation a {
+    font-size: 40px
+}
+
+.social_des_2 .nt-social a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+}
+
+.comment__avatar {
+    max-width: 80px;
+}
+
+.kalles-container__category-in-blog-post {
+    margin: 0 auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-container__category-in-blog-post {
+        margin: 0 auto 60px;
+    }
+}
+
+/**************************************************************
+* pinner single layout 04
+***************************************************************/
+.pin__type .pin_tt {
+    background-color: #f0807f;
+}
+
+.pin__type_single-post-001 {
+    transform: translate(-20%, -3%);
+    top: 3%;
+    left: 20%;
+}
+
+.pin__type_single-post-002 {
+    transform: translate(-12%, -50%);
+    top: 50%;
+    left: 12%;
+}
+
+.pin__type_single-post-003 {
+    transform: translate(-20%, -52%);
+    top: 52%;
+    left: 20%;
+}
+
+.pin__type_single-post-004 {
+    transform: translate(-20%, -90%);
+    top: 90%;
+    left: 20%;
+}
+
+.pin__type_single-post-005 {
+    transform: translate(-50%, -37%);
+    top: 37%;
+    left: 50%;
+}
+
+.pin__type_single-post-006 {
+    transform: translate(-87%, -62%);
+    top: 62%;
+    left: 87%;
+}

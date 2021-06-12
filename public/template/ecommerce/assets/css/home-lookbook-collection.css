@@ -1,0 +1,179 @@
+/**************************************
+* Banner
+**************************************/
+.lookbook-collection__countdown-banner {
+    margin: -30px auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .lookbook-collection__countdown-banner {
+        margin: 0 auto 60px;
+    }
+}
+
+/************ Position left *************/
+.lookbook-collection__left-cat .pa {
+    top: 100%;
+    left: 0%;
+    transform: translate(-0%, -100%);
+}
+
+.lookbook-collection__left-cat h3 {
+    color: #222222;
+}
+
+.lookbook-collection__left-cat h4 {
+    color: #222222;
+}
+
+.lookbook-collection__left-cat h5 {
+    color: #222222;
+}
+
+.lookbook-collection__left-cat a.button {
+    color: #222222;
+    border-color: #222222;
+}
+
+/************ Position right *************/
+.lookbook-collection__right-cat .pa {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lookbook-collection__right-cat h3 {
+    color: #222222;
+}
+
+.lookbook-collection__right-cat h4 {
+    color: #222222;
+}
+
+.lookbook-collection__right-cat h5 {
+    color: #222222;
+}
+
+.lookbook-collection__right-cat a.button {
+    color: #222222;
+    border-color: #222222;
+}
+
+/**************************************
+* Trending of the week section
+**************************************/
+.kalles-lookbook-collection__trending-of-the-week {
+    margin: 0 auto 90px;
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-lookbook-collection__trending-of-the-week {
+        margin: 0 auto 60px;
+        padding: 0 15px;
+    }
+}
+
+/**************************************
+* loockboook collection section
+**************************************/
+
+.kalles-lookbook-collection__lookbook-section {
+    margin: 0 auto 90px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-lookbook-collection__lookbook-section {
+        margin: 0 auto 60px;
+    }
+}
+
+/************ pin 01 *************/
+.pin__type_01 {
+    transform: translate(-74%, -75%);
+    top: 75%;
+    left: 74%;
+}
+
+.pin__type_01 .pin_tt {
+    background-color: #65affa;
+}
+
+/************ pin 02 *************/
+.pin__type_02 {
+    transform: translate(-32%, -50%);
+    top: 50%;
+    left: 32%;
+}
+
+.pin__type_02 .pin_tt {
+    background-color: #65affa;
+}
+
+/************ pin 03 *************/
+.pin__type_03 {
+    transform: translate(-44%, -69%);
+    top: 69%;
+    left: 44%;
+}
+
+.pin__type_03 .pin_tt {
+    background-color: #65affa;
+}
+
+/************ pin 04 *************/
+.pin__type_04 {
+    transform: translate(-63%, -32%);
+    top: 32%;
+    left: 63%;
+}
+
+.pin__type_04 .pin_tt {
+    background-color: #65affa;
+}
+
+/************ pin 05 *************/
+.pin__type_05 {
+    transform: translate(-50%, -39%);
+    top: 39%;
+    left: 50%;
+}
+
+.pin__type_05 .pin_tt {
+    background-color: #65affa;
+}
+
+/************ pin 06 *************/
+.pin__type_06 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.pin__type_06 .pin_tt {
+    background-color: #65affa;
+}
+
+/**************************************
+* shipping info
+**************************************/
+.lookbook-collection__shipping-info {
+    margin: 50px auto 0;
+}
+
+.lookbook-collection__shipping-info .use_border_true .nt_shipping:after {
+    border-color: #dddddd
+}
+
+.lookbook-collection__shipping-info .icon {
+    color: #9e9e9e
+}
+
+.lookbook-collection__shipping-info .content {
+    color: #878787
+}
+
+.lookbook-collection__shipping-info .content h3 {
+    color: #222222
+}

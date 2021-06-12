@@ -1,0 +1,391 @@
+/**
+* Turn on option dark mode disable settings color,
+* only use settings on color primary,
+* header, footer, top bar, header banner
+*/
+.dark-mode, body.dark-mode {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+body.dark-mode #nt_wrapper,
+body.dark-mode .nt_section,
+body.dark-mode #nt_content > .kalles-section,
+body.dark-mode .nt_fk_canvas,
+body.dark-mode .cat_design_1 .cat_grid_item__wrapper,
+body.dark-mode .cat_design_4 .cat_grid_item__wrapper,
+body.dark-mode .cat_design_6 .cat_grid_item__wrapper,
+body.dark-mode .cat_design_7 .cat_grid_item__wrapper,
+body.dark-mode #content_quickview,
+body.dark-mode .sp-content-help,
+body.dark-mode .hover_button .nt_add_qv,
+body.dark-mode .hover_button .pr_atc,
+body.dark-mode .mini_cart_content .mini_cart_item:hover,
+body.dark-mode #kalles-section-cart_widget .mini_cart_tool,
+body.dark-mode .mini_cart_dis,
+body.dark-mode .mini_cart_gift,
+body.dark-mode .mini_cart_note,
+body.dark-mode .mini_cart_ship,
+body.dark-mode .shipping_calc_page.shipping_calculator h3,
+body.dark-mode #wrap_des_pr,
+body.dark-mode .frm_cart_page:before,
+body.dark-mode .nt_mini_cart:before {
+    background-color: #1a1a1a !important
+}
+
+body.dark-mode .style_color.des_color_1 .is-color .swatch_pr_item,
+body.dark-mode .bgw,
+body.dark-mode .mfp-content .section_nt_filter .widget,
+body.dark-mode .drift-zoom-pane,
+body.dark-mode .pswp_tp_light .pswp__bg,
+body.dark-mode .pswp__ui--fit .pswp__caption,
+body.dark-mode .pswp_tp_light .pswp__button--arrow--left:before,
+body.dark-mode .pswp_tp_light .pswp__button--arrow--right:before,
+body.dark-mode .pswp_tp_light .pswp__ui--fit .pswp__top-bar,
+body.dark-mode .pswp__share-tooltip {
+    background-color: #1a1a1a
+}
+
+body.dark-mode a.pswp__share--facebook:before {
+    border-bottom-color: #1a1a1a
+}
+
+body.dark-mode .style_color .is-color .swatch_pr_item.is-selected,
+body.dark-mode .style_color .is-color .swatch_pr_item.is-selected-nt {
+    background-color: rgba(255, 255, 255, 0.45)
+}
+
+.has_fk_canvas body.dark-mode .nt_fk_canvas {
+    background-color: #1a1a1a
+}
+
+.has_ntcanvas body.dark-mode .mfp-content,
+.has_ntcanvas body.dark-mode .mfp-inline-holder .mfp-content {
+    background-color: #1a1a1a
+}
+
+body.dark-mode .sticky_atc_info > h4,
+body.dark-mode #nt_backtop.des_bt2 span i,
+body.dark-mode a.pp_cookies_more_btn,
+body.dark-mode .tab_cat_title.des_tab_1 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_2 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_3 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_1 > li > a.tt_active,
+body.dark-mode .tab_cat_title.des_tab_2 > li > a.tt_active,
+body.dark-mode .tab_cat_title.des_tab_3 > li > a.tt_active,
+body.dark-mode .tab_cat_title.des_tab_4 > li > a,
+body.dark-mode .tab_cat_title.des_tab_5 > li > a,
+body.dark-mode .tab_cat_title.des_tab_6 > li > a,
+body.dark-mode .tab_cat_title.des_tab_7 > li > a,
+body.dark-mode .tab_cat_title.des_tab_8 > li > a,
+body.dark-mode .tab_cat_title.des_tab_9 > li > a,
+body.dark-mode .tab_cat_title.des_tab_10 > li > a,
+body.dark-mode .blockid_price .price_slider_amount .price_label > span,
+body.dark-mode input:not([type=submit]):not([type=checkbox]).nt_cat_title,
+body.dark-mode .cd,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .f__mont,
+body.dark-mode .f_heading,
+body.dark-mode .h3,
+body.dark-mode .price ins,
+body.dark-mode .price_range ins,
+body.dark-mode .order-discount,
+body.dark-mode .sticky_atc_price,
+body.dark-mode .kl_fbt_price,
+body.dark-mode .grouped-pr-list-item__price ins,
+body.dark-mode .widget .product_list_widget ins,
+body.dark-mode .section_nt_filter .nt_filter_block a,
+body.dark-mode .section_nt_filter .nt_filter_block.nt_filter_color .active a,
+body.dark-mode .section_nt_filter .nt_filter_block.nt_filter_color a:hover,
+body.dark-mode .page-numbers li a:hover,
+body.dark-mode .page-numbers.current,
+body.dark-mode .wrap_sortby a,
+body.dark-mode .btn_filter,
+body.dark-mode .btn_sidebar,
+body.dark-mode .cat_sortby > a,
+body.dark-mode .cat_view a.active,
+body.dark-mode .cat_view a:hover,
+body.dark-mode .cat_view.on_list_view_true a.view_list,
+body.dark-mode .store-availability-information__title strong,
+body.dark-mode a,
+body.dark-mode a.button,
+body.dark-mode button,
+body.dark-mode input[type=submit],
+body.dark-mode .quantity input.input-text[type=number],
+body.dark-mode .swatch.is-label .swatch_pr_item:not(.is-selected):hover .swatch__value_pr,
+body.dark-mode #content_quickview button.mfp-close,
+body.dark-mode #nt_backtop span i,
+body.dark-mode h3.product-title,
+body.dark-mode h3.product-title > a,
+body.dark-mode h1.product_title.entry-title,
+body.dark-mode .widget .product_list_widget .product-title,
+body.dark-mode .widget .post_list_widget .article-title,
+body.dark-mode .mini_cart_footer .button,
+body.dark-mode .mini_cart_footer .total,
+body.dark-mode .mini_cart_note label,
+body.dark-mode .shipping_calculator h3,
+body.dark-mode .header-text > a:not(.cg),
+body.dark-mode .ul_tabs li a:hover,
+body.dark-mode .ul_tabs li.active a,
+body.dark-mode .cart_page_section .cart_header,
+body.dark-mode .type_shipping .content h3,
+body.dark-mode .mb_nav_title,
+body.dark-mode .menu_infos_title,
+body.dark-mode .header_picker,
+body.dark-mode .nt_lt_fake ul > li,
+body.dark-mode a.compare_remove,
+body.dark-mode .compare_field,
+body.dark-mode .compare_value:before {
+    color: #FFF
+}
+
+body.dark-mode .title_11:after,
+body.dark-mode .title_11:before,
+body.dark-mode .title_12:after,
+body.dark-mode .title_12:before,
+body.dark-mode .title_2:after,
+body.dark-mode .title_2:before,
+body.dark-mode .widget h5.widget-title:after {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+body.dark-mode .gecko_toolbar_item > a,
+body.dark-mode .cb,
+body.dark-mode .type_shipping .icon,
+body.dark-mode .type_shipping .content,
+body.dark-mode .nt_mb_menu .sub-menu li > a,
+body.dark-mode .nt_mb_menu > li > a {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+body.dark-mode .blockid_price .price_slider_amount .price_label,
+body.dark-mode .sub-title,
+body.dark-mode .price,
+body.dark-mode .price_range,
+body.dark-mode .grouped-pr-list-item__price,
+body.dark-mode .widget .product_list_widget del,
+body.dark-mode .price del,
+body.dark-mode .price_range del,
+body.dark-mode .sticky_atc_price del,
+body.dark-mode .kl_fbt_wrap del,
+body.dark-mode .post-content,
+body.dark-mode .page-numbers li,
+body.dark-mode .page-numbers li a,
+body.dark-mode .pr_short_des,
+body.dark-mode .store-availability-information__button:focus,
+body.dark-mode .store-availability-information__button:hover,
+body.dark-mode a:hover,
+body.dark-mode a:focus,
+body.dark-mode #content_quickview button.mfp-close:hover,
+body.dark-mode .nt_menu div.menu-item > a,
+body.dark-mode .nt_menu ul li a,
+body.dark-mode #CartSpecialInstructions {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+body.dark-mode .cat_view a, body.dark-mode .dev_view_cat a.view_list {
+    color: #878787
+}
+
+body.dark-mode .ul_tabs li.active a,
+body.dark-mode .ul_tabs li.tab_title_block.active a,
+body.dark-mode #nt_backtop.des_bt2 span,
+body.dark-mode .tab_cat_title.des_tab_1 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_2 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_3 > li > a:hover,
+body.dark-mode .tab_cat_title.des_tab_1 > li > a.tt_active,
+body.dark-mode .tab_cat_title.des_tab_2 > li > a.tt_active,
+body.dark-mode .tab_cat_title.des_tab_3 > li > a.tt_active {
+    border-color: #fff
+}
+
+body.dark-mode .nt_menu .sub-menu .sub-column-item > a, body.dark-mode .result_clear > .clear_filter:not(:last-child) {
+    border-color: rgba(255, 255, 255, 0.35)
+}
+
+body.dark-mode .on_list_view_true .pr_list_item .product-inner,
+body.dark-mode table,
+body.dark-mode td,
+body.dark-mode th,
+body.dark-mode .spr-container,
+body.dark-mode .on_list_view_true .grid-sizer + .pr_list_item .product-inner,
+body.dark-mode .on_list_view_true .pr_list_item:first-child .product-inner,
+body.dark-mode .nt-pagination,
+body.dark-mode .cat_sortby > a,
+body.dark-mode .tag-comment,
+body.dark-mode hr,
+body.dark-mode .filter_area .section_nt_filter,
+body.dark-mode .variations_form .quantity,
+body.dark-mode .variations_button .nt_add_cp,
+body.dark-mode .variations_button .nt_add_w,
+body.dark-mode .variations.style__circle .swatch.is-label .swatch_pr_item,
+body.dark-mode .style_color .is-color .swatch_pr_item,
+body.dark-mode input.search_header__input:not([type=submit]):not([type=checkbox]),
+body.dark-mode .cart_page_section .cart_item,
+body.dark-mode .shipping_calc_page.shipping_calculator,
+body.dark-mode .cart_page_section .cart_item:last-child,
+body.dark-mode .des_style_1.des_mb_2.sp-tab > .sp-tab-content,
+body.dark-mode .js_prs_search > :not(:last-child),
+body.dark-mode .cat-shop,
+body.dark-mode .nt_sortby .h3,
+body.dark-mode .nt_sortby h3,
+body.dark-mode .mfp-content .section_nt_filter .widget,
+body.dark-mode .store-availability-list__item:not(:first-child)::before,
+body.dark-mode .variations.style__radio.full .swatch:not(.is-color) li,
+body.dark-mode .header_picker,
+body.dark-mode.prs_bordered_grid_3 .products .nt_pr,
+body.dark-mode.prs_bordered_grid_2 .products .nt_pr .product-image,
+body.dark-mode input:not([type=submit]):not([type=checkbox]).nt_cat_title {
+    border-color: rgba(255, 255, 255, 0.15)
+}
+
+body.dark-mode.prs_bordered_grid_3 .products .nt_pr {
+    box-shadow: 0 -1px rgba(255, 255, 255, 0.15), -1px 0 rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .popup_slpr_wrap,
+body.dark-mode .gecko_toolbar,
+body.dark-mode .bgbl,
+body.dark-mode .h__top .bgbl,
+body.dark-mode .wrap_sortby,
+body.dark-mode .kalles_toolbar,
+body.dark-mode .nt_menu > li .sub-menu,
+body.dark-mode #nt_backtop span,
+body.dark-mode .mini_cart_footer .button,
+body.dark-mode .mini_cart_actions .quantity,
+body.dark-mode .frm_cart_page .mini_cart_actions .quantity,
+body.dark-mode .quantity input.input-text[type=number],
+body.dark-mode .mini_cart_tool > div:hover,
+body.dark-mode .variations_form .quantity,
+body.dark-mode .variations_button .nt_add_cp,
+body.dark-mode .variations_button .nt_add_w,
+body.dark-mode .tab-heading .nav_link_icon,
+body.dark-mode .nt_sortby,
+body.dark-mode .cat_toolbar.cat_stuck_prepared.cat_stuck,
+body.dark-mode .nt_bg_lz.lazyload,
+body.dark-mode .nt_bg_lz.lazyloading,
+body.dark-mode .nt_load.lazyloaded,
+body.dark-mode .nt_fk_lz,
+body.dark-mode .nt_lt_fake ul {
+    background-color: #000
+}
+
+body.dark-mode svg.ic_triangle_svg path {
+    fill: #000
+}
+
+body.dark-mode .btns_cart_1 .mini_cart_tool > div {
+    box-shadow: 9px 5px 10px #262729, -5px -5px 10px #2c3131;
+    color: #fff
+}
+
+body.dark-mode input:not([type=submit]):not([type=checkbox]),
+body.dark-mode select,
+body.dark-mode textarea {
+    border-color: rgba(255, 255, 255, 0.15);
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+body.dark-mode .form-message__title {
+    color: #651818
+}
+
+body.dark-mode a.button,
+body.dark-mode button,
+body.dark-mode input[type=submit] {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #000
+}
+
+body.dark-mode .search_header__submit,
+body.dark-mode #content_quickview button.mfp-close,
+body.dark-mode .store-availability-information__button,
+body.dark-mode .pswp_tp_light .pswp__button--arrow--left,
+body.dark-mode .pswp_tp_light .pswp__button--arrow--right {
+    border: none
+}
+
+body.dark-mode .nt_menu > li .sub-menu {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15)
+}
+
+body.dark-mode .newl_des_1 .signup-newsletter-form,
+body.dark-mode input.button.btn_back.btn_back2,
+body.dark-mode .mini_cart_ship input.button.btn_back,
+body.dark-mode .cat_toolbar.cat_stuck_prepared,
+body.dark-mode .flickity-prev-next-button,
+body.dark-mode .search_header__submit,
+body.dark-mode .on_list_view_true .pr_list_item .product-info__btns > a.nt_add_qv,
+body.dark-mode .variations.style__radio .swatch:not(.is-color) li.is-selected,
+body.dark-mode .variations.style__radio .swatch:not(.is-color) li.is-selected-nt,
+body.dark-mode .variations.style__radio .swatch:not(.is-color) li:hover {
+    background-color: transparent
+}
+
+body.dark-mode .flickity-prev-next-button {
+    border: 2px solid #fff
+}
+
+body.dark-mode a.compare_remove:after,
+body.dark-mode a.compare_remove:before {
+    background-color: #fff
+}
+
+body.dark-mode .nt_menu div.menu-item.is_hover > a,
+body.dark-mode .nt_menu div.menu-item > a:hover,
+body.dark-mode .nt_menu ul li a:hover,
+body.dark-mode .nt_menu ul li.is_hover a {
+    color: rgba(255, 255, 255, .45);
+}
+
+@media (min-width: 1025px) {
+    body.dark-mode .css_ntbar::-webkit-scrollbar-track,
+    body.dark-mode .css_scrollbar .fixcl-scroll ::-webkit-scrollbar-track,
+    body.dark-mode .css_scrollbar .gecko-scroll-quick ::-webkit-scrollbar-track,
+    body.dark-mode .mfp-content .css_ntbar .css_ntbar::-webkit-scrollbar-track {
+        background-color: rgba(255, 255, 255, 0.15)
+    }
+
+    body.dark-mode .css_ntbar::-webkit-scrollbar-thumb,
+    body.dark-mode .css_scrollbar .fixcl-scroll ::-webkit-scrollbar-thumb,
+    body.dark-mode .css_scrollbar .gecko-scroll-quick ::-webkit-scrollbar-thumb,
+    body.dark-mode .mfp-content .css_ntbar .css_ntbar::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.25)
+    }
+
+    body.dark-mode .col_nav.t4_show .btn_pnav_next,
+    body.dark-mode .col_nav.t4_show .btn_pnav_prev {
+        color: #fff
+    }
+
+    body.dark-mode .type_banner_collection .container .cat_banner_prs {
+        border-color: rgba(255, 255, 255, 0.15)
+    }
+}
+
+@media (min-width: 768px) {
+    body.dark-mode .summary-inner.gecko-scroll-quick:before {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, rgba(255, 255, 255, 0)), to(#fff));
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 94%, #fff 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 94%, #fff 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, rgba(26, 26, 26, 0)), to(#1a1a1a));
+        background: -webkit-linear-gradient(top, rgba(26, 26, 26, 0) 94%, #1a1a1a 100%);
+        background: linear-gradient(to bottom, rgba(26, 26, 26, 0) 94%, #1a1a1a 100%)
+    }
+}
+
+@media (max-width: 1024px) {
+    body.dark-mode .pr_grid_item .product-image .hover_button,
+    body.dark-mode .pr_grid_item .product-image:hover .hover_button {
+        background-color: #1a1a1a
+    }
+
+    .cltouchevents body.dark-mode ul.cat_lv_0 {
+        border-color: rgba(255, 255, 255, 0.15)
+    }
+}

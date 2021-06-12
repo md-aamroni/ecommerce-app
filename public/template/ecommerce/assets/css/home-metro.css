@@ -1,0 +1,15 @@
+.kalles-collection__container {
+    margin: 0 auto 80px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-collection__container {
+        margin: 0 auto 50px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .equal_nt.ratio_nt .col-lg-6 .nt_bg_lz {
+        padding-top: 126.315789%;
+    }
+}

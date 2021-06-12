@@ -1,0 +1,669 @@
+body {
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #999999;
+    font-weight: 400;
+}
+
+.f_body,
+.nt_action .tcount,
+.lazyloaded h4.f_body {
+    font-family: Quicksand, sans-serif;
+}
+
+.lazyloaded h1,
+.lazyloaded h2,
+.lazyloaded h3,
+.lazyloaded h4,
+.lazyloaded h5,
+.lazyloaded h6,
+.lazyloaded .f__mont,
+.lazyloaded .f_heading {
+    font-family: Quicksand, sans-serif;
+}
+
+.h__banner {
+    background-color: #1b745e !important;
+    min-height: 41px;
+    font-size: 13px;
+}
+
+.nt_menu > li > a {
+    height: 60px;
+}
+
+.kalles-header__wrapper .lbc_nav {
+    background-color: #94ccb9;
+}
+
+.kalles-header__wrapper .lb_menu_hot {
+    background-color: #ff3e11;
+    color: #ffffff;
+}
+
+.kalles-header__wrapper .lbl-sale {
+    background-color: #ff4e00;
+}
+
+.kalles-lbl__nav-sale {
+    color: #fe81ac;
+}
+
+h3.product-title, h3.product-title > a, h1.product_title.entry-title, .widget .product_list_widget .product-title, .widget .post_list_widget .article-title {
+    color: #fe81ac;
+}
+
+.nt_menu > li > a:hover, .nt_action > a:hover, .nt_action > div > a:hover, .nt_action .ssw-topauth .push_side:hover, .nt_menu > li > a:focus, .nt_action > a:focus, .nt_action > div > a:focus, .nt_action .ssw-topauth .push_side:focus,
+.cp, .chp:hover, .currencies .selected, .languages .selected, .color_primary_dark a:hover, .color_primary_dark a:active, .color_primary_dark a:focus, #kalles-section-nt_filter .nt_filter_block .active a, #kalles-section-nt_filter .nt_filter_block a:hover, a:hover, a:active, .cp, .chp:hover, #nt_sortby .wrap_sortby a.selected, .nt_filter_block li.active > a, .widget_product_categories .btn_cats_toggle:hover i, .widget_product_categories .btn_cats_toggle.active i, .widget_product_categories li.current-cat > a, .product-image .nt_add_w > a:hover, .product-image .nt_add_cp > a:hover, .header-text > a:not(.cg):hover, .header-text > .cg:hover, .nt_mb_menu .sub-menu li a.selected, .nt_mb_menu .current_item > a, .title_7 + .tt_divider > i.clprtrue, .widget .product_list_widget a.product-title:hover, .widget .product_list_widget a.product-title:active, .widget .post_list_widget a.article-title:hover, .widget .post_list_widget a.article-title:active, .swatch.is-label .nt_lt_fake .swatch_pr_item:not(.is-selected):hover .swatch__value_pr, #cat_kalles ul li.current-cat > a, #cat_kalles .sub-menu li > a:hover, .mfp-content #cat_kalles li.current-cat > a.cat_link, .tab_cat_title.des_tab_4 > li > a.tt_active, .tab_cat_title.des_tab_8 > li > a.tt_active, .tab_cat_title.des_tab_7 > li > a.tt_active, .clhovermq .cart_pos_dropdown:not(.template-cart) .icon_cart:hover a, .tab_cat_title.des_tab_11 > li > a, .quantity .tc button:hover, .type_feature_columns a.button.btn--style-3:hover, .dark-mode .on_list_view_true .pr_list_item .product-info__btns > a.nt_add_qv {
+    color: #94ccb9 !important;
+}
+
+input[type="submit"]:hover, button:hover, a.button:hover, .jas-ajax-load a:hover, .widget .tagcloud a:hover, .widget .tagcloud a.active, #kalles-section-nt_filter .widget .tagcloud a:hover, #kalles-section-nt_filter .widget .tagcloud a:active, .variations_button .nt_add_w:hover, .variations_button .nt_add_cp:hover, .single_add_to_cart_button, .variations.style__radio .swatch:not(.is-color) li:hover, .variations.style__radio .swatch:not(.is-color) li.is-selected, .variations.style__radio .swatch:not(.is-color) li.is-selected-nt, .variations.style__radio li:hover span.radio_styled, .variations.style__radio li.is-selected span.radio_styled, .variations.style__radio li.is-selected-nt span.radio_styled, .video-control__play, ul.nt_filter_styleck > li.active > a:before, .js_agree_ck:checked + label:before, .css_agree_ck:checked + label:before, .widget .tagcloud a:hover, .widget .tagcloud a.active, .nt_filter_styletag a:hover, .nt_filter_styletag .active a, .button.button_primary, .address-edit-toggle:focus, .shipping_calculator input.get_rates, .shipping_calculator input.get_rates:focus, .mini_cart_note input.btn_back:focus, .prev_next_3 .flickity-button, .tab_name, .js_fbt_ck:checked + label:before, body.template-cart .shipping_calculator input.get_rates, input.button.btn_back, .dark-mode .button.button_primary, .tab_cat_title.des_tab_11 > li > a.tt_active, .tab_cat_title.des_tab_11 > li > a:hover {
+    border-color: #94ccb9;
+}
+
+input[type="submit"]:hover, button:hover, a.button:hover, .bgcp, .jas-ajax-load a:hover, .widget .tagcloud a:hover, .widget .tagcloud a.active, #kalles-section-nt_filter .widget .tagcloud a:hover, #kalles-section-nt_filter .widget .tagcloud a:active, .single_add_to_cart_button, .variations.style__radio li.is-selected span.radio_styled:after, .variations.style__radio li.is-selected-nt span.radio_styled:after, .video-control__play, .signup-newsletter-form .submit-btn:hover, .mb_nav_title:after, .title_4 span:after, .title_3:after, ul.nt_filter_styleck > li.active > a:before, .js_agree_ck:checked + label:before, .css_agree_ck:checked + label:before, .widget .tagcloud a:hover, .widget .tagcloud a.active, .nt_filter_styletag a:hover, .nt_filter_styletag .active a, .button.button_primary, .address-edit-toggle:focus, .shipping_calculator input.get_rates, input.button.btn_back, .prev_next_3 .flickity-button, .dot_color_3 .flickity-page-dots .dot, .dot_color_3 .flickity-page-dots .dot:after, .tab_cat_title > li > a:hover > span:after, .tab_cat_title > li > a.tt_active > span:after, .nt_shipping.nt_icon_circle .icon:not(.ship_img):before, .pr_deal_dt.des_4, .title_9 span:after, .h_search_btn, .js_fbt_ck:checked + label:before, .progress_bar .current_bar, .mini_cart_footer .button.btn-checkout, body.template-cart .shipping_calculator input.get_rates, .shipping_calculator input.get_rates, input.button.btn_back, .cat_design_7 .cat_grid_item__wrapper, .about_us_img.border_true > span:after, .about_us_img.border_true > span:before, .des_title_13::after, .noUi-handle:before, .noUi-handle:after, .noUi-connect, .bgp, .bghp:hover, .dark-mode .on_list_view_true .pr_list_item .product-info__btns > a, .dark-mode .mini_cart_footer .button.btn-checkout, .dark-mode .single_add_to_cart_button, .dark-mode .button.button_primary, .dark-mode .address-edit-toggle:focus, .dark-mode .shipping_calculator input.get_rates, .dark-mode input.button.btn_back {
+    background-color: #94ccb9;
+}
+
+.nt_label.out-of-stock {
+    background-color: #1b745e;
+}
+
+.hover_button .pr_atc {
+    background: #fe81ac;
+    color: #ffffff;
+}
+
+.product-image .pr_atc:hover {
+    background: #94ccb9;
+    color: #fff;
+}
+
+.hover_button .nt_add_qv {
+    background: #fe81ac;
+    color: #ffffff;
+}
+
+.product-image .nt_add_qv:hover {
+    background: #94ccb9;
+    color: #ffffff;
+}
+
+/****************************
+* main slide
+*****************************/
+.kalles-flower__main-slide {
+    background-color: #efefef !important;
+}
+
+.kalles-flower__slide--layout-01 .nt_img_txt > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.kalles-flower__slide--layout-01 .pa_txts {
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-01 .pa_txts {
+        top: 50%;
+        width: auto;
+        left: 0%;
+        transform: translate(-0%, -50%);
+        right: auto;
+    }
+}
+
+.kalles-flower__slide--layout-01 .img_slider_block {
+    padding-top: 146.6666667%;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-01 .img_slider_block {
+        padding-top: 36.45833333333333%;
+    }
+}
+
+.kalles-flower__slide-01__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #94ccb9;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__title {
+        font-size: 18px;
+    }
+}
+
+.kalles-flower__slide-01__break-01 {
+    height: 7px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__break-01 {
+        height: 15px;
+    }
+}
+
+.kalles-flower__slide-01__second-title {
+    font-size: 33px;
+    font-weight: 600;
+    color: #fe81ac;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__second-title {
+        font-size: 55px;
+    }
+}
+
+.kalles-flower__slide-01__break-02 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__break-02 {
+        height: 20px;
+    }
+}
+
+
+.kalles-flower__slide-01__des {
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+    line-height: 25px;
+    margin-bottom: 1.3em;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__des {
+        font-size: 15.5px;
+    }
+}
+
+.kalles-flower__slide-01__break-03 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-01__break-03 {
+        height: 25px;
+    }
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-01__btn {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff !important;
+    background-color: #94ccb9;
+    border-color: #94ccb9;
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-01__btn.btn_icon_true:after {
+    color: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__main-slide .kalles-flower__slide-01__btn {
+        font-weight: 600;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.kalles-flower__slide--layout-02 .nt_img_txt > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.kalles-flower__slide--layout-02 .pa_txts {
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-02 .pa_txts {
+        top: 50%;
+        width: auto;
+        right: 0%;
+        transform: translate(0%, -50%);
+        left: auto;
+    }
+}
+
+.kalles-flower__slide--layout-02 .img_slider_block {
+    padding-top: 146.6666667%;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-02 .img_slider_block {
+        padding-top: 36.45833333333333%;
+    }
+}
+
+.kalles-flower__slide-02__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #94ccb9;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__title {
+        font-size: 18px;
+    }
+}
+
+.kalles-flower__slide-02__break-01 {
+    height: 7px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__break-01 {
+        height: 15px;
+    }
+}
+
+.kalles-flower__slide-02__second-title {
+    font-size: 33px;
+    font-weight: 600;
+    color: #fe81ac;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__second-title {
+        font-size: 55px;
+    }
+}
+
+.kalles-flower__slide-02__break-02 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__break-02 {
+        height: 20px;
+    }
+}
+
+.kalles-flower__slide-02__des {
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+    line-height: 25px;
+    margin-bottom: 1.3em;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__des {
+        font-size: 15.5px;
+    }
+}
+
+.kalles-flower__slide-02__break-03 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-02__break-03 {
+        height: 30px;
+    }
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-02__btn {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff !important;
+    background-color: #94ccb9;
+    border-color: #94ccb9;
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-02__btn.btn_icon_true:after {
+    color: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__main-slide .kalles-flower__slide-02__btn {
+        font-weight: 600;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.kalles-flower__slide--layout-03 .nt_img_txt > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.kalles-flower__slide--layout-03 .pa_txts {
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-03 .pa_txts {
+        top: 50%;
+        width: auto;
+        left: 0%;
+        transform: translate(-0%, -50%);
+        right: auto;
+    }
+}
+
+.kalles-flower__slide--layout-03 .img_slider_block {
+    padding-top: 146.6666667%;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide--layout-03 .img_slider_block {
+        padding-top: 36.45833333333333%;
+    }
+}
+
+.kalles-flower__slide-03__title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #94ccb9;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__title {
+        font-size: 18px;
+    }
+}
+
+.kalles-flower__slide-03__break-01 {
+    height: 7px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__break-01 {
+        height: 15px;
+    }
+}
+
+.kalles-flower__slide-03__second-title {
+    font-size: 33px;
+    font-weight: 600;
+    color: #fe81ac;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__second-title {
+        font-size: 55px;
+    }
+}
+
+.kalles-flower__slide-03__break-02 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__break-02 {
+        height: 20px;
+    }
+}
+
+.kalles-flower__slide-03__des {
+    font-size: 13px;
+    font-weight: 500;
+    color: #696969;
+}
+
+.kalles-flower__slide-03__des > p {
+    line-height: 25px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__des {
+        font-size: 15.5px;
+    }
+}
+
+.kalles-flower__slide-03__break-03 {
+    height: 10px;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__slide-03__break-03 {
+        height: 30px;
+    }
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-03__btn {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff !important;
+    background-color: #94ccb9;
+    border-color: #94ccb9;
+}
+
+.kalles-flower__main-slide .kalles-flower__slide-03__btn.btn_icon_true:after {
+    color: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+    .kalles-flower__main-slide .kalles-flower__slide-03__btn {
+        font-weight: 600;
+        min-height: 40px;
+        font-size: 14px;
+    }
+}
+
+/****************************
+* Type section
+*****************************/
+.kalles-flower__type-section {
+    margin: 50px auto 20px;
+}
+
+/****************************
+* Banner section
+*****************************/
+.kalles-flower__banner {
+    margin: 0 auto 58px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-flower__banner {
+        margin: 0 auto 50px;
+    }
+}
+
+/****************************
+* Best seller section
+*****************************/
+.kalles-flower__trending-section {
+    margin: 0 auto 90px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-flower__trending-section {
+        margin: 60px auto 0;
+    }
+}
+
+/****************************
+* Card info section
+*****************************/
+.kalles-flower__card-info .kalles-flower__card-info--desc {
+    color: #878787;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.kalles-flower__card-info .kalles-flower__card-info--title {
+    color: #222222;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.kalles-flower__card-info {
+    margin: 50px auto;
+}
+
+.kalles-flower__card-info .nt_promotion .nasa-button-banner:hover {
+    color: #ffffff !important;
+}
+
+.kalles-flower__card-info .nt_promotion > a:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+/****************************
+* best seller section
+*****************************/
+
+.kalles-flower__best-seller-section {
+    margin: 0 auto 80px;
+    padding-top: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-flower__best-seller-section {
+        margin: 0 auto 60px;
+    }
+}
+
+/****************************
+* blog post
+*****************************/
+.kalles-flower__blog-post {
+    margin: 0 auto 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .kalles-flower__blog-post {
+        margin: 0 auto 58px;
+    }
+}
+
+/****************************
+* shipping info
+*****************************/
+.kalles-flower__shipping {
+    margin: 50px auto 0;
+}
+
+.kalles-flower__shipping .use_border_true .nt_shipping:after {
+    border-color: #dddddd;
+}
+
+.kalles-flower__shipping .icon {
+    color: #9e9e9e;
+}
+
+.kalles-flower__shipping .content {
+    color: #878787;
+}
+
+.kalles-flower__shipping .content h3 {
+    color: #222222;
+}
+
+/****************************
+* footer
+*****************************/
+.footer__top a:hover {
+    color: #56cfe1;
+}
+
+.footer__top .signup-newsletter-form,
+.footer__top .signup-newsletter-form input.input-text {
+    background-color: transparent;
+}
+
+.footer__top .signup-newsletter-form input.input-text {
+    color: #878787;
+}
+
+.footer__top .signup-newsletter-form .submit-btn {
+    background-color: #222222;
+}
+
+.footer__top .widget-title {
+    color: #222222;
+}
+
+.footer__top a:not(:hover) {
+    color: #878787;
+}
+
+.footer__top .signup-newsletter-form {
+    border-color: #878787;
+}
+
+.footer__top .nt_bg_overlay:after {
+    background-color: #000000;
+    opacity: 0;
+}
+
+.footer__top_wrap {
+    background-color: #f6f6f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #878787;
+}
+
+@media (min-width: 1025px) {
+    .wrapper_boxed #nt_footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nt_content {
+        z-index: 2;
+    }
+
+    #nt_content,
+    .kalles_prefooter {
+        position: relative;
+        background-color: #fff;
+    }
+
+    #nt_footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        transition: all 0.25s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 800px;
+        perspective: 800px;
+    }
+
+    .browser-Safari #nt_footer {
+        opacity: 0;
+    }
+
+    .browser-Safari #nt_footer.visible_footer {
+        opacity: 1;
+    }
+}
+
+.footer__bot_wrap a:hover {
+    color: #56cfe1;
+}
+
+.footer__bot_wrap {
+    background-color: #ffffff;
+    color: #878787;
+}
+
+.footer__bot a:not(:hover) {
+    color: #878787;
+}

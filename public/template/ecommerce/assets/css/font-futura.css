@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Futura;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-Light.woff2") format("woff2"), url("../fonts/futura/FuturaLT-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 300;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-LightOblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-LightOblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-Book.woff2") format("woff2"), url("../fonts/futura/FuturaLT-Book.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 400;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-BookOblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-BookOblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT.woff2") format("woff2"), url("../fonts/futura/FuturaLT.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 500;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-Oblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-Oblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-Heavy.woff2") format("woff2"), url("../fonts/futura/FuturaLT-Heavy.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 600;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-HeavyOblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-HeavyOblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-Bold.woff2") format("woff2"), url("../fonts/futura/FuturaLT-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 700;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-BoldOblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-BoldOblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-ExtraBold.woff2") format("woff2"), url("../fonts/futura/FuturaLT-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 800;
+    font-style: oblique;
+    font-display: swap;
+    src: url("../fonts/futura/FuturaLT-ExtraBoldOblique.woff2") format("woff2"), url("../fonts/futura/FuturaLT-ExtraBoldOblique.woff") format("woff");
+}
+
+@font-face {
+    font-family: Futura;
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/futura/FuturaLT-Heavy.woff) format("woff"), url(../fonts/futura/FuturaLT-Heavy.woff2) format("woff2");
+}

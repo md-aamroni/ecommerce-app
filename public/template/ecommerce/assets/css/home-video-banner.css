@@ -1,0 +1,103 @@
+.kalles-hero-video .nt_img_txt > a:after {
+    background-color: #000000;
+    opacity: 0.0
+}
+
+.kalles-hero-video .pa_txts {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kalles-hero-video .nt_img_txt h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff
+}
+
+@media (min-width: 768px) {
+    .kalles-hero-video .nt_img_txt h4 {
+        font-size: 18px
+    }
+}
+
+.kalles-video__banner-head__br-01 {
+    height: 10px
+}
+
+@media (min-width: 768px) {
+    .kalles-video__banner-head__br-01 {
+        height: 20px
+    }
+}
+
+.kalles-hero-video .nt_img_txt h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff
+}
+
+@media (min-width: 768px) {
+    .kalles-hero-video .nt_img_txt h3 {
+        font-size: 60px
+    }
+}
+
+.kalles-video__banner-head__br-02 {
+    height: 10px
+}
+
+@media (min-width: 768px) {
+    .kalles-video__banner-head__br-02 {
+        height: 20px
+    }
+}
+
+.kalles-hero-video .imtt4_btn {
+    min-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #ffffff
+}
+
+.kalles-hero-video .imtt4_btn.btn_icon_true:after {
+    color: #ffffff
+}
+
+
+@media (min-width: 768px) {
+    .kalles-hero-video .imtt4_btn {
+        font-weight: 600;
+        min-height: 40px;
+        font-size: 14px
+    }
+}
+
+/*****************************
+* shipping block
+*****************************/
+.kalles-section-shipping {
+    background-color: #ffffff !important;
+}
+
+.kalles-section-shipping > .container {
+    margin: 50px auto -20px !important;
+}
+
+.kalles-section-shipping .use_border_true .nt_shipping:after {
+    border-color: #dddddd
+}
+
+.kalles-section-shipping .icon {
+    color: #9e9e9e
+}
+
+.kalles-section-shipping .content {
+    color: #878787
+}
+
+.kalles-section-shipping .content h3 {
+    color: #222222
+}

@@ -1,0 +1,155 @@
+.kalles-model-viewer-ui {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.kalles-model-viewer-ui model-viewer {
+    --progress-bar-height: 2px;
+    --progress-bar-color: currentColor;
+    transform: translateZ(0);
+    z-index: 1;
+    background-color: white;
+}
+
+.kalles-model-viewer-ui model-viewer.kalles-model-viewer-ui__disabled {
+    pointer-events: none;
+}
+
+.kalles-model-viewer-ui.kalles-model-viewer-ui--fullscreen model-viewer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.kalles-model-viewer-ui.kalles-model-viewer-ui--fullscreen .kalles-model-viewer-ui__control-icon--exit-fullscreen {
+    display: block;
+}
+
+.kalles-model-viewer-ui.kalles-model-viewer-ui--fullscreen .kalles-model-viewer-ui__control-icon--enter-fullscreen {
+    display: none;
+}
+
+.kalles-model-viewer-ui.kalles-model-viewer-ui--desktop:hover .kalles-model-viewer-ui__controls-area, .kalles-model-viewer-ui.kalles-model-viewer-ui--desktop.kalles-model-viewer-ui--child-focused .kalles-model-viewer-ui__controls-area {
+    opacity: 1;
+}
+
+.kalles-model-viewer-ui:not(.kalles-model-viewer-ui--desktop) .kalles-model-viewer-ui__controls-area {
+    display: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__controls-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__controls-area {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    opacity: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__controls-area:not(.kalles-model-viewer-ui__controls-area--playing) {
+    display: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button {
+    color: #3a3a3a;
+    border-radius: 0;
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button:not(.focus-visible) {
+    outline: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--control {
+    padding: 0px;
+    height: 44px;
+    width: 44px;
+    background: transparent;
+    position: relative;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--control:hover {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--control:active, .kalles-model-viewer-ui .kalles-model-viewer-ui__button--control.focus-visible:focus {
+    color: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--control:not(:last-child):after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    width: 28px;
+    bottom: 0px;
+    right: 8px;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__control-icon {
+    width: 44px;
+    height: 44px;
+    fill: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--poster {
+    background: #fff;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    transform: translate3d(-50%, -50%, 0);
+    height: 62px;
+    width: 62px;
+    z-index: 1;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__button--poster:hover, .kalles-model-viewer-ui .kalles-model-viewer-ui__button--poster:focus {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__poster-control-icon {
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    fill: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__control-icon--exit-fullscreen {
+    display: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__control-icon--enter-fullscreen {
+    display: block;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__spritesheet {
+    display: none;
+}
+
+.kalles-model-viewer-ui .kalles-model-viewer-ui__sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
