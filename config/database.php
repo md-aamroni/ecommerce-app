@@ -11,7 +11,6 @@ $GLOBALS['DB_NAME']     = "mediraj_app_rdb";
 $GLOBALS['DB_USER']     = "root";
 $GLOBALS['DB_PASS']     = "";
 
-echo 'Hello';
 
 
 // $GLOBALS['DB_DRIVER']	= "mysql";

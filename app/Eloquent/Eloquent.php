@@ -1,31 +1,31 @@
 <?php
 
-namespace App\Http\Eloquent;
+namespace App\Eloquent;
 
 use Exception;
 use App\Http\Core\Controller;
 
 class Eloquent extends Controller
 {
-	public function all()
+	protected function all()
 	{
 		// Code Here..
 	}
 
 
-	public function findOn()
+	protected function findOn()
 	{
 		// Code Here..
 	}
 
 
-	public function findLike()
+	protected function findLike()
 	{
 		// Code Here..
 	}
 
 
-	public function drop($table, $delete_id)
+	protected function drop($table, $delete_id)
 	{
 		$sqlCode = "DELETE FROM $table WHERE id = :DELETE_ID";
 		$query   = $this->connection->prepare($sqlCode);
@@ -44,7 +44,7 @@ class Eloquent extends Controller
 	}
 
 
-	public function dropMultiple($table, $delete_ids)
+	protected function dropMultiple($table, $delete_ids)
 	{
 		$sqlCode = "DELETE FROM $table WHERE `id` IN (:DELETE_ID)";
 		$query   = $this->connection->prepare($sqlCode);

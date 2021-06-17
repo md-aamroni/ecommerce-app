@@ -1,0 +1,13 @@
+{
+	"name": "user/ecommerce-app",
+	"authors": [{
+		"name": "Abdullah Al Mamun Roni",
+		"email": "md.aamroni@gmail.com"
+	}],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	}
+}

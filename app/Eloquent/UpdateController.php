@@ -42,7 +42,7 @@ class UpdateController extends Controller
 		$this->id		= $this->encode($id);
 
 		$sqlCode	= "UPDATE $this->table
-						SET `total_amount` = :TOTAL_AMOUNT, `updated_at` = :UPDATED_AT 
+						SET `total_amount` = :TOTAL_AMOUNT, `updated_at` = :UPDATED_AT
 						WHERE `id` = :UPDATE_ID";
 
 		$query 	= $this->connection->prepare($sqlCode);

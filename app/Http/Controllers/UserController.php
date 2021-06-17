@@ -1,35 +1,38 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
-class UserController
+use App\Models\UserModel;
+
+class UserController extends UserModel
 {
    public function index()
    {
-      //Code Here..
+      echo 'Hello '. __METHOD__;
    }
-
 
    public function create()
    {
-      //Code Here..
+		echo 'Hello '. __METHOD__;
    }
 
+	public function count()
+	{
+		echo 'Hello '. __METHOD__;
+	}
 
    public function edit()
    {
-      //Code Here..
+		echo 'Hello '. __METHOD__;
    }
-
 
    public function update()
    {
-      //Code Here..
+		echo 'Hello '. __METHOD__;
    }
-
 
    public function delete()
    {
-      //Code Here..
-   }
+		echo 'Hello '. __METHOD__;
+  	}
 }
