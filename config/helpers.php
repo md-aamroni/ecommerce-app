@@ -1,10 +1,6 @@
 <?php
 
-/**
- * Content  :
- * Date     :
- * Feature  :
- */
+/** Helpers */
 function dd($var, $type = null)
 {
 	if (!is_null($type) && $type === 'json') {
@@ -31,10 +27,10 @@ function dd($var, $type = null)
 
 function asset($fileName, $version = false)
 {
-	if (file_exists("./../public/assets/" . $fileName)) {
-		$getPath = "./../public/assets/" . $fileName;
+	if (file_exists("./../public/" . $fileName)) {
+		$getPath = "./../public/" . $fileName;
 	} else {
-		$getPath = "public/assets/" . $fileName;
+		$getPath = "public/" . $fileName;
 	}
 
 	if (is_bool($version) && $version === true) {
@@ -47,10 +43,10 @@ function asset($fileName, $version = false)
 }
 
 
-function pageTitle($appName = APPNAME, $type = null)
+function currentPageTitle($appName = APP['title'], $type = null)
 {
-	$pageName = basename($_SERVER['PHP_SELF']);
-	$dash     = strpos($pageName, '-');
+	$pageName	= basename($_SERVER['PHP_SELF']);
+	$parseDash	= strpos($pageName, '-');
 
 	if (!is_null($type)) {
 		$type = ' ' . $type . ' ';
@@ -59,78 +55,24 @@ function pageTitle($appName = APPNAME, $type = null)
 	}
 
 	if (is_null($appName)) {
-		if ($dash > 0) {
-			$title = ucwords(str_replace('.php', '', str_replace('-', ' ', $pageName)));
+		if ($parseDash > 0) {
+			$pageTitle = ucwords(str_replace('.php', '', str_replace('-', ' ', $pageName)));
 		} else {
-			$title = ucwords(str_replace('.php', '', $pageName));
+			$pageTitle = ucwords(str_replace('.php', '', $pageName));
 		}
 	}
 
 	if (!is_null($appName)) {
-		if ($dash > 0) {
-			$title = ucwords(str_replace('.php', '', str_replace('-', ' ', $pageName)) . $type . $appName);
+		if ($parseDash > 0) {
+			$pageTitle = ucwords(str_replace('.php', '', str_replace('-', ' ', $pageName)) . $type . $appName);
 		} else {
-			$title = ucwords(str_replace('.php', '', $pageName) . $type . $appName);
+			$pageTitle = ucwords(str_replace('.php', '', $pageName) . $type . $appName);
 		}
 
 		if ($pageName == "index.php") {
-			$title = ucwords(str_replace('.php', '', 'home') . $type . $appName);
+			$pageTitle = ucwords(str_replace('.php', '', 'home') . $type . $appName);
 		}
 	}
 
-	echo $title;
-}
-
-
-function arrayMergeUnique($array, $value, $unique = false)
-{
-	$emptyArray = [];
-	foreach ($array as $each) {
-		$convertDate	= strtotime($each[$value]);
-		$getMonthYear	= getDate($convertDate);
-		$getMonthYear	= $getMonthYear['month'] . ' ' . $getMonthYear['year'];
-		array_push($emptyArray, $getMonthYear);
-	}
-
-	if (is_bool($unique) && $unique === false) {
-		return $emptyArray;
-	} else {
-		return array_unique($emptyArray);
-	}
-}
-
-
-function alias($string)
-{
-	$data  = explode(" ", $string);
-	$value = null;
-	if (count($data) > 1) {
-		$explode = explode(" ", $string);
-		foreach ($explode as $i) {
-			$value = $value . str_split($i, 1)[0];
-		}
-	} else {
-		$value = str_split($string, 1)[0];
-	}
-
-	$alias = $value . '-' . strtoupper(substr(md5(uniqid($value)), 0, 14));
-	return $alias;
-}
-
-
-function unique($length = 38)
-{
-	return substr(md5(uniqid(bin2hex(random_bytes(8)))), 0, $length);
-}
-
-
-function randID()
-{
-	return substr('#' . strtoupper(md5(uniqid())), 0, 10);
-}
-
-
-function notification($type, $message)
-{
-	return '<script>round_' . $type . '_noti("' . $message . '")</script>';
+	echo $pageTitle;
 }

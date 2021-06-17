@@ -1,33 +1,38 @@
 <?php
 
-/**
- * Content  :
- * Date     :
- * Feature  :
- */
-function timeElapsed($string, $type = null)
+/** Date Converter */
+function dateFormat($string, $type = null)
 {
-	if (!is_null($type) && $type === 0) {
-		$explode = getDate(strtotime($string));
-		$format  = $explode['mday'] . ' ' . $explode['month'] . ', ' . $explode['year'];
-	} elseif (!is_null($type) && $type === 1) {
-		$explode = getDate(strtotime($string));
-		$format  = $explode['month'] . ' ' . $explode['mday'] . ', ' . $explode['year'];
-	} elseif (!is_null($type) && $type === 2) {
-		$explode = getDate(strtotime($string));
-		$format  = $explode['weekday'] . ' ' . $explode['mday'] . ' ' . $explode['month'] . ', ' . $explode['year'];
-	} elseif (!is_null($type) && $type === 3) {
-		$format = date('D j F, Y', strtotime($string));
-	} elseif (!is_null($type) && $type === 4) {
-		$format = date('D, j M Y, H:i:s A', strtotime($string));
-	} elseif (!is_null($type) && $type === 5) {
-		$format = date('D, j M Y, h:i:s A', strtotime($string));
-	} elseif (!is_null($type) && $type === 6) {
-		$format = date('D, j M Y, h:i A', strtotime($string));
-	} elseif (!is_null($type) && $type === 7) {
-		$format = date('h:i A', strtotime($string));
-	} else {
-		$format = date('M F, Y', strtotime($string));
+	$x = getDate(strtotime($string));
+
+	switch ($type) {
+		case 0:
+			$format = $x['mday'] . ' ' . $x['month'] . ', ' . $x['year'];
+			break;
+		case 1:
+			$format = $x['month'] . ' ' . $x['mday'] . ', ' . $x['year'];
+			break;
+		case 2:
+			$format = $x['weekday'] . ' ' . $x['mday'] . ' ' . $x['month'] . ', ' . $x['year'];
+			break;
+		case 3:
+			$format = date('D j F, Y', strtotime($string));
+			break;
+		case 4:
+			$format = date('D, j M Y, H:i:s A', strtotime($string));
+			break;
+		case 5:
+			$format = date('D, j M Y, h:i:s A', strtotime($string));
+			break;
+		case 6:
+			$format = date('D, j M Y, h:i A', strtotime($string));
+			break;
+		case 7:
+			$format = date('h:i A', strtotime($string));
+			break;
+		default:
+			$format = date('M F, Y', strtotime($string));
+			break;
 	}
 
 	return $format;

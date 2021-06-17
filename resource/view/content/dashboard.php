@@ -1,7 +1,12 @@
 <?php
 
 use App\Http\Controllers\UserController;
+
 $user = new UserController;
 
-$user->create();
+
+
+echo '<pre>';
+print_r($user->index());
+echo '</pre>';
 ?>

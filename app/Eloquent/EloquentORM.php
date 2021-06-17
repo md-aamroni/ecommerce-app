@@ -2,14 +2,32 @@
 
 namespace App\Eloquent;
 
+use PDO;
 use Exception;
 use App\Http\Core\Controller;
 
-class Eloquent extends Controller
+class EloquentORM extends Controller
 {
-	protected function all()
+	public $sqlCode;
+
+	protected function all($tableName, $orderBy = null)
 	{
-		// Code Here..
+		if (!is_null($orderBy) && $orderBy === true) {
+			$this->sqlCode = "SELECT * FROM {$tableName} ORDER BY `id` DESC";
+		} else {
+			$this->sqlCode = "SELECT * FROM {$tableName} ORDER BY `id` ASC";
+		}
+
+		$query = $this->connection->prepare($this->sqlCode);
+		$query->execute();
+		$dataList = $query->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelected = $query->rowCount();
+
+		if ($totalRowSelected > 0) {
+			return $dataList;
+		} else {
+			return 0;
+		}
 	}
 
 
