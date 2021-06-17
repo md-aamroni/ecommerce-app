@@ -7,23 +7,24 @@ class View
 	public function __construct()
 	{
 		if (file_exists('./../vendor/autoload.php')) {
-			require_once './../vendor/autoload.php';
+			include './../vendor/autoload.php';
 		} else {
-			require_once 'vendor/autoload.php';
+			include 'vendor/autoload.php';
 		}
 
 		if (file_exists('./../config/bootstrap.php')) {
-			require './../config/bootstrap.php';
+			include './../config/bootstrap.php';
 		} else {
-			require 'config/bootstrap.php';
+			include 'config/bootstrap.php';
 		}
 
 		if (file_exists('./../component/app.php')) {
-			require './../component/app.php';
+			include './../component/app.php';
 		} else {
-			require 'component/app.php';
+			include 'component/app.php';
 		}
 	}
+
 
 	public function loadContent($page)
 	{
@@ -51,9 +52,10 @@ class View
 		}
 
 		if (file_exists($filePath)) {
-			include $filePath;
+			require_once $filePath;
 		}
 	}
+
 
 	public function loadLayout($page)
 	{
@@ -81,7 +83,7 @@ class View
 		}
 
 		if (file_exists($filePath)) {
-			include $filePath;
+			require_once $filePath;
 		}
 	}
 }

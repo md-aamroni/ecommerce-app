@@ -8,23 +8,31 @@ use App\Http\Core\Controller;
 
 class EloquentORM extends Controller
 {
-	public $sqlCode;
+	protected $sqlCode;
+	protected $query;
+	protected $table;
+	protected $order;
+	protected $dataList;
+	protected $totalRow;
 
-	protected function all($tableName, $orderBy = null)
+	protected function all($table, $order = null)
 	{
-		if (!is_null($orderBy) && $orderBy === true) {
-			$this->sqlCode = "SELECT * FROM {$tableName} ORDER BY `id` DESC";
+		$this->table = $table;
+		$this->order = $order;
+
+		if (!is_null($this->order) && $this->order === true) {
+			$this->sqlCode = "SELECT * FROM $this->table ORDER BY `id` DESC";
 		} else {
-			$this->sqlCode = "SELECT * FROM {$tableName} ORDER BY `id` ASC";
+			$this->sqlCode = "SELECT * FROM $this->table ORDER BY `id` ASC";
 		}
 
-		$query = $this->connection->prepare($this->sqlCode);
-		$query->execute();
-		$dataList = $query->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $query->rowCount();
+		$this->query = $this->connection->prepare($this->sqlCode);
+		$this->query->execute();
+		$this->dataList = $this->query->fetchAll(PDO::FETCH_ASSOC);
+		$this->totalRow = $this->query->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($this->totalRow > 0) {
+			return $this->dataList;
 		} else {
 			return 0;
 		}
@@ -45,8 +53,8 @@ class EloquentORM extends Controller
 
 	protected function drop($table, $delete_id)
 	{
-		$sqlCode = "DELETE FROM $table WHERE id = :DELETE_ID";
-		$query   = $this->connection->prepare($sqlCode);
+		$this->sqlCode = "DELETE FROM $table WHERE id = :DELETE_ID";
+		$query   = $this->connection->prepare($this->sqlCode);
 		$values  = array(':DELETE_ID' => $delete_id);
 
 		try {
@@ -64,8 +72,8 @@ class EloquentORM extends Controller
 
 	protected function dropMultiple($table, $delete_ids)
 	{
-		$sqlCode = "DELETE FROM $table WHERE `id` IN (:DELETE_ID)";
-		$query   = $this->connection->prepare($sqlCode);
+		$this->sqlCode = "DELETE FROM $table WHERE `id` IN (:DELETE_ID)";
+		$query   = $this->connection->prepare($this->sqlCode);
 		$values  = array(':DELETE_ID' => $delete_ids);
 
 		try {

@@ -7,14 +7,14 @@ use PDOException;
 
 class Database
 {
-	private $driver;
-	private $host;
-	private $database;
-	private $charset;
-	private $username;
-	private $password;
-	private $dsn;
-	private $db;
+	protected $driver;
+	protected $host;
+	protected $database;
+	protected $charset;
+	protected $username;
+	protected $password;
+	protected $dsn;
+	protected $db;
 
 	protected function connection()
 	{
@@ -24,7 +24,7 @@ class Database
 		$this->charset	 = DB['charset'];
 		$this->username = DB['username'];
 		$this->password = DB['password'];
-		$this->dsn 		= '' . $this->driver . ':host=' . $this->host . ';dbname=' . $this->database . ';charset=' . $this->charset . '';
+		$this->dsn		 = '' . $this->driver . ':host=' . $this->host . ';dbname=' . $this->database . ';charset=' . $this->charset . '';
 
 		try {
 			$this->db = new PDO($this->dsn, $this->username, $this->password);

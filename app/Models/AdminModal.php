@@ -4,12 +4,12 @@ namespace App\Models;
 
 use App\Eloquent\EloquentORM;
 
-class UserModel extends EloquentORM
+class AdminModal extends EloquentORM
 {
 	protected $table;
 	protected $order;
 
-	protected function allUsers()
+	protected function allAdmins()
 	{
 		$this->table = 'users';
 		$this->order = false;
