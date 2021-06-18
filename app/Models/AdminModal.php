@@ -6,13 +6,10 @@ use App\Eloquent\EloquentORM;
 
 class AdminModal extends EloquentORM
 {
-	protected $table;
-	protected $order;
-
-	protected function allAdmins()
+	protected function allAdmins($order = false)
 	{
-		$this->table = 'users';
-		$this->order = false;
+		$this->table = 'countries';
+		$this->order = $order;
 		return $this->all($this->table, $this->order);
 	}
 }

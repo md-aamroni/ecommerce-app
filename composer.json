@@ -1,9 +1,14 @@
 {
-	"name": "user/ecommerce-app",
+	"name": "project/ecommerce-app",
 	"authors": [{
 		"name": "Abdullah Al Mamun Roni",
-		"email": "md.aamroni@gmail.com"
+		"email": "md.aamroni@gmail.com",
+		"homepage": "https://aamroni.net",
+		"role": "Web Application Developer"
 	}],
+	"support": {
+		"email": "info.aamroni@gmail.com"
+	},
 	"require": {},
 	"autoload": {
 		"psr-4": {

@@ -7,13 +7,13 @@ use PDOException;
 
 class Database
 {
-	protected $driver;
-	protected $host;
-	protected $database;
-	protected $charset;
-	protected $username;
-	protected $password;
-	protected $dsn;
+	private $driver;
+	private $host;
+	private $database;
+	private $charset;
+	private $username;
+	private $password;
+	private $dsn;
 	protected $db;
 
 	protected function connection()

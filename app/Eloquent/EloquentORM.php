@@ -11,19 +11,17 @@ class EloquentORM extends Controller
 	protected $sqlCode;
 	protected $query;
 	protected $table;
+	protected $column	= [];
 	protected $order;
 	protected $dataList;
 	protected $totalRow;
 
-	protected function all($table, $order = null)
+	protected function all($table, $order = false)
 	{
-		$this->table = $table;
-		$this->order = $order;
-
-		if (!is_null($this->order) && $this->order === true) {
-			$this->sqlCode = "SELECT * FROM $this->table ORDER BY `id` DESC";
+		if (is_bool($order) && $order === true) {
+			$this->sqlCode = "SELECT * FROM $table ORDER BY `id` DESC";
 		} else {
-			$this->sqlCode = "SELECT * FROM $this->table ORDER BY `id` ASC";
+			$this->sqlCode = "SELECT * FROM $table ORDER BY `id` ASC";
 		}
 
 		$this->query = $this->connection->prepare($this->sqlCode);

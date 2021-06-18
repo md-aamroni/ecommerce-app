@@ -14,22 +14,22 @@ $GLOBALS['DB_CONFIG'] = [
 		'collation'	=> 'utf8mb4_unicode_ci',
 		'prefix'		=> ''
 	],
-	'sqllite'	=> [
-		'driver'		=> '',
-		'url'			=> '',
-		'database'	=> '',
+	'sqlite'	=> [
+		'driver'		=> 'sqlite',
+		'url'			=> __DIR__ . '/ecommerce_app_rdb.sqlite',
+		'database'	=> 'ecommerce_app_rdb',
 		'prefix'		=> '',
-		'fk_const'	=> ''		// foreign key constraints
+		'fk_const'	=> ''	// foreign key constraints
 	],
 	'pgsql'		=> [
-		'driver'		=> '',
+		'driver'		=> 'pgsql',
 		'url'			=> '',
-		'host'		=> '',
-		'port'		=> '',
-		'database'	=> '',
-		'username'	=> '',
+		'host'		=> 'localhost',
+		'port'		=> '5432',
+		'database'	=> 'ecommerce_app_rdb',
+		'username'	=> 'root',
 		'password'	=> '',
-		'charset'	=> '',
+		'charset'	=> 'utf8mb4',
 		'collation'	=> '',
 		'prefix'		=> ''
 	],

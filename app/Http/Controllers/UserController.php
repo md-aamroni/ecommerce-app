@@ -8,6 +8,6 @@ class UserController extends UserModel
 {
 	public function index()
 	{
-		return $this->allUsers();
+		return $this->allUsers(true);
 	}
 }

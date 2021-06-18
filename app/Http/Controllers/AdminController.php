@@ -8,6 +8,6 @@ class AdminController extends AdminModal
 {
 	public function index()
 	{
-		return $this->allAdmins();
+		return $this->allAdmins(false);
 	}
 }
