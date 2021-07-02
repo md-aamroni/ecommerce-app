@@ -1,8 +1,9 @@
 <?php
+	
 include './../app/Http/Core/View.php';
 
 $view = new View;
 
-$view->loadLayout('top');
-$view->loadContent('admin');
-$view->loadLayout('tail');
+$view->loadLayout('admin.top');
+$view->loadContent('auth.login');
+$view->loadLayout('admin.tail');

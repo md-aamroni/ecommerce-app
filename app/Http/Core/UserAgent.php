@@ -51,7 +51,7 @@ class UserAgent
 
    public function host()
    {
-      return gethostbyaddr($this->ip());
+      return gethostbyaddr($_SERVER['SERVER_ADDR']);
    }
 
 

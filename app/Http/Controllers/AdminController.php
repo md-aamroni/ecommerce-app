@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AdminModal;
+use App\Models\AdminModel;
 
-class AdminController extends AdminModal
+class AdminController extends AdminModel
 {
 	public function index()
 	{

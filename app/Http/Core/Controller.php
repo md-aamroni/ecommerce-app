@@ -35,7 +35,7 @@ class Controller extends Database
 	{
 		$seeds   = $this->urlSafeEncode(random_bytes(8));
 		$time    = time();
-		$hash    = $this->urlSafeEncode(hash_hmac('sha256', $seeds . $time, CSRF_TOKEN_SECRET, true));
+		$hash    = $this->urlSafeEncode(hash_hmac('sha256', $seeds . $time, TOKEN, true));
 		return $this->urlSafeEncode($hash . '|' . $seeds . '|' . $time);
 	}
 
@@ -48,7 +48,7 @@ class Controller extends Database
 	{
 		$parseToken = explode('|', $this->urlSafeDecode($token));
 		if (count($parseToken) === 3) {
-			$hash = hash_hmac('sha256', $parseToken[1] . $parseToken[2], CSRF_TOKEN_SECRET, true);
+			$hash = hash_hmac('sha256', $parseToken[1] . $parseToken[2], TOKEN, true);
 			if (hash_equals($hash, $this->urlSafeDecode($parseToken[0]))) {
 				return true;
 			}

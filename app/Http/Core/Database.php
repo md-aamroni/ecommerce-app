@@ -13,7 +13,7 @@ class Database
 	private $charset;
 	private $username;
 	private $password;
-	private $dsn;
+	private $dataServerName;
 	protected $db;
 
 	protected function connection()
@@ -24,10 +24,11 @@ class Database
 		$this->charset	 = DB['charset'];
 		$this->username = DB['username'];
 		$this->password = DB['password'];
-		$this->dsn		 = '' . $this->driver . ':host=' . $this->host . ';dbname=' . $this->database . ';charset=' . $this->charset . '';
+
+		$this->dataServerName = '' . $this->driver . ':host=' . $this->host . ';dbname=' . $this->database . ';charset=' . $this->charset . '';
 
 		try {
-			$this->db = new PDO($this->dsn, $this->username, $this->password);
+			$this->db = new PDO($this->dataServerName, $this->username, $this->password);
 			$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
