@@ -1,5 +1,5 @@
 <?php
-	
+
 session_start();
 
 class View
@@ -50,7 +50,7 @@ class View
 				$filePath = 'resource/view/content/' . $page . '.php';
 			}
 		}
-		
+
 		if (file_exists($filePath)) {
 			require_once $filePath;
 		}
@@ -81,7 +81,7 @@ class View
 				$filePath = 'resource/view/include/' . $page . '.php';
 			}
 		}
-		
+
 		if (file_exists($filePath)) {
 			require_once $filePath;
 		}

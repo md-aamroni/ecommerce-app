@@ -6,5 +6,5 @@ $view = new View;
 
 $view->loadLayout('ecommerce.top');
 $view->loadLayout('ecommerce.header');
-$view->loadContent('ecommerce.index');
+$view->loadContent('ecommerce.product');
 $view->loadLayout('ecommerce.tail');
