@@ -9,6 +9,15 @@
 					</a>
 				</li>
 				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-user"></i><span> Manage Admin
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="admin-list">All Admins</a></li>
+						<li><a href="add-admin">Create Admin</a></li>
+					</ul>
+				</li>
+				<li>
 					<a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Manage Category <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span> </a>
 					<ul class="submenu">
 						<li><a href="categories">Categories</a></li>
@@ -24,14 +33,42 @@
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:;" class="waves-effect"><i class="mdi mdi-email"></i><span> Manage Admin
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-users"></i><span> Manage Customer
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
-						<li><a href="admin-list">All Admins</a></li>
-						<li><a href="add-admin">Create Admin</a></li>
+						<li><a href="customer-list">Customer List</a></li>
+						<li><a href="customer-overview">Customer Overview</a></li>
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-tags"></i><span> Manage Order
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="order-list">Order List</a></li>
+						<li><a href="invoice-list">Invoice List</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-photo-video"></i><span> Manage Slider
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="slider-image">Add Image Slider</a></li>
+						<li><a href="slider-list">List Image Slider</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-sort-amount-up"></i><span> SEO
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="pages">Pages</a></li>
+						<li><a href="pages-details">Pages Details</a></li>
+					</ul>
+				</li>
+				
 				<li class="menu-title">Extras</li>
 
 				<li>
