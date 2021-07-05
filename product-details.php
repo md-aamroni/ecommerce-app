@@ -1,4 +1,5 @@
 <?php
+echo 'product- details';
 
 include './../app/Http/Core/View.php';
 

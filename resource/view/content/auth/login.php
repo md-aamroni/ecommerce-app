@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <?php
 use config\DB;
@@ -43,3 +44,6 @@ echo $admin_name;
   </div>
 </div>
 </div>
+=======
+admin log in page 
+>>>>>>> 45dd8b8710edf0ea14cb98377af651d9a277b4b7

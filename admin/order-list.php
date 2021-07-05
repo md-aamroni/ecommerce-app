@@ -8,5 +8,5 @@ $view->loadLayout('session');
 $view->loadLayout('admin.top');
 $view->loadLayout('admin.header');
 $view->loadLayout('admin.sidebar');
-$view->loadContent('product.update');
+$view->loadContent('admin.order');
 $view->loadLayout('admin.tail');
