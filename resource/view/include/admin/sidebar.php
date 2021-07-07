@@ -25,7 +25,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Manage Products <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span> </a>
+					<a href="javascript:void(0);" class="waves-effect"><i class="fab fa-product-hunt"></i> <span> Manage Products <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span> </a>
 					<ul class="submenu">
 						<li><a href="products">All Products</a></li>
 						<li><a href="add-product">Add Product</a></li>
@@ -70,7 +70,7 @@
 				</li>
 
 				<li>
-					<a href="javascript:;" class="waves-effect"><i class="fas fa-sort-amount-up"></i><span> Manage Coupon & Voucher
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-gift" aria-hidden="true"></i><span> Manage Coupon & Voucher
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
@@ -83,11 +83,20 @@
 
 				
 				<li>
-					<a href="javascript:;" class="waves-effect"><i class="fas fa-sort-amount-up"></i><span> Manage Inventory
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-dolly-flatbed"></i><span> Manage Inventory
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
 						<li><a href="inventory">Inventory List</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-blog"></i><span> Manage Blogs
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="blogs">Blogs List</a></li>
 					</ul>
 				</li>
 
@@ -100,10 +109,11 @@
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
-						<li><a href="javascript:;">Privacy Policy</a></li>
-						<li><a href="javascript:;">About Us</a></li>
-						<li><a href="javascript:;">Terms &amp; Condition</a></li>
+						<li><a href="privacy-policy">Privacy Policy</a></li>
+						<li><a href="about-us">About Us</a></li>
+						<li><a href="terms-and-condition">Terms &amp; Condition</a></li>
 						<li><a href="setting">Settings</a></li>
+						
 					</ul>
 				</li>
 
