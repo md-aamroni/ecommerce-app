@@ -100,7 +100,7 @@
 										<input class="horizontal-quantity form-control" type="text">
 									</div>
 
-									<a href="shop-cart.php" class="btn btn-dark add-cart icon-shopping-cart" title="Add to Cart">Add to Cart</a>
+									<a href="shop-cart.php" class="btn btn-dark add-cart fas fa-shopping-cart" title="Add to Cart">Add to Cart</a>
 								</div>
 
 								<hr class="divider mb-1">
