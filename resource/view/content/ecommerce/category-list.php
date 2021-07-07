@@ -1,567 +1,566 @@
 <main class="main">
-			<div class="promo-section bg-gray" data-parallax="{'speed': 1.5, 'enableOnMobile': true, 'offset': 24 }" data-image-src="assets/images/banners/promo-bg.png">
-				<div class="promo-banner banner container text-uppercase">
-					<div class="banner-content row align-items-center text-center">
-						<div class="col-md-5 col-lg-4 ml-xl-auto text-md-right">
-							<h2 class="mb-md-0">Top electronic<br>Deals</h2>
+	<div class="promo-section bg-gray" data-parallax="{'speed': 1.5, 'enableOnMobile': true, 'offset': 24 }" data-image-src="<?php echo asset('images/ecommerce/banners/promo-bg.png'); ?>">
+		<div class="promo-banner banner container text-uppercase">
+			<div class="banner-content row align-items-center text-center">
+				<div class="col-md-5 col-lg-4 ml-xl-auto text-md-right">
+					<h2 class="mb-md-0">Top electronic<br>Deals</h2>
+				</div>
+				<div class="col-md-3 pb-4 pb-md-0">
+					<a href="#" class="btn btn-primary ls-10">View Sale</a>
+				</div>
+				<div class="col-md-4 mr-xl-auto text-md-left">
+					<h4 class="mb-1 coupon-sale-text p-0 d-block ls-10 text-transform-none">
+						<b class="bg-dark text-white font1">Exclusive COUPON</b>
+					</h4>
+					<h5 class="mb-0 coupon-sale-text ls-10 p-0"><i class="ls-0">UP TO</i><b class="text-white bg-secondary">$100</b> OFF</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav aria-label="breadcrumb" class="breadcrumb-nav">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.php"><i class="fas fa-home"></i></a></li>
+				<li class="breadcrumb-item"><a href="#">Men</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Accessories</li>
+			</ol>
+		</div>
+	</nav>
+
+	<div class="container mb-3">
+		<div class="row">
+			<div class="col-lg-9 order-lg-1">
+				<nav class="toolbox">
+					<div class="toolbox-left">
+						<div class="toolbox-item toolbox-sort">
+							<label>Sort By:</label>
+
+							<div class="select-custom">
+								<select name="orderby" class="form-control">
+									<option value="menu_order" selected="selected">Default sorting</option>
+									<option value="popularity">Sort by popularity</option>
+									<option value="rating">Sort by average rating</option>
+									<option value="date">Sort by newness</option>
+									<option value="price">Sort by price: low to high</option>
+									<option value="price-desc">Sort by price: high to low</option>
+								</select>
+							</div>
+
 						</div>
-						<div class="col-md-3 pb-4 pb-md-0">
-							<a href="#" class="btn btn-primary ls-10">View Sale</a>
+					</div>
+
+					<div class="toolbox-right">
+						<div class="toolbox-item toolbox-show">
+							<label>Show:</label>
+
+							<div class="select-custom">
+								<select name="count" class="form-control">
+									<option value="12">12</option>
+									<option value="24">24</option>
+									<option value="36">36</option>
+								</select>
+							</div>
 						</div>
-						<div class="col-md-4 mr-xl-auto text-md-left">
-							<h4 class="mb-1 coupon-sale-text p-0 d-block ls-10 text-transform-none">
-								<b class="bg-dark text-white font1">Exclusive COUPON</b>
-							</h4>
-							<h5 class="mb-0 coupon-sale-text ls-10 p-0"><i class="ls-0">UP TO</i><b class="text-white bg-secondary">$100</b> OFF</h5>
+
+						<div class="toolbox-item layout-modes">
+							<a href="category-grid.php" class="layout-btn btn-grid active" title="Grid">
+								<i class="fas fa-th"></i>
+							</a>
+							<a href="category-list.php" class="layout-btn btn-list" title="List">
+								<i class="fas fa-th-list"></i>
+							</a>
+						</div>
+					</div>
+				</nav>
+
+				<div class="row pb-4">
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-1.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-2.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-3.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-4.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-5.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 product-default left-details product-list mb-4">
+						<figure>
+							<a href="product.php">
+								<img src="<?php echo asset('images/ecommerce/products/product-6.jpg'); ?>">
+							</a>
+						</figure>
+						<div class="product-details">
+							<div class="category-list">
+								<a href="category.php" class="product-category">category</a>
+							</div>
+							<h2 class="product-title">
+								<a href="product.php">Product Short Name</a>
+							</h2>
+							<div class="ratings-container">
+								<div class="product-ratings">
+									<span class="ratings" style="width:100%"></span>
+									<span class="tooltiptext tooltip-top"></span>
+								</div>
+							</div>
+							<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+							<div class="price-box">
+								<span class="product-price">$15.00</span>
+							</div>
+							<div class="product-action">
+								<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+								<a href="#" class="btn-icon-wish"><i class="fas fa-heart"></i></a>
+								<a href="ajax/product-quick-view.php" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<nav class="toolbox toolbox-pagination">
+					<div class="toolbox-item toolbox-show">
+						<label>Show:</label>
+
+						<div class="select-custom">
+							<select name="count" class="form-control">
+								<option value="12">12</option>
+								<option value="24">24</option>
+								<option value="36">36</option>
+							</select>
+						</div>
+					</div>
+
+					<ul class="pagination toolbox-item">
+						<li class="page-item disabled">
+							<a class="page-link page-link-btn" href="#"><i class="fas fa-angle-left"></i></a>
+						</li>
+						<li class="page-item active">
+							<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><span class="page-link">...</span></li>
+						<li class="page-item">
+							<a class="page-link page-link-btn" href="#"><i class="fas fa-angle-right"></i></a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 
-			<nav aria-label="breadcrumb" class="breadcrumb-nav">
-				<div class="container">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="index-2.html"><i class="icon-home"></i></a></li>
-						<li class="breadcrumb-item"><a href="#">Men</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Accessories</li>
-					</ol>
-				</div>
-			</nav>
+			<div class="sidebar-overlay"></div>
+			<div class="sidebar-toggle"><i class="fas fa-sliders-h"></i></div>
+			<aside class="sidebar-shop col-lg-3 mobile-sidebar">
+				<div class="sidebar-wrapper">
+					<div class="widget">
+						<h3 class="widget-title">
+							<a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">Categories</a>
+						</h3>
 
-			<div class="container mb-3">
-				<div class="row">
-					<div class="col-lg-9 order-lg-1">
-						<nav class="toolbox">
-							<div class="toolbox-left">
-								<div class="toolbox-item toolbox-sort">
-									<label>Sort By:</label>
-
-									<div class="select-custom">
-										<select name="orderby" class="form-control">
-											<option value="menu_order" selected="selected">Default sorting</option>
-											<option value="popularity">Sort by popularity</option>
-											<option value="rating">Sort by average rating</option>
-											<option value="date">Sort by newness</option>
-											<option value="price">Sort by price: low to high</option>
-											<option value="price-desc">Sort by price: high to low</option>
-										</select>
-									</div><!-- End .select-custom -->
-
-								</div><!-- End .toolbox-item -->
-							</div><!-- End .toolbox-left -->
-
-							<div class="toolbox-right">
-								<div class="toolbox-item toolbox-show">
-									<label>Show:</label>
-
-									<div class="select-custom">
-										<select name="count" class="form-control">
-											<option value="12">12</option>
-											<option value="24">24</option>
-											<option value="36">36</option>
-										</select>
-									</div><!-- End .select-custom -->
-								</div><!-- End .toolbox-item -->
-
-								<div class="toolbox-item layout-modes">
-									<a href="category.html" class="layout-btn btn-grid active" title="Grid">
-										<i class="icon-mode-grid"></i>
-									</a>
-									<a href="category-list.html" class="layout-btn btn-list" title="List">
-										<i class="icon-mode-list"></i>
-									</a>
-								</div><!-- End .layout-modes -->
-							</div><!-- End .toolbox-right -->
-						</nav>
-
-						<div class="row pb-4">
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-1.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
-							</div>
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-2.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
-							</div>
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-3.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
-							</div>
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-4.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
-							</div>
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-5.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
-							</div>
-							<div class="col-12 product-default left-details product-list mb-4">
-								<figure>
-									<a href="product.html">
-										<img src="assets/images/products/product-6.jpg">
-									</a>
-								</figure>
-								<div class="product-details">
-									<div class="category-list">
-										<a href="category.html" class="product-category">category</a>
-									</div>
-									<h2 class="product-title">
-										<a href="product.html">Product Short Name</a>
-									</h2>
-									<div class="ratings-container">
-										<div class="product-ratings">
-											<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-											<span class="tooltiptext tooltip-top"></span>
-										</div><!-- End .product-ratings -->
-									</div><!-- End .product-container -->
-									<p class="product-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-									<div class="price-box">
-										<span class="product-price">$15.00</span>
-									</div><!-- End .price-box -->
-									<div class="product-action">
-										<button class="btn-icon btn-add-cart" data-toggle="modal" data-target="#addCartModal"><i class="icon-shopping-cart"></i>ADD TO CART</button>
-										<a href="#" class="btn-icon-wish"><i class="icon-heart"></i></a>
-										<a href="ajax/product-quick-view.html" class="btn-quickview" title="Quick View"><i class="fas fa-external-link-alt"></i></a>
-									</div>
-								</div><!-- End .product-details -->
+						<div class="collapse show" id="widget-body-2">
+							<div class="widget-body">
+								<ul class="cat-list">
+									<li><a href="#">Accessories</a></li>
+									<li><a href="#">Watch Fashion</a></li>
+									<li><a href="#">Tees, Knits &amp; Polos</a></li>
+									<li><a href="#">Pants &amp; Denim</a></li>
+								</ul>
 							</div>
 						</div>
+					</div>
 
-						<nav class="toolbox toolbox-pagination">
-							<div class="toolbox-item toolbox-show">
-								<label>Show:</label>
+					<div class="widget">
+						<h3 class="widget-title">
+							<a data-toggle="collapse" href="#widget-body-3" role="button" aria-expanded="true" aria-controls="widget-body-3">Price</a>
+						</h3>
 
-								<div class="select-custom">
-									<select name="count" class="form-control">
-										<option value="12">12</option>
-										<option value="24">24</option>
-										<option value="36">36</option>
-									</select>
-								</div><!-- End .select-custom -->
-							</div><!-- End .toolbox-item -->
+						<div class="collapse show" id="widget-body-3">
+							<div class="widget-body">
+								<form action="#">
+									<div class="price-slider-wrapper">
+										<div id="price-slider"></div>
+									</div>
 
-							<ul class="pagination toolbox-item">
-								<li class="page-item disabled">
-									<a class="page-link page-link-btn" href="#"><i class="icon-angle-left"></i></a>
-								</li>
-								<li class="page-item active">
-									<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item"><a class="page-link" href="#">4</a></li>
-								<li class="page-item"><a class="page-link" href="#">5</a></li>
-								<li class="page-item"><span class="page-link">...</span></li>
-								<li class="page-item">
-									<a class="page-link page-link-btn" href="#"><i class="icon-angle-right"></i></a>
-								</li>
-							</ul>
-						</nav>
-					</div><!-- End .col-lg-9 -->
+									<div class="filter-price-action d-flex align-items-center justify-content-between flex-wrap">
+										<button type="submit" class="btn btn-primary">Filter</button>
 
-					<div class="sidebar-overlay"></div>
-					<div class="sidebar-toggle"><i class="fas fa-sliders-h"></i></div>
-					<aside class="sidebar-shop col-lg-3 mobile-sidebar">
-						<div class="sidebar-wrapper">
-							<div class="widget">
-								<h3 class="widget-title">
-									<a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true" aria-controls="widget-body-2">Categories</a>
-								</h3>
+										<div class="filter-price-text">
+											Price:
+											<span id="filter-price-range"></span>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 
-								<div class="collapse show" id="widget-body-2">
-									<div class="widget-body">
-										<ul class="cat-list">
-											<li><a href="#">Accessories</a></li>
-											<li><a href="#">Watch Fashion</a></li>
-											<li><a href="#">Tees, Knits &amp; Polos</a></li>
-											<li><a href="#">Pants &amp; Denim</a></li>
-										</ul>
-									</div><!-- End .widget-body -->
-								</div><!-- End .collapse -->
-							</div><!-- End .widget -->
+					<div class="widget">
+						<h3 class="widget-title">
+							<a data-toggle="collapse" href="#widget-body-4" role="button" aria-expanded="true" aria-controls="widget-body-4">Size</a>
+						</h3>
 
-							<div class="widget">
-								<h3 class="widget-title">
-									<a data-toggle="collapse" href="#widget-body-3" role="button" aria-expanded="true" aria-controls="widget-body-3">Price</a>
-								</h3>
+						<div class="collapse show" id="widget-body-4">
+							<div class="widget-body">
+								<ul class="cat-list">
+									<li><a href="#">Small</a></li>
+									<li><a href="#">Medium</a></li>
+									<li><a href="#">Large</a></li>
+									<li><a href="#">Extra Large</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-								<div class="collapse show" id="widget-body-3">
-									<div class="widget-body">
-										<form action="#">
-											<div class="price-slider-wrapper">
-												<div id="price-slider"></div><!-- End #price-slider -->
-											</div><!-- End .price-slider-wrapper -->
+					<div class="widget">
+						<h3 class="widget-title">
+							<a data-toggle="collapse" href="#widget-body-5" role="button" aria-expanded="true" aria-controls="widget-body-5">Brand</a>
+						</h3>
 
-											<div class="filter-price-action d-flex align-items-center justify-content-between flex-wrap">
-												<button type="submit" class="btn btn-primary">Filter</button>
+						<div class="collapse show" id="widget-body-5">
+							<div class="widget-body">
+								<ul class="cat-list">
+									<li><a href="#">Adidas</a></li>
+									<li><a href="#">Calvin Klein (26)</a></li>
+									<li><a href="#">Diesel (3)</a></li>
+									<li><a href="#">Lacoste (8)</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-												<div class="filter-price-text">
-													Price:
-													<span id="filter-price-range"></span>
-												</div><!-- End .filter-price-text -->
-											</div><!-- End .filter-price-action -->
-										</form>
-									</div><!-- End .widget-body -->
-								</div><!-- End .collapse -->
-							</div><!-- End .widget -->
+					<div class="widget">
+						<h3 class="widget-title">
+							<a data-toggle="collapse" href="#widget-body-6" role="button" aria-expanded="true" aria-controls="widget-body-6">Color</a>
+						</h3>
 
-							<div class="widget">
-								<h3 class="widget-title">
-									<a data-toggle="collapse" href="#widget-body-4" role="button" aria-expanded="true" aria-controls="widget-body-4">Size</a>
-								</h3>
+						<div class="collapse show" id="widget-body-6">
+							<div class="widget-body">
+								<ul class="config-swatch-list">
+									<li class="active">
+										<a href="#" style="background-color: #000;"></a>
+										<span>Black</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #0188cc;"></a>
+										<span>Blue</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #81d742;"></a>
+										<span>Green</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #6085a5;"></a>
+										<span>Indigo</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #ab6e6e;"></a>
+										<span>Red</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #ddb373;"></a>
+										<span>Brown</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #6b97bf;"></a>
+										<span>Light-Blue</span>
+									</li>
+									<li>
+										<a href="#" style="background-color: #eded68;"></a>
+										<span>Yellow</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-								<div class="collapse show" id="widget-body-4">
-									<div class="widget-body">
-										<ul class="cat-list">
-											<li><a href="#">Small</a></li>
-											<li><a href="#">Medium</a></li>
-											<li><a href="#">Large</a></li>
-											<li><a href="#">Extra Large</a></li>
-										</ul>
-									</div><!-- End .widget-body -->
-								</div><!-- End .collapse -->
-							</div><!-- End .widget -->
+					<div class="widget widget-featured">
+						<h3 class="widget-title">Featured</h3>
 
-							<div class="widget">
-								<h3 class="widget-title">
-									<a data-toggle="collapse" href="#widget-body-5" role="button" aria-expanded="true" aria-controls="widget-body-5">Brand</a>
-								</h3>
-
-								<div class="collapse show" id="widget-body-5">
-									<div class="widget-body">
-										<ul class="cat-list">
-											<li><a href="#">Adidas</a></li>
-											<li><a href="#">Calvin Klein (26)</a></li>
-											<li><a href="#">Diesel (3)</a></li>
-											<li><a href="#">Lacoste (8)</a></li>
-										</ul>
-									</div><!-- End .widget-body -->
-								</div><!-- End .collapse -->
-							</div><!-- End .widget -->
-
-							<div class="widget">
-								<h3 class="widget-title">
-									<a data-toggle="collapse" href="#widget-body-6" role="button" aria-expanded="true" aria-controls="widget-body-6">Color</a>
-								</h3>
-
-								<div class="collapse show" id="widget-body-6">
-									<div class="widget-body">
-										<ul class="config-swatch-list">
-											<li class="active">
-												<a href="#" style="background-color: #000;"></a>
-												<span>Black</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #0188cc;"></a>
-												<span>Blue</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #81d742;"></a>
-												<span>Green</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #6085a5;"></a>
-												<span>Indigo</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #ab6e6e;"></a>
-												<span>Red</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #ddb373;"></a>
-												<span>Brown</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #6b97bf;"></a>
-												<span>Light-Blue</span>
-											</li>
-											<li>
-												<a href="#" style="background-color: #eded68;"></a>
-												<span>Yellow</span>
-											</li>
-										</ul>
-									</div><!-- End .widget-body -->
-								</div><!-- End .collapse -->
-							</div><!-- End .widget -->
-
-							<div class="widget widget-featured">
-								<h3 class="widget-title">Featured</h3>
-
-								<div class="widget-body">
-									<div class="owl-carousel widget-featured-products">
-										<div class="featured-col">
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-10.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+						<div class="widget-body">
+							<div class="owl-carousel widget-featured-products">
+								<div class="featured-col">
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-10.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
 											</div>
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-11.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
 											</div>
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-12.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+										</div>
+									</div>
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-11.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
 											</div>
-										</div><!-- End .featured-col -->
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-12.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
+											</div>
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
 
-										<div class="featured-col">
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-13.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+								<div class="featured-col">
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-13.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
 											</div>
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-14.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
 											</div>
-											<div class="product-default left-details product-widget">
-												<figure>
-													<a href="product.html">
-														<img src="assets/images/products/product-8.jpg">
-													</a>
-												</figure>
-												<div class="product-details">
-													<h2 class="product-title">
-														<a href="product.html">Product Short Name</a>
-													</h2>
-													<div class="ratings-container">
-														<div class="product-ratings">
-															<span class="ratings" style="width:100%"></span><!-- End .ratings -->
-															<span class="tooltiptext tooltip-top"></span>
-														</div><!-- End .product-ratings -->
-													</div><!-- End .product-container -->
-													<div class="price-box">
-														<span class="product-price">$49.00</span>
-													</div><!-- End .price-box -->
-												</div><!-- End .product-details -->
+										</div>
+									</div>
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-14.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
 											</div>
-										</div><!-- End .featured-col -->
-									</div><!-- End .widget-featured-slider -->
-								</div><!-- End .widget-body -->
-							</div><!-- End .widget -->
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
+											</div>
+										</div>
+									</div>
+									<div class="product-default left-details product-widget">
+										<figure>
+											<a href="product.php">
+												<img src="<?php echo asset('images/ecommerce/products/product-8.jpg'); ?>">
+											</a>
+										</figure>
+										<div class="product-details">
+											<h2 class="product-title">
+												<a href="product.php">Product Short Name</a>
+											</h2>
+											<div class="ratings-container">
+												<div class="product-ratings">
+													<span class="ratings" style="width:100%"></span>
+													<span class="tooltiptext tooltip-top"></span>
+												</div>
+											</div>
+											<div class="price-box">
+												<span class="product-price">$49.00</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-							<div class="widget widget-block">
-								<h3 class="widget-title">Custom HTML Block</h3>
-								<h5>This is a custom sub-title.</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi. </p>
-							</div><!-- End .widget -->
-						</div><!-- End .sidebar-wrapper -->
-					</aside><!-- End .col-lg-3 -->
-				</div><!-- End .row -->
-			</div><!-- End .container -->
-		</main><!-- End .main -->
-
+					<div class="widget widget-block">
+						<h3 class="widget-title">Custom HTML Block</h3>
+						<h5>This is a custom sub-title.</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi. </p>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
