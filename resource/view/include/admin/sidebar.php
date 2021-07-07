@@ -68,6 +68,30 @@
 						<li><a href="pages-details">Pages Details</a></li>
 					</ul>
 				</li>
+
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-sort-amount-up"></i><span> Manage Coupon & Voucher
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="add-coupon">Add coupon</a></li>
+						<li><a href="Add-voucher">add voucher </a></li>
+						<li><a href="coupon-list">List coupon </a></li>
+						<li><a href="voucher-list">List voucher </a></li>
+					</ul>
+				</li>
+
+				
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fas fa-sort-amount-up"></i><span> Manage Inventory
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="inventory">Inventory List</a></li>
+					</ul>
+				</li>
+
+				
 				
 				<li class="menu-title">Extras</li>
 
@@ -79,6 +103,7 @@
 						<li><a href="javascript:;">Privacy Policy</a></li>
 						<li><a href="javascript:;">About Us</a></li>
 						<li><a href="javascript:;">Terms &amp; Condition</a></li>
+						<li><a href="setting">Settings</a></li>
 					</ul>
 				</li>
 

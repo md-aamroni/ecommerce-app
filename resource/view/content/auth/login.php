@@ -1,45 +1,56 @@
-<?php
 
-use config\DB;
+<!-- Background -->
+<div class="account-pages"></div>
+        <!-- Begin page -->
+        <div class="wrapper-page">
 
-$q = "select * from admins";
-/*
-$result=mysqli_query($con,$q);
-if (mysqli_num_rows($result) > 0) {
-  echo "success";
-}
-else{
-  echo"check connection";
-}
-echo"<pre>";
-echo $con;
-echo"</pre>";
-*/
-$admin_name = $_GET['full_name'];
-echo $admin_name;
-?>
-<div class="contaner-fluid">
-  <div class="wrapper fadeInDown">
-    <div id="formContent">
-      <!-- Tabs Titles -->
+            <div class="card">
+                <div class="card-body">
 
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <h1>Admin Login</h1>
-      </div>
+                    <h3 class="text-center m-0">
+                        <a href="index.html" class="logo logo-admin"><img src="<?php echo asset('images/backend/logo.png'); ?>"  height="30" alt="logo"></a>
+                        
+                    </h3>
 
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
+                    <div class="p-3">
+                        <h4 class="text-muted font-18 m-b-5 text-center">Welcome Back !</h4>
+                        <p class="text-muted text-center">Sign in to continue to Agroxa.</p>
 
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div>
+                        <form class="form-horizontal m-t-30" action="index.html">
 
-    </div>
-  </div>
-</div>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userpassword">Password</label>
+                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                            </div>
+
+                            <div class="form-group row m-t-20">
+                                <div class="col-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                        <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log In</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group m-t-10 mb-0 row">
+                                <div class="col-12 m-t-20">
+                                    <a href="pages-recoverpw.html" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+           
+
+        </div>

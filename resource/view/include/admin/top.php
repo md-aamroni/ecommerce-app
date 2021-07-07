@@ -20,7 +20,7 @@
 	<link href="<?php echo asset('css/backend/metismenu.min.css'); ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo asset('css/icons.css'); ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo asset('css/backend/style.css', true); ?>" rel="stylesheet" type="text/css">
-	<link href="<?php echo asset('css/backend/admin_login.css', true); ?>" rel="stylesheet" type="text/css">
+	
 
 	<script src="<?php echo asset('js/jquery-3.6.0.min.js'); ?>"></script>
 </head>
