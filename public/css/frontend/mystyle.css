@@ -1,0 +1,29 @@
+.autocomplete-items {
+    width: 205px;
+    position: absolute;
+    border: 1px solid #eeeeee;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+
+.autocomplete-items div {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #fff;
+}
+
+.autocomplete-items div:hover {
+    background-color: #ffffff;
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}

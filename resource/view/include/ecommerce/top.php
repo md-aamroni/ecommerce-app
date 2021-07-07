@@ -21,7 +21,7 @@
 
 
 
-	<link rel="stylesheet" href="<?php echo asset('css/mystyle.css'); ?>">
+	<link rel="stylesheet" href="<?php echo asset('css/frontend/mystyle.css'); ?>">
 	
 	<script src="<?php echo asset('js/jquery-3.6.0.min.js'); ?>"></script>
 </head>
