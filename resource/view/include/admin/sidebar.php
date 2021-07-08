@@ -21,7 +21,9 @@
 					<a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Manage Category <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span> </a>
 					<ul class="submenu">
 						<li><a href="categories">Categories</a></li>
+						<li><a href="add-category">Add Categories</a></li>
 						<li><a href="sub-categories">Sub Categories</a></li>
+						<li><a href="add-sub-category">Add Sub-Categories</a></li>
 					</ul>
 				</li>
 				<li>
