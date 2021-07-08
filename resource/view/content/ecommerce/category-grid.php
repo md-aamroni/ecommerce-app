@@ -1,5 +1,5 @@
 <main class="main">
-	<div class="promo-section bg-gray" data-parallax="{'speed': 1.5, 'enableOnMobile': true, 'offset': 24 }" data-image-src="<?php echo asset('images/ecommerce/banners/promo-bg.png'); ?>">
+	<div class="promo-section bg-gray" data-parallax="{'speed': 1.5, 'enableOnMobile': true, 'offset': 24 }" data-image-src="<?php echo asset('images/ecommerce/banners/promo-1.png'); ?>">
 		<div class="promo-banner banner container text-uppercase">
 			<div class="banner-content row align-items-center text-center">
 				<div class="col-md-5 col-lg-4 ml-xl-auto text-md-right">

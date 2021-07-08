@@ -1213,6 +1213,8 @@ screen and (max-height: 300px) {
 }
 
 .bootstrap-touchspin .input-group-btn-vertical>.btn:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     position: relative;
     margin: 0;
     width: auto;
@@ -1641,9 +1643,10 @@ aside .banner {
 .breadcrumb-item+.breadcrumb-item:before {
     color: inherit;
     padding-right: 11px;
-    content: "";
+    content: '\f054';
+    font-weight: 900;
     font-size: 12px;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     vertical-align: middle;
     margin-top: -.5rem
 }
@@ -2074,7 +2077,7 @@ a:focus {
 }
 
 .icon-down-dir:before {
-    content: '\e80b'
+    content: '\f0d7'
 }
 
 .icon-cart:before {
@@ -2082,7 +2085,7 @@ a:focus {
 }
 
 .icon-up-dir:before {
-    content: '\e80d'
+    content: '\f0d8'
 }
 
 .icon-mode-grid:before {
@@ -2142,7 +2145,7 @@ a:focus {
 }
 
 .icon-angle-down:before {
-    content: '\e81c'
+    content: '\f078'
 }
 
 .icon-down:before {
@@ -2809,7 +2812,7 @@ form h2 {
 }
 
 .form-control {
-    height: 6rem;
+    height: 4rem;
     margin-bottom: 1rem;
     padding: 2rem;
     transition: all .3s;
@@ -2836,7 +2839,7 @@ form h2 {
 }
 
 select.form-control:not([size]):not([multiple]) {
-    height: 6rem
+    height: 4rem
 }
 
 select.form-control-sm:not([size]):not([multiple]) {
@@ -2944,9 +2947,10 @@ label {
     top: 50%;
     right: 1.9rem;
     transform: translateY(-50%);
-    font-family: 'porto';
     font-size: 1.5rem;
-    content: '\e81c'
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f078'
 }
 
 .select-custom .form-control,
@@ -3272,7 +3276,10 @@ label {
 .toolbox .select-custom:after {
     right: 1.5rem;
     margin-top: -1px;
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
 
 .toolbox .select-custom .form-control {
@@ -4238,7 +4245,7 @@ span.page-link,
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.1rem;
     line-height: 1;
     content: '\e84e'
@@ -6866,7 +6873,7 @@ header p {
 }
 
 .logo {
-    max-width: 100px
+    max-width: 120px
 }
 
 .header-contact {
@@ -7074,13 +7081,14 @@ header .separator {
 }
 
 .dropdown-arrow:after {
-    content: "\e81c";
+    content: "\f078";
     border: 0;
     margin: -5px 2px 0 11px;
     font-size: 15px;
-    font-family: porto;
+    font-family: 'Font Awesome 5 Free';
     width: auto;
-    height: auto
+    height: auto;
+    font-weight: 900;
 }
 
 .dropdown-arrow .badge-circle {
@@ -7124,9 +7132,9 @@ header .separator {
 }
 
 .header-dropdown>a:after {
-    content: '\e5cf';
-    font-family: 'porto';
-    font-weight: 400;
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     margin-left: .5rem
 }
 
@@ -7789,15 +7797,15 @@ header .separator {
 .menu.sf-arrows .sf-with-ul:after {
     position: absolute;
     right: 1rem;
-    content: '\e81a';
-    font-family: 'porto'
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free'
 }
 
 .menu.sf-arrows>li>.sf-with-ul:after {
-    content: '\e81c';
+    content: '\f054';
     position: static;
     margin-left: 5px;
-    font-weight: 400
+    font-weight: 900
 }
 
 .main-nav .menu {
@@ -8081,8 +8089,9 @@ header .separator {
 .mmenu-btn:after {
     display: inline-block;
     margin-top: -2px;
-    font-family: 'porto';
-    content: '\e81c'
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f078'
 }
 
 .open>a>.mmenu-btn:after {
@@ -8685,11 +8694,12 @@ footer .contact-info-label {
 }
 
 .add-wishlist:before {
-    content: '\e91b';
+    content: '\f004';
+    font-weight: 900;
     margin-right: .5rem;
     display: inline-block;
     font-size: 1.8rem;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     line-height: 0;
     transform: translateY(2px)
 }
@@ -8697,7 +8707,7 @@ footer .contact-info-label {
 .add-compare:before {
     content: '\e810';
     font-size: 1.8rem;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     margin-right: 6px
 }
 
@@ -9781,14 +9791,14 @@ main .sticky-header .product-ratings:before {
     right: .1rem;
     transform: translateY(-50%);
     transition: all .35s;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 900;
     content: '\e81b'
 }
 
 .sidebar-product .widget.widget-collapse .widget-title a.collapsed:after {
-    content: '\e81c'
+    content: '\f078'
 }
 
 .sidebar-product .widget.widget-collapse .widget-body {
@@ -9935,7 +9945,7 @@ aside .widget-info i {
 .product-collapse-title a:before {
     content: '\e81b';
     margin-right: 1rem;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 2rem;
     font-weight: 400
 }
@@ -9955,7 +9965,7 @@ aside .widget-info i {
 }
 
 .product-collapse-title a.collapsed:before {
-    content: '\e81c'
+    content: '\f078'
 }
 
 .product-collapse-title a.collapsed:after {
@@ -10285,13 +10295,13 @@ tbody .product-col {
     top: 50%;
     right: .4rem;
     transform: translateY(-50%);
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.4rem;
     content: '\e81b'
 }
 
 .cart-summary h4 a.collapsed:after {
-    content: '\e81c'
+    content: '\f078'
 }
 
 #total-estimate-section form {
@@ -10497,8 +10507,9 @@ tbody .product-col {
 }
 
 .checkout-progress-bar li.active>span:after {
-    font-family: 'porto';
-    content: '\e84e'
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f00c';
 }
 
 .checkout-progress-bar li:first-child:before {
@@ -10596,11 +10607,12 @@ tbody .product-col {
     padding-top: .2rem;
     background-color: #ff5501;
     color: #fff;
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.9rem;
     line-height: 2.1rem;
     text-align: center;
-    content: '\e84e'
+    font-weight: 900;
+    content: '\f00c'
 }
 
 .shipping-address-box.active .address-box-action {
@@ -10690,14 +10702,14 @@ tbody .product-col {
     top: 50%;
     right: .4rem;
     transform: translateY(-50%);
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 900;
     content: '\e81b'
 }
 
 .order-summary h4 a.collapsed:after {
-    content: '\e81c'
+    content: '\f078'
 }
 
 .table-mini-cart {
@@ -10808,13 +10820,13 @@ tbody .product-col {
     top: 50%;
     right: .4rem;
     transform: translateY(-50%);
-    font-family: 'porto';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.5rem;
     content: '\e81b'
 }
 
 .checkout-discount h4 a.collapsed:after {
-    content: '\e81c'
+    content: '\f078'
 }
 
 .checkout-info-box {
