@@ -10,7 +10,6 @@
 function deleteButton($deleteID, $buttonName, $isFileExist = null, $action = "delete")
 {
 	$makeForm = '<form method="POST" action="' . $action . '">';
-	$makeForm .= '<input type="hidden" name="csrf_token" value="" />';
 	$makeForm .= '<input type="hidden" name="delete_id" value="' . $deleteID . '" />';
 
 	if (!is_null($isFileExist)) {
@@ -18,7 +17,7 @@ function deleteButton($deleteID, $buttonName, $isFileExist = null, $action = "de
 	}
 
 	$makeForm .= '<button name="' . $buttonName . '"
-							class="btn btn-primary btn-sm waves-effect waves-light mw-80"
+							class="btn btn-danger btn-sm waves-effect waves-light mw-80"
 							type="submit"><i class="fas fa-trash"></i> Trash</button>';
 	$makeForm .= '</form>';
 

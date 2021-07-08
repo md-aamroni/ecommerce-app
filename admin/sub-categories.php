@@ -4,9 +4,9 @@ include './../app/Http/Core/View.php';
 
 $view = new View;
 
-$view->loadLayout('session');
-$view->loadLayout('admin.top');
-$view->loadLayout('admin.header');
-$view->loadLayout('admin.sidebar');
-$view->loadContent('sub-category.index');
-$view->loadLayout('admin.tail');
+$view->loadLayouts('session');
+$view->loadLayouts('admin.top');
+$view->loadLayouts('admin.header');
+$view->loadLayouts('admin.sidebar');
+$view->loadContent('subcategory.index');
+$view->loadLayouts('admin.tail');

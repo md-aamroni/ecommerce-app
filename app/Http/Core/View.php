@@ -57,7 +57,7 @@ class View
 	}
 
 
-	public function loadLayout($page)
+	public function loadLayouts($page)
 	{
 		if (strpos($page, '/')) {
 			$dir = explode('/', $page);

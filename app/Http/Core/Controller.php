@@ -6,7 +6,7 @@ use App\Http\Core\Database;
 
 class Controller extends Database
 {
-	public $connection;
+	protected $connection;
 
 	public function __construct()
 	{

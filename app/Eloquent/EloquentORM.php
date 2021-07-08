@@ -8,7 +8,7 @@ use App\Http\Core\Controller;
 
 class EloquentORM extends Controller
 {
-	// Read Query
+	// TODO: Execute All Common Read Queries
 	protected function all($table, $order = false)
 	{
 		if (is_bool($order) && $order === true) {
@@ -19,16 +19,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRow = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRow > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findOn($table, $col1, $val1, $col2 = null, $val2 = null, $col3 = null, $val3 = null)
 	{
@@ -42,16 +41,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findLike($table, $col1, $val1, $col2 = null, $val2 = null, $col3 = null, $val3 = null, $col4 = null, $val4 = null)
 	{
@@ -67,16 +65,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findIn($table, $col1, $val1, $col2 = null, $val2 = null, $col3 = null, $val3 = null)
 	{
@@ -90,16 +87,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findNotIn($table, $col1, $val1, $col2 = null, $val2 = null, $col3 = null, $val3 = null)
 	{
@@ -113,16 +109,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findOnDate($table, $date, $type, $range, $col1 = null, $val1 = null, $col2 = null, $val2 = null)
 	{
@@ -156,16 +151,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findBetween($table, $col1, $val1, $col2 = null, $val2 = null)
 	{
@@ -176,16 +170,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function findColumns($table, $columns, $col1, $val1, $col2 = null, $val2 = null)
 	{
@@ -202,32 +195,30 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function uniqueOn($table, $column)
 	{
 		$sqlCode = "SELECT DISTINCT {$column} FROM {$table}";
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function sumTotalOn($table, $sum, $col1 = null, $val1 = null, $col2 = null, $val2 = null)
 	{
@@ -241,16 +232,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function eachMonthTotal($table, $calculate, $col1, $val1, $col2 = null, $val2 = null, $date = null, $range = null)
 	{
@@ -264,16 +254,15 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function countTotal($table, $countOn, $type = null, $col1 = null, $val1 = null, $col2 = null, $val2 = null, $date = null, $range = null, $isEqual = true)
 	{
@@ -295,35 +284,34 @@ class EloquentORM extends Controller
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
-
 
 	protected function columnArray($table, $column)
 	{
 		$sqlCode	= "SELECT {$column} FROM {$table}";
 		$queries	= $this->connection->prepare($sqlCode);
 		$queries->execute();
-		$dataList = $queries->fetchAll(PDO::FETCH_ASSOC);
-		$totalRowSelected = $queries->rowCount();
+		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
+		$totalRowSelect = $queries->rowCount();
 
-		if ($totalRowSelected > 0) {
-			return $dataList;
+		if ($totalRowSelect > 0) {
+			return $totalDataLists;
 		} else {
 			return 0;
 		}
 	}
 
 
-	// Delete Query
-	protected function drop($table, $delete_id)
+	// TODO: Execute All Common Delete Queries
+	protected function dropSingle($table, $delete_id)
 	{
 		$sqlCode = "DELETE FROM $table WHERE id = :DELETE_ID";
 		$queries	= $this->connection->prepare($sqlCode);
@@ -331,8 +319,7 @@ class EloquentORM extends Controller
 
 		try {
 			if ($queries->execute($values)) {
-				$deletedRowNumber = $queries->rowCount();
-				return $deletedRowNumber;
+				return $queries->rowCount();
 			} else {
 				throw new Exception();
 			}
@@ -340,7 +327,6 @@ class EloquentORM extends Controller
 			return false;
 		}
 	}
-
 
 	protected function dropMultiple($table, $delete_ids)
 	{
@@ -350,8 +336,7 @@ class EloquentORM extends Controller
 
 		try {
 			if ($queries->execute($values)) {
-				$deletedRowNumber = $queries->rowCount();
-				return $deletedRowNumber;
+				return $queries->rowCount();
 			} else {
 				throw new Exception();
 			}
@@ -361,26 +346,27 @@ class EloquentORM extends Controller
 	}
 
 
-	// Update Query
+	// TODO: Execute All Common Update Queries
 	protected function changeStatus($table, $column, $status, $id)
 	{
-		$this->table	= $this->encode($table);
-		$this->column	= $this->encode($column);
-		$this->status	= $this->encode($status);
-		$this->id		= $this->encode($id);
+		$sqlCode = "UPDATE $table SET";
 
-		if ($this->status == "Active") {
-			$sqlCode = "UPDATE $this->table SET $this->column = 'Inactive', updated_at = :UPDATED_AT WHERE id	= :UPDATE_ID";
-		} else if ($this->status == "Inactive") {
-			$sqlCode = "UPDATE $this->table SET $this->column = 'Active', updated_at = :UPDATED_AT WHERE id	= :UPDATE_ID";
+		if ($status == "Active") {
+			$sqlCode .= " $column = 'Inactive', ";
+		} else if ($status == "Inactive") {
+			$sqlCode .= " $column = 'Active', ";
 		}
 
-		$query	= $this->connection->prepare($sqlCode);
-		$values	= array(':UPDATED_AT' => date("Y-m-d H:i:s"), ':UPDATE_ID' => $this->id);
+		$sqlCode .= "updated_at = :UPDATED_AT WHERE id = :UPDATE_ID";
+		$queries	= $this->connection->prepare($sqlCode);
+		$values	= array(
+			':UPDATED_AT'	=> date("Y-m-d H:i:s"),
+			':UPDATE_ID'	=> $id
+		);
+
 		try {
-			if ($query->execute($values)) {
-				$totalRowUpdated = $query->rowCount();
-				return $totalRowUpdated;
+			if ($queries->execute($values)) {
+				return $queries->rowCount();
 			} else {
 				throw new Exception();
 			}

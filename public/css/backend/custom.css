@@ -1,0 +1,16 @@
+.custom-file-label:after {
+	content: "+ Add files.." !important;
+	padding-top: 8px;
+	background: #ffffff;
+	color: #707070;
+	font-weight: 500;
+	border-left-width: 0px !important;
+	border-left-color: #fff !important;
+}
+
+.table>tbody>tr>td,
+.table>tfoot>tr>td,
+.table>thead>tr>td {
+	padding: 3px 8px;
+	font-size: 14px;
+}

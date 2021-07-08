@@ -29,6 +29,8 @@
 	<script src="<?php echo asset('js/backend/app.js'); ?>"></script>
 	<script src="<?php echo asset('js/backend/main.js'); ?>"></script>
 
+	<script src="<?php echo asset('js/custom.js'); ?>"></script>
+
 </body>
 
 </html>

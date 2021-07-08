@@ -4,7 +4,7 @@ include('app/Http/Core/View.php');
 
 $view = new View;
 
-$view->loadLayout('ecommerce.top');
-$view->loadLayout('ecommerce.header');
+$view->loadLayouts('ecommerce.top');
+$view->loadLayouts('ecommerce.header');
 $view->loadContent('ecommerce.forgot-password');
-$view->loadLayout('ecommerce.tail');
+$view->loadLayouts('ecommerce.tail');

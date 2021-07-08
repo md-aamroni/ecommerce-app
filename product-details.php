@@ -5,9 +5,9 @@ include './../app/Http/Core/View.php';
 
 $view = new View;
 
-$view->loadLayout('session');
-$view->loadLayout('ecommerce.top');
-$view->loadLayout('ecommerce.header');
-$view->loadLayout('ecommerce.sidebar');
+$view->loadLayouts('session');
+$view->loadLayouts('ecommerce.top');
+$view->loadLayouts('ecommerce.header');
+$view->loadLayouts('ecommerce.sidebar');
 $view->loadContent('product.details');
-$view->loadLayout('ecommerce.tail');
+$view->loadLayouts('ecommerce.tail');

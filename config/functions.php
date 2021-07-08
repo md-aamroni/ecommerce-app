@@ -1,11 +1,28 @@
 <?php
 
 /** Reusable Functions */
-function notification($type, $message)
+//Notification
+//Type		=> success (default) | green | warning | alert | orange | danger | error | red
+//Position	=> bl | br | tr | tc | tm | bc | bm | tl
+function notification($message, $type, $position = 'bc')
 {
-	return '<script>round_' . $type . '_noti("' . $message . '")</script>';
-}
+	$notificatonScript = '
+		<script type="text/javascript">
+			$(document).ready(function() {
+				new SnackBar({
+					message: "'. $message .'",
+					dismissible: true,
+					timeout: 5000,
+					status: "'. $type .'",
+					position: "'. $position .'",
+					fixed: true
+				});
+			});
+		</script>
+	';
 
+	return $notificatonScript;
+}
 
 function arrayMergeUnique($array, $value, $unique = false)
 {
