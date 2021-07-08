@@ -22,26 +22,29 @@
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<label for="subCategoryName">sub-category name</label>
+											<label for="subCategoryName">Sub-category name</label>
 											<input type="text" class="form-control" id="subCategoryName" aria-describedby="emailHelp" placeholder="Enter Sub-Category name">
-										
+
 										</div>
 										<div class="form-group">
-											<label for="sub-category_slug">sub-category slug</label>
+											<label for="sub-category_slug">Sub-category slug</label>
 											<input type="text" class="form-control" id="sub-category_slug" placeholder="Enter sub-category slug">
 
 										</div>
 										<div class="form-group">
-											<label for="offerForCupon">under category</label>
+											<label for="offerForCupon">Under category</label>
 											<select name="adminCategory" id="adminCategory" class="form-control" required>
-											
-											<option value="" >Select category</option>
-											<option value="mobile">mobile</option>
+
+												<option value="">Select category</option>
+												<option value="mobile">mobile</option>
 											</select>
 
 										</div>
-
-										
+										<div class="form-group">
+                                            <label for="subCategoryImageAdmin">Select sub-category image</label>
+                                            <input type="file" class="form-control" id="subCategoryImageAdmin" placeholder="select image">
+                                            
+                                        </div>
 
 								</div>
 								<div class="modal-footer text-center" style="text-align: center;">
@@ -49,9 +52,9 @@
 									<button type="submit" class="btn btn-primary waves-effect waves-light">Save changes</button>
 									</form>
 								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="card-body pb-3">
@@ -60,9 +63,10 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Name</th>
-									<th scope="col">Departments</th>
-									<th scope="col">Profile</th>
+									<th scope="col">title</th>
+									<th scope="col">slug</th>
+									<th scope="col">image</th>
+									<th scope="col">Avilabe product</th>
 									<th scope="col">Status</th>
 									<th scope="col">Date Modified</th>
 									<th scope="col">Action</th>

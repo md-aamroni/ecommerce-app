@@ -31,19 +31,21 @@
 											<input type="text" class="form-control" id="categorySlug" placeholder="Enter Category slug ">
 
 										</div>
-										
-
-
-
+										<div class="form-group">
+                                            <label for="categoryImageAdmin">Select category image</label>
+                                            <input type="file" class="form-control" id="categoryImageAdmin" placeholder="select image">
+                                            
+                                        </div>
+								
 								</div>
 								<div class="modal-footer text-center" style="text-align: center;">
 									<button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
 									<button type="submit" class="btn btn-primary waves-effect waves-light">Save changes</button>
 									</form>
 								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="card-body pb-3">
@@ -52,9 +54,10 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Name</th>
-									<th scope="col">Departments</th>
-									<th scope="col">Profile</th>
+									<th scope="col">Title</th>
+									<th scope="col">Slug</th>
+									<th scope="col">Image</th>
+									<th scope="col">Avlible products</th>
 									<th scope="col">Status</th>
 									<th scope="col">Date Modified</th>
 									<th scope="col">Action</th>

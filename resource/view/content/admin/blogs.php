@@ -62,9 +62,10 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Departments</th>
-                                    <th scope="col">Profile</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Exerpt</th>
+                                    <th scope="col">Details</th>
+                                    <th scope="col">Iamges</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Date Modified</th>
                                     <th scope="col">Action</th>

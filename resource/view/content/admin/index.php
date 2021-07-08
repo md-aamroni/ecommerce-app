@@ -42,7 +42,11 @@
                                             <input type="password" class="form-control" id="adminPassword" placeholder="Enter password">
                                             
                                         </div>
-
+                                        <div class="form-group">
+                                            <label for="imageAdmin">admin image</label>
+                                            <input type="file" class="form-control" id="imageAdmin" placeholder="select image">
+                                            
+                                        </div>
                                     
                                       
                                        
@@ -53,9 +57,9 @@
                                     <button type="submit" class="btn btn-primary waves-effect waves-light">Save changes</button>
                                     </form>
                                 </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-body pb-3">
@@ -64,9 +68,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Departments</th>
-                                    <th scope="col">Profile</th>
+                                    <th scope="col">full name</th>
+                                    <th scope="col">image</th>
+                                    <th scope="col">email</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Date Modified</th>
                                     <th scope="col">Action</th>

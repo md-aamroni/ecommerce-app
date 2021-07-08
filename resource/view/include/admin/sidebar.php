@@ -64,8 +64,8 @@
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
-						<li><a href="pages">Pages</a></li>
-						<li><a href="pages-details">Pages Details</a></li>
+						<li><a href="seo-pages">Pages</a></li>
+						<li><a href="seo-page-details">Pages Details</a></li>
 					</ul>
 				</li>
 

@@ -5,35 +5,35 @@
                 <div class="card-header font-16 mt-0 bg-light border-success py-2">
 
                     <div class="text-muted font-14 float-left">
-                        <h5>Cupon Lists</h5>
+                        <h5>Voucher Lists</h5>
                         Please make sure that, you have followed the instruction...
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">Add cupon</button>
+                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#myModal">Add Voucher</button>
                     </div>
 
                     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title mt-0" id="myModalLabel">Add Cupon</h5>
+                                    <h5 class="modal-title mt-0" id="myModalLabel">Add Voucher</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
                                         <div class="form-group">
-                                            <label for="cuponName">Cupon name</label>
-                                            <input type="text" class="form-control" id="cuponName" aria-describedby="emailHelp" placeholder="Enter cupon name">
+                                            <label for="voucherName">Voucher name</label>
+                                            <input type="text" class="form-control" id="voucherName" aria-describedby="emailHelp" placeholder="Enter voucher name">
                                           
                                         </div>
                                         <div class="form-group">
-                                            <label for="couponPrice">Fixt price</label>
-                                            <input type="number" class="form-control" id="couponPrice" placeholder="Enter fixt price ">
+                                            <label for="voucherPrice">Fixt price</label>
+                                            <input type="number" class="form-control" id="voucherPrice" placeholder="Enter fixt price ">
                                             
                                         </div>
                                         <div class="form-group">
-                                            <label for="offerForCupon">Free for: % free</label>
-                                            <input type="number" class="form-control" id="offerForCupon" placeholder="amount of coupon ">
+                                            <label for="offerForvoucher">Free for: % free</label>
+                                            <input type="number" class="form-control" id="offerForvoucher" placeholder="amount of voucher ">
                                             
                                         </div>
 

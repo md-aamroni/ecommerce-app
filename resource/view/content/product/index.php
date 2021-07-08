@@ -82,9 +82,9 @@
                                     <button type="submit" class="btn btn-primary waves-effect waves-light">Save changes</button>
                                     </form>
                                 </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card-body pb-3">
@@ -93,9 +93,11 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Departments</th>
-                                    <th scope="col">Profile</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Exerpt</th>
+                                    <th scope="col">Images</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Sub-category</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Date Modified</th>
                                     <th scope="col">Action</th>
