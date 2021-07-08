@@ -9,5 +9,5 @@ $view->loadLayout('admin.top');
 $view->loadLayout('admin.header');
 $view->loadLayout('admin.sidebar');
 // $view->loadContent('admin.');
-echo 'Add image slider';
+
 $view->loadLayout('admin.tail');

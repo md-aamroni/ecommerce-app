@@ -8,5 +8,5 @@ $view->loadLayout('session');
 $view->loadLayout('admin.top');
 $view->loadLayout('admin.header');
 $view->loadLayout('admin.sidebar');
-$view->loadContent('slider.slider');
+$view->loadContent('admin.about-us');
 $view->loadLayout('admin.tail');
