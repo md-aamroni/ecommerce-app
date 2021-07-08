@@ -9,15 +9,6 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:;" class="waves-effect"><i class="fa fa-user"></i><span> Manage Admin
-						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
-					</a>
-					<ul class="submenu">
-						<li><a href="admin-list">All Admins</a></li>
-						<li><a href="add-admin">Create Admin</a></li>
-					</ul>
-				</li>
-				<li>
 					<a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Manage Category <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span> </a>
 					<ul class="submenu">
 						<li><a href="categories">Categories</a></li>
@@ -70,7 +61,7 @@
 				</li>
 
 				<li>
-					<a href="javascript:;" class="waves-effect"><i class="fa fa-gift" aria-hidden="true"></i><span> Manage Coupon & Voucher
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-gift" aria-hidden="true"></i><span> Manage Coupon
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
 					</a>
 					<ul class="submenu">
@@ -81,7 +72,7 @@
 					</ul>
 				</li>
 
-				
+
 				<li>
 					<a href="javascript:;" class="waves-effect"><i class="fas fa-dolly-flatbed"></i><span> Manage Inventory
 						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
@@ -99,9 +90,16 @@
 						<li><a href="blogs">Blogs List</a></li>
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="waves-effect"><i class="fa fa-user"></i><span> Manage Admin
+						<span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span>
+					</a>
+					<ul class="submenu">
+						<li><a href="admin-list">All Admins</a></li>
+					</ul>
+				</li>
 
-				
-				
+
 				<li class="menu-title">Extras</li>
 
 				<li>
@@ -113,7 +111,7 @@
 						<li><a href="about-us">About Us</a></li>
 						<li><a href="terms-and-condition">Terms &amp; Condition</a></li>
 						<li><a href="setting">Settings</a></li>
-						
+
 					</ul>
 				</li>
 

@@ -10,7 +10,6 @@
 function changeStatus($changeID, $currentStatus)
 {
 	$makeForm = '<form method="POST" action="">';
-	$makeForm .= '<input type="hidden" name="csrf_token" value="" />';
 	$makeForm .= '<input type="hidden" name="id" value="' . $changeID . '" />';
 	$makeForm .= '<input type="hidden" name="status" value="' . $currentStatus . '" />';
 

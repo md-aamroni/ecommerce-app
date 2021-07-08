@@ -12,17 +12,20 @@
 
 	<link rel="shortcut icon" href="assets/images/favicon.ico">
 
-	<link href="<?php echo asset('plugins/datatable/css/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css">
-	<link href="<?php echo asset('plugins/datatable/css/buttons.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css" />
-	<link href="<?php echo asset('plugins/datatable/css/responsive.bootstrap4.min.css'); ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo asset('plugins/datatable/css/dataTables.bootstrap4.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('plugins/datatable/css/buttons.bootstrap4.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('plugins/datatable/css/responsive.bootstrap4.min.css'); ?>" rel="stylesheet">
 
-	<link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css">
-	<link href="<?php echo asset('css/backend/metismenu.min.css'); ?>" rel="stylesheet" type="text/css">
-	<link href="<?php echo asset('css/icons.css'); ?>" rel="stylesheet" type="text/css">
-	<link href="<?php echo asset('css/backend/style.css', true); ?>" rel="stylesheet" type="text/css">
-	
+	<link href="<?php echo asset('plugins/toasts/js-snackbar.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('css/backend/metismenu.min.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('css/icons.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('css/backend/style.css'); ?>" rel="stylesheet">
+	<link href="<?php echo asset('css/backend/custom.css'); ?>" rel="stylesheet">
+
 
 	<script src="<?php echo asset('js/jquery-3.6.0.min.js'); ?>"></script>
+	<script src="<?php echo asset('plugins/toasts/js-snackbar.js'); ?>"></script>
 </head>
 
 <body>
