@@ -1,12 +1,12 @@
 <div class="topbar">
 	<div class="topbar-left">
-		<a href="index.html" class="logo">
+		<a href="index.php" class="logo">
 			<span>
-				<img src="assets/images/logo.png" alt="" height="24">
+				<img src="<?php echo asset('images/backend/logo.png'); ?>" alt="" height="24">
 			</span>
-			<i>
-				<img src="assets/images/logo-sm.png" alt="" height="22">
-			</i>
+			
+				
+			
 		</a>
 	</div>
 
