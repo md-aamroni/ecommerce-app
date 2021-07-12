@@ -4,20 +4,42 @@ use App\Http\Controllers\CategoryController;
 
 $ctrl = new CategoryController;
 
+// Delete Data
+if (!empty($_SESSION['isDataDeleted'])) {
+   if ($_SESSION['isDataDeleted'] === true) {
+      echo notification('Congratulation! Data is deleted successfully', 'success');
+      unset($_SESSION['isDataDeleted']);
+   } elseif ($_SESSION['isDataDeleted'] === false) {
+      echo notification('Oops! Something went wrong, please retry...', 'warning');
+      unset($_SESSION['isDataDeleted']);
+   }
+}
 
+
+// Update Data
 if (isset($_POST['changeStatus'])) {
 	$result = $ctrl->status($_POST['status'], $_POST['id']);
 	if ($result > 0) {
-		echo notification('success', 'Congratulation! Status is changed successfully');
+		echo notification('Congratulation! Status is changed successfully', 'success');
 	} else {
-		echo notification('warning', 'Oops! Something went wrong, please retry...');
+		echo notification('Oops! Something went wrong, please retry...', 'warning');
+	}
+}
+
+if (isset($_POST['updateCategory'])) {
+	$result = $ctrl->update($_POST['update_title'], $_POST['update_is_featured'], $_POST['update_status'], $_POST['update_id']);
+	if ($result) {
+		echo notification('Congratulation! Data is updated successfully', 'success');
+	} else {
+		echo notification('Oops! Something went wrong', 'warning');
 	}
 }
 
 
+// Create Data
 if (isset($_POST['addNewCategory'])) {
 	if (!empty($_POST['title'])) {
-		$result = $ctrl->create($_POST['title'], $_POST['isFeatured'], $_POST['status']);
+		$result = $ctrl->create($_POST['title'], @$_POST['isFeatured'], @$_POST['status']);
 
 		if (!empty($result) && is_array($result)) {
 			echo notification('Congratulation! Data is added successfully', 'success');
@@ -30,6 +52,7 @@ if (isset($_POST['addNewCategory'])) {
 }
 
 
+// Read Data
 $categories = $ctrl->allCategories(true);
 ?>
 
@@ -66,17 +89,17 @@ $categories = $ctrl->allCategories(true);
 							</thead>
 							<tbody>
 								<?php if (!empty($categories) && is_array($categories)) : ?>
-									<?php foreach($categories as $n => $category) : ?>
+									<?php foreach ($categories as $n => $category) : ?>
 
 										<tr>
 											<td><?php echo ++$n; ?></td>
-											<td><?php echo $category['title']; ?></td>
-											<td><?php echo ++$n; ?></td>
+											<td><?php echo $ctrl->decode($category['title']); ?></td>
+											<td><?php echo $ctrl->decode($category['slug']); ?></td>
 											<td><?php echo $category['is_featured']; ?></td>
 											<td><?php echo changeStatus($category['id'], $category['status']); ?></td>
 											<td><?php echo dateFormat($category['created_at'], 3); ?></td>
 											<td class="d-flex">
-												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editCategory" data-eid="<?php echo $category['id']; ?>">
+												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editCategory" data-eid="<?php echo $category['id']; ?>" data-title="<?php echo $ctrl->decode($category['title']); ?>" data-featured="<?php echo $category['is_featured']; ?>" data-status="<?php echo $category['status']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
 												<?php echo deleteButton($category['id'], 'deleteCategory'); ?>
@@ -136,21 +159,64 @@ $categories = $ctrl->allCategories(true);
 	</div>
 </div>
 
-<script type="text/javascript">
-	//File Size Reader
-	function bytesToSize(bytes) {
-		let sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-		if (bytes == 0) return '0 Byte';
-		let i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
-		return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
-	}
 
+<div id="editCategory" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="editCategoryLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header py-2">
+				<h5 class="modal-title mt-0">Edit Category</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<form action="" method="POST" autocomplete="off">
+				<input type="hidden" name="update_id" value="" />
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="">Title</label>
+						<input type="text" class="form-control" name="update_title" value="" />
+					</div>
+					<div class="form-group">
+						<label for="">Is Featured</label>
+						<select class="custom-select" name="update_is_featured">
+							<option selected disabled>Please Select..</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="">Status</label>
+						<select class="custom-select" name="update_status">
+							<option selected disabled>Please Select..</option>
+							<option value="Active">Active</option>
+							<option value="Inactive">Inactive</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer py-2">
+					<button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary waves-effect waves-light" name="updateCategory">Confirm and Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
 	$(document).ready(function() {
-		//Image Preview
-		$(document).on('change', '[name="banner"]', function(event) {
-			let file = event.target.files[0];
-			let id = $(this).data('uid');
-			$('#img').html('<img src="" class="img-fluid" alt="..." id="div1" style="width:auto;max-height:180px;"/><div class="shadow p-2 mb-1 mt-2 bg-white rounded text-left"><strong>File Name: </strong>' + file.name + '</div><div class="shadow p-2 mb-1 bg-white rounded text-left"><strong>File Type: </strong>' + file.type + '</div><div class="shadow p-2 mb-2 bg-white rounded text-left"><strong>File Size: </strong>' + bytesToSize(file.size) + '</div>');
+		// Edit Data
+		$(document).on('click', '.editData', function() {
+			const editable = {
+				id: $(this).data('eid'),
+				title: $(this).data('title'),
+				featured: $(this).data('featured'),
+				status: $(this).data('status'),
+			}
+
+			if (editable) {
+				$('[name="update_id"]').val(editable['id']);
+				$('[name="update_title"]').val(editable['title']);
+				$('[name="update_is_featured"]').val(editable['featured']);
+				$('[name="update_status"]').val(editable['status']);
+			}
 		});
 	});
 </script>

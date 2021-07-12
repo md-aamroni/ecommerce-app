@@ -131,7 +131,8 @@ CREATE TABLE IF NOT EXISTS `sliders` (
 
 CREATE TABLE IF NOT EXISTS `categories` (
 	`id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	`title` varchar(255) NULL,
+	`title` varchar(255) NOT NULL,
+	`slug` text NOT NULL,
 	`is_featured` enum('Yes','No') NOT NULL DEFAULT 'No',
 	`status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
 	`created_at` datetime NULL,
@@ -143,9 +144,11 @@ CREATE TABLE IF NOT EXISTS `categories` (
 CREATE TABLE IF NOT EXISTS `sub_categories` (
 	`id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`category_id` int(11) NOT NULL,
-	`title` varchar(255) NULL,
-	`is_stock` enum('Stock In','Stock Out') NOT NULL DEFAULT 'Stock Out',
+	`title` varchar(255) NOT NULL,
+	`slug` text NOT NULL,
+	`is_stock` enum('Stock In','Stock Out','Not Yet') NOT NULL DEFAULT 'Not Yet',
 	`banner` text DEFAULT NULL,
+	`status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
 	`created_at` datetime NULL,
 	`updated_at` datetime NULL,
 	`deleted_at` datetime NULL,
