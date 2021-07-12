@@ -10,11 +10,11 @@ function notification($message, $type, $position = 'bc')
 		<script type="text/javascript">
 			$(document).ready(function() {
 				new SnackBar({
-					message: "'. $message .'",
+					message: "' . $message . '",
 					dismissible: true,
 					timeout: 5000,
-					status: "'. $type .'",
-					position: "'. $position .'",
+					status: "' . $type . '",
+					position: "' . $position . '",
 					fixed: true
 				});
 			});
@@ -23,6 +23,25 @@ function notification($message, $type, $position = 'bc')
 
 	return $notificatonScript;
 }
+
+
+function makeSlug($string)
+{
+	if (strpos($string, ' ')) {
+		$convert = strtolower(str_replace(' ', '-', $string));
+	} else {
+		$convert = strtolower($string);
+	}
+
+	if (strpos($convert, "'")) {
+		return str_replace("'", "", $convert);
+	} elseif (strpos($convert, '"')) {
+		return str_replace('"', "", $convert);
+	} else {
+		return $convert;
+	}
+}
+
 
 function arrayMergeUnique($array, $value, $unique = false)
 {

@@ -3,5 +3,6 @@
 /** Upload Storage */
 $GLOBALS['upDir'] = [
 	'admin'	=> 'storage/admins/',
-	'user'	=> 'storage/users/'
+	'user'	=> 'storage/users/',
+	'subCat'	=> 'storage/sub-category/'
 ];
