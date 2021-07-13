@@ -20,4 +20,6 @@ class CategoryController extends CategoryModel
 	{
 		return $this->changeStatus($this->table, 'status', $status, $id);
 	}
+	
+	
 }

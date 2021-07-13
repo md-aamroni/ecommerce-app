@@ -2,14 +2,14 @@
 	<div class="topbar-left">
 		<a href="index.html" class="logo">
 			<span>
-				<img src="assets/images/logo.png" alt="" height="24">
+				<img src="<?php echo asset('images/logo.png'); ?>" alt="" height="55">
 			</span>
 			<i>
-				<img src="assets/images/logo-sm.png" alt="" height="22">
+				<img src="<?php echo asset('images/logo.png'); ?>" alt="" height="20">
 			</i>
 		</a>
 	</div>
-
+	
 	<nav class="navbar-custom">
 
 		<ul class="navbar-right d-flex list-inline float-right mb-0">

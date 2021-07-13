@@ -66,7 +66,7 @@ $categories = $ctrl->allCategories(true);
 							</thead>
 							<tbody>
 								<?php if (!empty($categories) && is_array($categories)) : ?>
-									<?php foreach($categories as $n => $category) : ?>
+									<?php foreach ($categories as $n => $category) : ?>
 
 										<tr>
 											<td><?php echo ++$n; ?></td>
@@ -79,7 +79,7 @@ $categories = $ctrl->allCategories(true);
 												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editCategory" data-eid="<?php echo $category['id']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
-												<?php echo deleteButton($category['id'], 'deleteCategory'); ?>
+												<?php echo deleteButton($category['id'],'deleteCategory'); ?>
 											</td>
 										</tr>
 
