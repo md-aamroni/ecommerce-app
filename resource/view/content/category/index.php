@@ -102,7 +102,7 @@ $categories = $ctrl->allCategories(true);
 												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editCategory" data-eid="<?php echo $category['id']; ?>" data-title="<?php echo $ctrl->decode($category['title']); ?>" data-featured="<?php echo $category['is_featured']; ?>" data-status="<?php echo $category['status']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
-												<?php echo deleteButton($category['id'], 'deleteCategory'); ?>
+												<?php echo deleteButton($category['id'],'deleteCategory'); ?>
 											</td>
 										</tr>
 
