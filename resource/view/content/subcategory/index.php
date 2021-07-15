@@ -9,13 +9,13 @@ $subCtrl = new SubCategoryController;
 
 // Delete Data
 if (!empty($_SESSION['isDataDeleted'])) {
-	if ($_SESSION['isDataDeleted'] === true) {
-		echo notification('Congratulation! Data is deleted successfully', 'success');
-		unset($_SESSION['isDataDeleted']);
-	} elseif ($_SESSION['isDataDeleted'] === false) {
-		echo notification('Oops! Something went wrong, please retry...', 'warning');
-		unset($_SESSION['isDataDeleted']);
-	}
+   if ($_SESSION['isDataDeleted'] === true) {
+      echo notification('Congratulation! Data is deleted successfully', 'success');
+      unset($_SESSION['isDataDeleted']);
+   } elseif ($_SESSION['isDataDeleted'] === false) {
+      echo notification('Oops! Something went wrong, please retry...', 'warning');
+      unset($_SESSION['isDataDeleted']);
+   }
 }
 
 
@@ -85,8 +85,6 @@ if (isset($_POST['addNewSubCategory'])) {
 $categories = $catCtrl->isActive();
 $subCategories = $subCtrl->allSubCategories(true);
 
-
-
 ?>
 
 <div class="page-content-wrapper">
@@ -150,7 +148,7 @@ $subCategories = $subCtrl->allSubCategories(true);
 											<td><?php echo changeStatus($subCategory['id'], $subCategory['status']); ?></td>
 											<td><?php echo dateFormat($subCategory['created_at'], 3); ?></td>
 											<td class="d-flex">
-												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editSubCategory" data-eid="<?php echo $subCategory['id']; ?>" data-category="<?php echo $subCategory['category_id']; ?>" d ata-title="<?php echo $subCategory['title']; ?>" data-image="<?php echo $subCategory['banner']; ?>" data-filepath="<?php echo $bannerImage; ?>" data-status="<?php echo $subCategory['status']; ?>">
+												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editSubCategory" data-eid="<?php echo $subCategory['id']; ?>" data-category="<?php echo $subCategory['category_id']; ?>" data-title="<?php echo $subCategory['title']; ?>" data-image="<?php echo $subCategory['banner']; ?>" data-filepath="<?php echo $bannerImage; ?>" data-status="<?php echo $subCategory['status']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
 												<?php echo deleteButton($subCategory['id'], 'deleteSubCategory', './../' . $GLOBALS['upDir']['subCat']  . $subCategory['banner']); ?>
@@ -267,7 +265,7 @@ $subCategories = $subCtrl->allSubCategories(true);
 								</button>
 							</div>
 							<div class="custom-file">
-								<input type="file" class="custom-file-input upload" name="banner" aria-describedby="uploadIcon" onchange="readURL (this);" set-to="div2" />
+								<input type="file" class="custom-file-input upload" name="banner" aria-describedby="uploadIcon" onchange="readURL(this);" set-to="div2" />
 								<label class="custom-file-label fileName pt-2" for="banner">Choose Logo File</label>
 							</div>
 						</div>
