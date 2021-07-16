@@ -1,17 +1,18 @@
 <div class="topbar">
 	<div class="topbar-left">
-		<a href="index.php" class="logo">
+		<a href="dashboard" class="logo">
 			<span>
 				<img src="<?php echo asset('images/backend/logo.png'); ?>" alt="" height="24">
 			</span>
-			
-				
-			
 		</a>
 	</div>
-	
-	<nav class="navbar-custom">
 
+	<nav class="navbar-custom">
+		<?php
+		$admin_profile_session= $_SESSION['banner'];
+		$testto='60efe5c4ab219_admin_profile_banner.jpg';
+		
+		?>
 		<ul class="navbar-right d-flex list-inline float-right mb-0">
 			<li class="dropdown notification-list d-none d-sm-block">
 				<form role="search" class="app-search">
@@ -68,7 +69,7 @@
 			<li class="dropdown notification-list">
 				<div class="dropdown notification-list nav-pro-img">
 					<a class="dropdown-toggle nav-link arrow-none waves-effect nav-user waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-						<img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+						<img src="<?php echo admin_asset('admins/'.$admin_profile_session)?>" alt="admin" class="rounded-circle">
 					</a>
 					<div class="dropdown-menu dropdown-menu-right profile-dropdown ">
 						<!-- item-->

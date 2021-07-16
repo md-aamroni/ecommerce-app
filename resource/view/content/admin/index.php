@@ -1,21 +1,21 @@
 <?php
-
 use App\Http\Controllers\AdminController;
-
 $adminCtrl = new AdminController;
+
+
 
 
 
 // Delete Data
 if (!empty($_SESSION['isDataDeleted'])) {
 	if ($_SESSION['isDataDeleted'] === true) {
-	   echo notification('Congratulation! Data is deleted successfully', 'success');
-	   unset($_SESSION['isDataDeleted']);
+		echo notification('Congratulation! Data is deleted successfully', 'success');
+		unset($_SESSION['isDataDeleted']);
 	} elseif ($_SESSION['isDataDeleted'] === false) {
-	   echo notification('Oops! Something went wrong, please retry...', 'warning');
-	   unset($_SESSION['isDataDeleted']);
+		echo notification('Oops! Something went wrong, please retry...', 'warning');
+		unset($_SESSION['isDataDeleted']);
 	}
- }
+}
 
 
 // Update Status
@@ -36,7 +36,7 @@ if (isset($_POST['updateAdmin'])) {
 		$isValid	= $adminCtrl->checkImage(@$_FILES['banner']['type'], @$_FILES['banner']['size'], @$_FILES['banner']['error']);
 
 		if ($isValid === 1) {
-			$result = $adminCtrl->update($_POST['edit_admin_name'], $_POST['edit_admin_email'], $_POST['edit_admin_Password'],$_POST['edit_admin_roles'],$_POST['editAdminImage'], $_POST['edit_admin_status'], $_POST['editAdminId']);
+			$result = $adminCtrl->update($_POST['edit_admin_name'], $_POST['edit_admin_email'], $_POST['edit_admin_Password'], $_POST['edit_admin_roles'], $_POST['editAdminImage'], $_POST['edit_admin_status'], $_POST['editAdminId']);
 			if ($result) {
 				move_uploaded_file($_FILES['banner']['tmp_name'], './../' . $GLOBALS['upDir']['admin'] . $banner);
 				unlink('./../' . $GLOBALS['upDir']['admin'] . $_POST['editAdminImage']);
@@ -48,7 +48,7 @@ if (isset($_POST['updateAdmin'])) {
 			echo notification('File Error! Please upload a valid file', 'danger');
 		}
 	} else {
-		$result = $adminCtrl->update($_POST['edit_admin_name'], $_POST['edit_admin_email'], $_POST['edit_admin_Password'],$_POST['edit_admin_roles'],$_POST['banner'], $_POST['edit_admin_status'], $_POST['editAdminId']);
+		$result = $adminCtrl->update($_POST['edit_admin_name'], $_POST['edit_admin_email'], $_POST['edit_admin_Password'], $_POST['edit_admin_roles'], $_POST['banner'], $_POST['edit_admin_status'], $_POST['editAdminId']);
 		if ($result) {
 			echo notification('Congratulation! Data is updated successfully', 'success');
 		} else {
@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
 		$isValid	= $adminCtrl->checkImage(@$_FILES['banner']['type'], @$_FILES['banner']['size'], @$_FILES['banner']['error']);
 
 		if ($isValid === 1) {
-			$result = $adminCtrl->create($_POST['adminName'],$_POST['userName'], $_POST['adminEmail'], $_POST['adminPassword'], $_POST['roles'], $banner, $_POST['status']);
+			$result = $adminCtrl->create($_POST['adminName'], $_POST['userName'], $_POST['adminEmail'], $_POST['adminPassword'], $_POST['roles'], $banner, $_POST['status']);
 			if (!empty($result) && is_array($result)) {
 				move_uploaded_file($_FILES['banner']['tmp_name'], './../' . $GLOBALS['upDir']['admin'] . $banner);
 				echo notification('Congratulation! Data is added successfully', 'success');
@@ -86,7 +86,8 @@ if (isset($_POST['submit'])) {
 
 // Read Data
 $readAdmin = $adminCtrl->allAdminController(true);
-
+$admin_images = $readAdmin['banner'];
+print_r($admin_images);
 ?>
 
 
@@ -98,7 +99,7 @@ $readAdmin = $adminCtrl->allAdminController(true);
 					<div class="card">
 						<div class="card-header font-16 mt-0 bg-light border-success py-2">
 							<div class="float-left">
-								Admin Lists
+								Admin Lists 
 								<div class="text-muted font-14">
 									Here you find all the admins list as well...
 								</div>
@@ -139,6 +140,7 @@ $readAdmin = $adminCtrl->allAdminController(true);
 												endif;
 
 
+
 												?>
 
 												<tr>
@@ -151,7 +153,8 @@ $readAdmin = $adminCtrl->allAdminController(true);
 													<td><?php echo $adminList['password']; ?></td>
 													<td><?php echo $adminList['roles']; ?></td>
 
-													
+												<?php  $admin_images = $_SESSION['banner'] = $adminList['banner'];
+														 ?>
 
 													<td>
 														<button type="button" class="btn btn-light btn-sm waves-effect waves-light previewBannerImage" data-toggle="modal" data-target="#previewBannerImage" data-image="<?php echo $bannerImage; ?>">
@@ -159,13 +162,13 @@ $readAdmin = $adminCtrl->allAdminController(true);
 														</button>
 													</td>
 													<td><?php echo changeStatus($adminList['id'], $adminList['status']); ?></td>
-													<td><?php echo dateFormat($adminList['created_at'], 3); ?></td>
-													<td class="d-flex">
-														<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editAdmin" data-eid="<?php echo $adminList['id']; ?>" data-email="<?php echo $adminList['email']; ?>" data-full_name="<?php echo $adminList['full_name']; ?>" 
-														data-password="<?php echo $adminList['password']; ?>"
-														data-roles="<?php echo $adminList['roles']; ?>"
+													<!--
+													<td><?php //echo dateFormat($adminList['created_at'], 3); 
+														?></td>
 
-														data-image="<?php echo $adminList['banner']; ?>" data-filepath="<?php echo $bannerImage; ?>" data-status="<?php echo $adminList['status']; ?>">
+														-->
+													<td class="d-flex">
+														<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editAdmin" data-eid="<?php echo $adminList['id']; ?>" data-email="<?php echo $adminList['email']; ?>" data-full_name="<?php echo $adminList['full_name']; ?>" data-password="<?php echo $adminList['password']; ?>" data-roles="<?php echo $adminList['roles']; ?>" data-image="<?php echo $adminList['banner']; ?>" data-filepath="<?php echo $bannerImage; ?>" data-status="<?php echo $adminList['status']; ?>">
 															<i class="fas fa-pencil-alt mr-1"></i> Edit
 														</button>
 														<?php echo deleteButton($adminList['id'], 'deleteAdmin', './../' . $GLOBALS['upDir']['admin']  . $adminList['banner']); ?>
@@ -173,6 +176,9 @@ $readAdmin = $adminCtrl->allAdminController(true);
 												</tr>
 
 											<?php endforeach; ?>
+											<?
+
+											?>
 										<?php endif; ?>
 									</tbody>
 
@@ -243,7 +249,7 @@ $readAdmin = $adminCtrl->allAdminController(true);
 					</div>
 					<div class="form-group">
 						<label for="userName">Admin username</label>
-						<input type="text" class="form-control" name="userName"  placeholder="Enter username">
+						<input type="text" class="form-control" name="userName" placeholder="Enter username">
 					</div>
 					<div class="form-group">
 						<label for="adminEmail">Email Address</label>
@@ -350,7 +356,7 @@ $readAdmin = $adminCtrl->allAdminController(true);
 
 						</select>
 					</div>
-					
+
 
 					<div class="form-group">
 						<label for="edit_admin_Password">Password</label>

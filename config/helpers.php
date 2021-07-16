@@ -43,6 +43,24 @@ function asset($fileName, $version = false)
 }
 
 
+function admin_asset($fileName, $version = false)
+{
+	if (file_exists("./../storage/" . $fileName)) {
+		$getPath = "./../storage/" . $fileName;
+	} else {
+		$getPath = "storage/" . $fileName;
+	}
+
+	if (is_bool($version) && $version === true) {
+		$filePath = $getPath . '?' . rand(0, 9) . '.' . rand(0, 9);
+	} else {
+		$filePath = $getPath;
+	}
+
+	return $filePath;
+}
+
+
 function currentPageTitle($appName = APP['title'], $type = null)
 {
 	$pageName	= basename($_SERVER['PHP_SELF']);

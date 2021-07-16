@@ -1,6 +1,8 @@
 <?php
+
 use App\Http\Controllers\SliderController;
 $sdCtrl = new SliderController;
+
 
 
 // Delete Data
