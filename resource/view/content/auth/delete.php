@@ -40,6 +40,7 @@ if (isset($_POST['deleteSubCategory'])) {
 	$ctrl->redirect('sub-categories');
 }
 
+<<<<<<< HEAD
 
 // Delete Sub Category
 if (isset($_POST['deleteCouponList'])) {
@@ -64,6 +65,10 @@ if (isset($_POST['deleteCouponList'])) {
 
 // Delete Slider
 if (isset($_POST['deleteSlidersList'])) {
+=======
+// Delete Slider
+if (isset($_POST['deleteSlider'])) {
+>>>>>>> 99c19e599fdf3e0132a8bc71169a67b6a30ccb31
 	if (!empty($_POST['delete_id'])) {
 		$result = $ctrl->single('sliders', $_POST['delete_id']);
 		if ($result) {
@@ -79,6 +84,7 @@ if (isset($_POST['deleteSlidersList'])) {
 	$ctrl->redirect('slider-list');
 }
 
+<<<<<<< HEAD
 // Delete admins
 if (isset($_POST['deleteAdmin'])) {
 	if (!empty($_POST['delete_id'])) {
@@ -95,3 +101,5 @@ if (isset($_POST['deleteAdmin'])) {
 
 	$ctrl->redirect('admin-list');
 }
+=======
+>>>>>>> 99c19e599fdf3e0132a8bc71169a67b6a30ccb31

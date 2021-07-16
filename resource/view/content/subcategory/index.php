@@ -93,15 +93,15 @@ $subCategories = $subCtrl->allSubCategories(true);
 			<div class="card">
 				<div class="card-header font-16 mt-0 bg-light border-success py-2">
 					<div class="float-left">
-						Sub Categories Lists
+						<h5>Sub Categories Lists</h5>
 						<div class="text-muted font-14">
 							Here you find all the admins list as well...
 						</div>
 					</div>
-					<div class="float-right pt-2">
-						<button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target="#addNewSubCategory">
-							<i class="fas fa-plus"></i> Add New Sub-Category
-						</button>
+
+					<div class="float-right pt-3">
+						<button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#addNewSubCategory">
+							<i class="fas fa-plus"></i> Add New Sub-Category</button>
 					</div>
 				</div>
 				<div class="card-body pb-3">
@@ -330,7 +330,6 @@ $subCategories = $subCtrl->allSubCategories(true);
 			let id = $(this).data('uid');
 			$('#updateImg').html('<img src="" class="img-fluid" alt="..." id="div2" style="width:auto;max-height:180px;"/><div class="shadow p-2 mb-1 mt-2 bg-white rounded text-left"><strong>File Name: </strong>' + file.name + '</div><div class="shadow p-2 mb-1 bg-white rounded text-left"><strong>File Type: </strong>' + file.type + '</div><div class="shadow p-2 mb-2 bg-white rounded text-left"><strong>File Size: </strong>' + bytesToSize(file.size) + '</div>');
 		});
-
 
 		// Banner Image Preview from Table
 		$(document).on('click', '.previewBannerImage', function() {

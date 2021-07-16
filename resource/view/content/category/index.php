@@ -6,13 +6,13 @@ $ctrl = new CategoryController;
 
 // Delete Data
 if (!empty($_SESSION['isDataDeleted'])) {
-   if ($_SESSION['isDataDeleted'] === true) {
-      echo notification('Congratulation! Data is deleted successfully', 'success');
-      unset($_SESSION['isDataDeleted']);
-   } elseif ($_SESSION['isDataDeleted'] === false) {
-      echo notification('Oops! Something went wrong, please retry...', 'warning');
-      unset($_SESSION['isDataDeleted']);
-   }
+	if ($_SESSION['isDataDeleted'] === true) {
+		echo notification('Congratulation! Data is deleted successfully', 'success');
+		unset($_SESSION['isDataDeleted']);
+	} elseif ($_SESSION['isDataDeleted'] === false) {
+		echo notification('Oops! Something went wrong, please retry...', 'warning');
+		unset($_SESSION['isDataDeleted']);
+	}
 }
 
 
@@ -62,15 +62,15 @@ $categories = $ctrl->allCategories(true);
 			<div class="card">
 				<div class="card-header font-16 mt-0 bg-light border-success py-2">
 					<div class="float-left">
-						Categories Lists
+					<h5>Categories Lists</h5> 	
 						<div class="text-muted font-14">
 							Here you find all the admins list as well...
 						</div>
 					</div>
-					<div class="float-right pt-2">
-						<button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target="#addNewCategory">
-							<i class="fas fa-plus"></i> Add New Category
-						</button>
+
+					<div class="float-right pt-3">
+						<button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#addNewCategory">
+							<i class="fas fa-plus"></i> Add New Category</button>
 					</div>
 				</div>
 				<div class="card-body pb-3">
@@ -102,7 +102,7 @@ $categories = $ctrl->allCategories(true);
 												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editCategory" data-eid="<?php echo $category['id']; ?>" data-title="<?php echo $ctrl->decode($category['title']); ?>" data-featured="<?php echo $category['is_featured']; ?>" data-status="<?php echo $category['status']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
-												<?php echo deleteButton($category['id'], 'deleteCategory'); ?>
+												<?php echo deleteButton($category['id'],'deleteCategory'); ?>
 											</td>
 										</tr>
 
