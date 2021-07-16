@@ -39,7 +39,7 @@ class EloquentORM extends Controller
 			$sqlCode .= " AND {$col2} = {$val2}";
 		}
 
-		$queries = $this->connection->prepare($sqlCode);
+	$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
 		$totalDataLists = $queries->fetchAll(PDO::FETCH_ASSOC);
 		$totalRowSelect = $queries->rowCount();
@@ -251,6 +251,7 @@ class EloquentORM extends Controller
 		} elseif (is_null($col2) && !is_null($date)) {
 			$sqlCode .= " AND `{$date}` BETWEEN {$range}";
 		}
+	
 
 		$queries = $this->connection->prepare($sqlCode);
 		$queries->execute();
