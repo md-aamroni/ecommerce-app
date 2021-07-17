@@ -16,6 +16,8 @@
 	<link href="<?php echo asset('plugins/datatable/css/buttons.bootstrap4.min.css'); ?>" rel="stylesheet">
 	<link href="<?php echo asset('plugins/datatable/css/responsive.bootstrap4.min.css'); ?>" rel="stylesheet">
 
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
 	<link href="<?php echo asset('plugins/toasts/js-snackbar.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo asset('css/bootstrap.min.css'); ?>" rel="stylesheet">
 	<link href="<?php echo asset('css/backend/metismenu.min.css'); ?>" rel="stylesheet">

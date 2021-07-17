@@ -8,5 +8,5 @@ $view->loadLayouts('session');
 $view->loadLayouts('admin.top');
 $view->loadLayouts('admin.header');
 $view->loadLayouts('admin.sidebar');
-$view->loadContent('admin.privacy-policy');
+$view->loadContent('config.privacy-policy');
 $view->loadLayouts('admin.tail');

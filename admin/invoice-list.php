@@ -8,5 +8,5 @@ $view->loadLayouts('session');
 $view->loadLayouts('admin.top');
 $view->loadLayouts('admin.header');
 $view->loadLayouts('admin.sidebar');
-$view->loadContent('admin.invoice');
+$view->loadContent('order.invoice-list');
 $view->loadLayouts('admin.tail');

@@ -450,6 +450,16 @@ CREATE TABLE IF NOT EXISTS `customer_feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci AUTO_INCREMENT=1;
 
 
+CREATE TABLE IF NOT EXISTS `seo` (
+   `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   `page_url` varchar(255) NOT NULL,
+   `priority` enum('0.50','0.60','0.70','0.80','0.90') NOT NULL DEFAULT '0.60',
+	`status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
+   `keywords` text NOT NULL,
+   `description` varchar(255) NULL,
+   `created_at` datetime NULL,
+   `updated_at` datetime NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci AUTO_INCREMENT=1;
 
 
 

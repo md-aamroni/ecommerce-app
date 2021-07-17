@@ -41,6 +41,7 @@
 					<ul class="submenu">
 						<li><a href="order-list">Order List</a></li>
 						<li><a href="invoice-list">Invoice List</a></li>
+						<li><a href="invoice">Invoice</a></li>
 					</ul>
 				</li>
 				<li>

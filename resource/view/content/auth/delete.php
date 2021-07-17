@@ -57,3 +57,19 @@ if (isset($_POST['deleteSlider'])) {
 	$ctrl->redirect('slider-list');
 }
 
+// Delete Seo Page url
+if (isset($_POST['deletePageUrl'])) {
+	if (!empty($_POST['delete_id'])) {
+		$result = $ctrl->single('seo', $_POST['delete_id']);
+		if ($result) {
+			if (file_exists($_POST['filePath'])) {
+				unlink($_POST['filePath']);
+			}
+			$_SESSION['isDataDeleted'] = true;
+		}
+	} else {
+		$_SESSION['isDataDeleted'] = false;
+	}
+
+	$ctrl->redirect('seo-pages');
+}
