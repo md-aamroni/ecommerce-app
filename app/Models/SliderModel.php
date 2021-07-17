@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Models;
-
 use Exception;
 use App\Eloquent\EloquentORM;
 
@@ -10,36 +8,32 @@ class SliderModel extends EloquentORM
 	protected $table = 'sliders';
 	protected $id;
 	protected $title;
-   protected $sub_title;
-	protected $images;
-	protected $alt_text;
-	protected $sequence;
-	protected $is_activ;
+	protected $sub_title;
+	protected $banner;
+	protected $status;
 
-	protected function addNewSlider( $title,$sub_title, $images, $alt_text,$is_activ)
+	protected function addNewSlider($title,$sub_title, $banner, $status)
 	{
+		
 		$this->title	= $this->encode($title);
-      $this->sub_title	= $this->encode($sub_title);
-		$this->images	= $this->encode($images);
-      $this->alt_text	= $this->encode($alt_text);
-		$this->sequence	= 'Not Yet';
-		$this->is_activ	= !empty($this->encode($is_activ)) ? $this->encode($is_activ) : 'Active';
+		$this->sub_title	= $this->encode($sub_title);
+		$this->banner	= $this->encode($banner);
+		$this->status	= !empty($this->encode($status)) ? $this->encode($status) : 'Active';
 
 		$sqlCode	= "INSERT INTO $this->table (
-							 `title`, `sub_title`, `images`, `alt_text`, `sequence`, `is_active`, `created_at`
+							`id`, `title`,`sub_title`, `banner`, `status`, `created_at`
 						)
 						VALUES (
-							 :S_TITLE, :S_SUB_TITLE, :S_IMAGES, :S_ALT_TEXT, :S_SEQUENCE, :S_IS_ACTIVE, :CREATED_AT
+							:S_CAT_ID, :TITLE,:S_TITLE,  :S_BANNER, :S_STATUS, :CREATED_AT
 						)";
 
 		$queries	= $this->connection->prepare($sqlCode);
 		$bindParam = array(
-			':S_TITLE'		=> $this->title,
-			':S_SUB_TITLE'	=> $this->sub_title,
-			':S_IMAGES'		=> $this->images,
-			':S_ALT_TEXT'		=> $this->alt_text,
-			':S_SEQUENCE'		=> $this->sequence,
-         ':S_IS_ACTIVE'		=> $this->is_activ,
+			':S_CAT_ID'		=> $this->id,
+			':TITLE'		=> $this->title,
+			':S_TITLE'		=> $this->sub_title,
+			':S_BANNER'		=> $this->banner,
+			':S_STATUS'		=> $this->status,
 			':CREATED_AT'	=> date("Y-m-d H:i:s")
 		);
 
@@ -69,30 +63,28 @@ class SliderModel extends EloquentORM
 	}
 
 
-	protected function updateSlider( $title, $sub_title, $images, $alt_text, $is_active, $id)
+	protected function updateSlider($title,$sub_title, $banner, $status, $id)
 	{
-		$this->title	   = $this->encode($title);
-      $this->sub_title	= $this->encode($sub_title);
-      $this->images	   = $this->encode($images);
-		$this->alt_text	= $this->encode($alt_text);
-		$this->is_active	= $this->encode($is_active);
-		$this->id	      = $this->encode($id);
-
 		
+		$this->title	= $this->encode($title);
+		$this->sub_title	= $this->encode($sub_title);
+		$this->banner	= $this->encode($banner);
+		$this->status	= $this->encode($status);
+		$this->id		= $this->encode($id);
 
 		$sqlCode = "UPDATE $this->table
                   SET
-							`title` = :S_TITLE, `sub_title` = :S_SUBTITLE, `images` = :S_IMAGES, `alt_text` = :S_ALT, `is_active` = :S_IS_ACTIVE, `updated_at` = :UPDATED_AT
+							`id` = :S_ID, `title` = :S_TITLE, `sub_title` = :S_sub_title, `banner` = :S_BANNER, `status` = :S_STATUS, `updated_at` = :UPDATED_AT
                   WHERE
 							`id` = :UPDATE_ID";
 
 		$queries = $this->connection->prepare($sqlCode);
 		$values  = array(
+			':S_ID'		=> $this->id,
 			':S_TITLE'		=> $this->title,
-			':S_SUBTITLE'		=> $this->sub_title,
-			':S_IMAGES'		=> $this->images,
-			':S_ALT'		   => $this->alt_text,
-			':S_IS_ACTIVE'	=> $this->is_active,
+			':S_sub_title'		=> $this->sub_title,
+			':S_BANNER'		=> $this->banner,
+			':S_STATUS'		=> $this->status,
 			':UPDATED_AT'	=> date("Y-m-d H:i:s"),
 			':UPDATE_ID'	=> $this->id
 		);

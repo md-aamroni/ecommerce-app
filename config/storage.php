@@ -5,5 +5,5 @@ $GLOBALS['upDir'] = [
 	'admin'	=> 'storage/admins/',
 	'user'	=> 'storage/users/',
 	'subCat'	=> 'storage/sub-category/',
-	'slider'	=> 'storage/slider/'
+	'sliders'	=> 'storage/sliders/'
 ];

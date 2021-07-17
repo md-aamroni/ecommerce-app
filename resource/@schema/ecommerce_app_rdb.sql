@@ -1144,3 +1144,14 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+ALTER TABLE `sliders` CHANGE `images` `banner` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL;
+
+ALTER TABLE `sliders` CHANGE `is_active` `status` ENUM('Active','Inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Active';
+
+ALTER TABLE `admins` ADD `user_name` TEXT NOT NULL AFTER `full_name`;
+ALTER TABLE `admins` ADD `banner` TEXT NOT NULL AFTER `roles`;
+ALTER TABLE `admins` CHANGE `is_active` `status` ENUM('Active','Inactive') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Inactive';
+
+ALTER TABLE `sub_categories` ADD `status` ENUM('active','inactive') NOT NULL AFTER `banner`;

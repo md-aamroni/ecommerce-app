@@ -1,9 +1,6 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\SliderModel;
-
 
 class SliderController extends SliderModel
 {
@@ -12,18 +9,18 @@ class SliderController extends SliderModel
 		return $this->all($this->table, $order);
 	}
 
-	public function create($title,$sub_title, $images, $alt_text, $is_activ)
+	public function create($title,$sub_title, $banner, $status)
 	{
-		return $this->addNewSlider($title,$sub_title, $images, $alt_text, $is_activ);
+		return $this->addNewSlider($title,$sub_title, $banner, $status);
 	}
 
-	public function status($status, $id )
+	public function status($status, $id)
 	{
-		return $this->changeStatus($this->table, 'is_active', $status, $id );
+		return $this->changeStatus($this->table, 'status', $status, $id);
 	}
 
-	public function update($title, $sub_title, $images, $alt_text, $is_active, $id)
+	public function update($title,$sub_title, $banner, $status, $id)
 	{
-		return $this->updateSlider($title, $sub_title, $images, $alt_text, $is_active, $id);
+		return $this->updateSlider($title,$sub_title, $banner, $status, $id);
 	}
 }
