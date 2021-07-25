@@ -82,7 +82,7 @@ class Controller extends Database
 
 	public function mobileNoParser($string)
 	{
-		$mobile   = explode(' ', $string);
+		$mobile = explode(' ', $string);
 		return str_replace('-', '', $mobile[1]);
 	}
 }

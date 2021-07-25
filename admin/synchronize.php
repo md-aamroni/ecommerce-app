@@ -2,6 +2,6 @@
 
 include('./../app/Http/Core/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadContent('auth.sync');
+View::content('auth.sync');

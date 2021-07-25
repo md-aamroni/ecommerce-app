@@ -1,13 +1,13 @@
 <?php
 echo 'product- details';
 
-include './../app/Http/Core/View.php';
+include('./../bootstrap/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadLayouts('session');
-$view->loadLayouts('ecommerce.top');
-$view->loadLayouts('ecommerce.header');
-$view->loadLayouts('ecommerce.sidebar');
-$view->loadContent('product.details');
-$view->loadLayouts('ecommerce.tail');
+View::layouts('session');
+View::layouts('ecommerce.top');
+View::layouts('ecommerce.header');
+View::layouts('ecommerce.sidebar');
+View::content('product.details');
+View::layouts('ecommerce.tail');

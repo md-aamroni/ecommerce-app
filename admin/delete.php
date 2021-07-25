@@ -2,6 +2,6 @@
 
 include('./../app/Http/Core/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadContent('auth.delete');
+View::content('auth.delete');

@@ -1,11 +1,11 @@
 
 <?php
 
-include('app/Http/Core/View.php');
+include('bootstrap/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadLayouts('ecommerce.top');
-$view->loadLayouts('ecommerce.header');
-$view->loadContent('ecommerce.product-sticky-tab');
-$view->loadLayouts('ecommerce.tail');
+View::layouts('ecommerce.top');
+View::layouts('ecommerce.header');
+View::content('ecommerce.product-sticky-tab');
+View::layouts('ecommerce.tail');
