@@ -2,31 +2,22 @@
 
 session_start();
 
+
 class View
 {
-	public function __construct()
+	public static function init()
 	{
-		if (file_exists('./../vendor/autoload.php')) {
-			include './../vendor/autoload.php';
+		if (file_exists('./../../bootstrap/app.php')) {
+			include './../../bootstrap/app.php';
+		} elseif (file_exists('./../bootstrap/app.php')) {
+			include './../bootstrap/app.php';
 		} else {
-			include 'vendor/autoload.php';
-		}
-
-		if (file_exists('./../config/bootstrap.php')) {
-			include './../config/bootstrap.php';
-		} else {
-			include 'config/bootstrap.php';
-		}
-
-		if (file_exists('./../component/app.php')) {
-			include './../component/app.php';
-		} else {
-			include 'component/app.php';
+			include './bootstrap/app.php';
 		}
 	}
 
 
-	public function loadContent($page)
+	public static function content($page)
 	{
 		if (strpos($page, '/')) {
 			$dir = explode('/', $page);
@@ -57,7 +48,7 @@ class View
 	}
 
 
-	public function loadLayouts($page)
+	public static function layouts($page)
 	{
 		if (strpos($page, '/')) {
 			$dir = explode('/', $page);

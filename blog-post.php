@@ -1,10 +1,10 @@
 <?php
 
-include('app/Http/Core/View.php');
+include('bootstrap/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadLayouts('ecommerce.top');
-$view->loadLayouts('ecommerce.header');
-$view->loadContent('ecommerce.blog-post');
-$view->loadLayouts('ecommerce.tail');
+View::layouts('ecommerce.top');
+View::layouts('ecommerce.header');
+View::content('ecommerce.blog-post');
+View::layouts('ecommerce.tail');

@@ -1,10 +1,10 @@
 <?php
 
-include './../app/Http/Core/View.php';
+include('./../bootstrap/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadLayouts('admin.top');
-$view->loadContent('auth.login');
-//$view->loadLayouts('admin.tail');
+View::layouts('admin.top');
+View::content('auth.login');
+//View::layouts('admin.tail');
 

@@ -1,12 +1,12 @@
 <?php
 
-include './../app/Http/Core/View.php';
+include('./../bootstrap/View.php');
 
-$view = new View;
+View::init();
 
-$view->loadLayouts('session');
-$view->loadLayouts('admin.top');
-$view->loadLayouts('admin.header');
-$view->loadLayouts('admin.sidebar');
-$view->loadContent('slider.slider');
-$view->loadLayouts('admin.tail');
+View::layouts('session');
+View::layouts('admin.top');
+View::layouts('admin.header');
+View::layouts('admin.sidebar');
+View::content('slider.slider');
+View::layouts('admin.tail');
