@@ -14,6 +14,8 @@ if (!empty($_SESSION['isDataDeleted'])) {
 		unset($_SESSION['isDataDeleted']);
 	}
 }
+
+
 // Update status
 if (isset($_POST['changeStatus'])) {
 	$result = $ctrl->status($_POST['status'], $_POST['id']);
@@ -35,6 +37,8 @@ if (isset($_POST['updateSeoPage'])) {
 		echo notification('Oops! Something went wrong', 'warning');
 	}
 }
+
+
 // Create Data
 if (isset($_POST['addNewPageUrl'])) {
 	if (!empty($_POST['page_url']) && !empty($_POST['keywords'])) {
@@ -49,11 +53,10 @@ if (isset($_POST['addNewPageUrl'])) {
 		echo notification('All fields are required', 'danger');
 	}
 }
-//data read
-$seo_lists = $ctrl->allSeoList(true);
-// dd($seo_lists);
-?>
 
+
+// Fetch read
+$seo_lists = $ctrl->allSeoList(true);
 ?>
 
 <div class="page-content-wrapper">
@@ -82,8 +85,7 @@ $seo_lists = $ctrl->allSeoList(true);
 									<th scope="col">Page URL</th>
 									<th scope="col">Priority</th>
 									<th scope="col">Status</th>
-									<th scope="col">Keywords</th>
-									<th scope="col">Description</th>
+									<th scope="col">Details</th>
 									<th scope="col">Date Modified</th>
 									<th scope="col">Action</th>
 								</tr>
@@ -96,8 +98,10 @@ $seo_lists = $ctrl->allSeoList(true);
 											<td><?php echo $ctrl->decode($seo_list['page_url']); ?></td>
 											<td><?php echo $ctrl->decode($seo_list['priority']); ?></td>
 											<td><?php echo changeStatus($seo_list['id'], $seo_list['status']); ?></td>
-											<td><?php echo $seo_list['keywords']; ?></td>
-											<td><?php echo $seo_list['description']; ?></td>
+											<td>
+												<button class="btn btn-outline-warning btn-sm" name="detailsPreview" data-key="<?php echo $seo_list['keywords']; ?>" data-detail="<?php echo $seo_list['description']; ?>">
+													Preview</button>
+											</td>
 											<td><?php echo dateFormat($seo_list['created_at'], 3); ?></td>
 
 											<td class="d-flex">
@@ -117,6 +121,22 @@ $seo_lists = $ctrl->allSeoList(true);
 				</div>
 				<div class="card-footer text-muted">
 					Date Modified: <?php echo dateFormat(date('Y-m-d H:i:s'), 6); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-md-12">
+			<div class="card">
+				<div class="card-header font-16 mt-0 bg-light border-success pt-2 pb-1">
+					Profile Details
+					<div class="text-muted font-14">Please click to the <code>Preview</code> button for more details...</div>
+				</div>
+				<div class="card-body py-2">
+					<ul class="list-group list-group-flush" id="pageDetails">
+						<div class="display-4 font-16 text-center py-2">Page Details Content Appear Here...</div>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -229,10 +249,6 @@ $seo_lists = $ctrl->allSeoList(true);
 </div>
 
 <script type="text/javascript">
-	// $(document).ready(function() {
-	// 	$('#summernote').summernote();
-	// });
-
 	$(document).ready(function() {
 		// Edit Data
 		$(document).on('click', '.editData', function() {
@@ -253,6 +269,29 @@ $seo_lists = $ctrl->allSeoList(true);
 				$('[name="update_keywords"]').val(editable['keywords']);
 				$('[name="update_description"]').val(editable['description']);
 			}
+		});
+
+
+		$(document).on('click', '[name="detailsPreview"]', function() {
+			let pageDetails = {
+				keyword: $(this).data('key'),
+				details: $(this).data('detail')
+			};
+
+			$('#pageDetails').html(`
+				<li class="list-group-item d-flex justify-content-between align-items-start py-2">
+					<div class="ml-2 my-auto">
+						<div class="h6 mb-0">Keywords</div>
+						${pageDetails['keyword']}
+					</div>
+				</li>
+				<li class="list-group-item d-flex justify-content-between align-items-start py-2">
+					<div class="ml-2 my-auto">
+						<div class="h6 mb-0">Description</div>
+						${pageDetails['details']}
+					</div>
+				</li>
+			`);
 		});
 	});
 </script>

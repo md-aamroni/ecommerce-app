@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `sliders` (
 	`images` varchar(255) NOT NULL,
 	`alt_text` varchar(255) NOT NULL,
 	`sequence` int(11) NULL,
-	`is_active` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
+	`status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
 	`created_at` datetime NULL,
 	`updated_at` datetime NULL,
 	`deleted_at` datetime NULL
@@ -459,6 +459,16 @@ CREATE TABLE IF NOT EXISTS `seo` (
    `description` varchar(255) NULL,
    `created_at` datetime NULL,
    `updated_at` datetime NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci AUTO_INCREMENT=1;
+
+
+CREATE TABLE IF NOT EXISTS `settings` (
+   `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`title` enum('About Us','Privacy Policy', 'Terms and Condition') NOT NULL,
+   `details` text NOT NULL,
+   `created_at` datetime NULL,
+   `updated_at` datetime NULL,
+	`deleted_at` datetime NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_general_ci AUTO_INCREMENT=1;
 
 
