@@ -9,7 +9,7 @@
             <div class="page-content-wrapper mt-0">
                <div class="row">
                   <div class="col-12">
-                     <div class="card m-b-20">
+                     <div class="card m-b-20 mb-0">
                         <div class="card-body">
 
                            <div class="row">
@@ -78,7 +78,7 @@
                                                 </tr>
                                              </thead>
                                              <tbody>
-                                                <!-- foreach ($order->lineItems as $line) or some such thing here -->
+
                                                 <tr>
                                                    <td>BS-200</td>
                                                    <td class="text-center">$10.99</td>
@@ -137,14 +137,14 @@
                                  </div>
 
                               </div>
-                           </div> <!-- end row -->
+                           </div>
 
                         </div>
                      </div>
-                  </div> <!-- end col -->
-               </div> <!-- end row -->
+                  </div>
+               </div>
             </div>
-            <!-- end page content-->
+
 
             <div class="card-footer text-muted">
                Date Modified: <?php echo dateFormat(date('Y-m-d H:i:s'), 6); ?>

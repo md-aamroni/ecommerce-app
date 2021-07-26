@@ -9,8 +9,8 @@
 
 	<nav class="navbar-custom">
 		<?php
-		$admin_profile_session= $_SESSION['banner'];
-		$testto='60efe5c4ab219_admin_profile_banner.jpg';
+		// $admin_profile_session= $_SESSION['banner'];
+		// $testto='60efe5c4ab219_admin_profile_banner.jpg';
 		
 		?>
 		<ul class="navbar-right d-flex list-inline float-right mb-0">
