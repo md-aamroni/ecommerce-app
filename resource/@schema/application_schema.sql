@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `sliders` (
 	`images` varchar(255) NOT NULL,
 	`alt_text` varchar(255) NOT NULL,
 	`sequence` int(11) NULL,
-	`is_active` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
+	`status` enum('Active','Inactive') NOT NULL DEFAULT 'Active',
 	`created_at` datetime NULL,
 	`updated_at` datetime NULL,
 	`deleted_at` datetime NULL

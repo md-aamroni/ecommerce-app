@@ -27,7 +27,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-9 col-md-8">
 					<div class="widget widget-newsletter">
 						<h4 class="widget-title m-b-1 pb-2">Subscribe newsletter</h4>
@@ -51,7 +51,7 @@
 							<div class="widget">
 								<h4 class="widget-title">Customer Service</h4>
 
-								<ul class="links link-parts row mb-0">  
+								<ul class="links link-parts row mb-0">
 									<div class="link-part col-sm-6">
 										<li><a href="about.php">About Us</a></li>
 										<li><a href="contact.php">Contact Us</a></li>
@@ -93,7 +93,7 @@
 		<div class="container d-flex justify-content-between align-items-center flex-wrap">
 			<p class="footer-copyright py-3 pr-4 mb-0">© Porto eCommerce. 2020. All Rights Reserved</p>
 
-			<img src="<?php echo asset('images/ecommerce/payments.png');?>" alt="payment methods" class="footer-payments py-3">
+			<img src="<?php echo asset('images/ecommerce/payments.png'); ?>" alt="payment methods" class="footer-payments py-3">
 		</div>
 	</div>
 </footer>
@@ -237,11 +237,11 @@
 	</div>
 </div>
 
-	<a id="scroll-top" href="#top" title="Top" role="button"><i class="fas fa-angle-up"></i></a>
+<a id="scroll-top" href="#top" title="Top" role="button"><i class="fas fa-angle-up"></i></a>
 
-	<script src="<?php echo asset('js/frontend/bootstrap.bundle.min.js'); ?>"></script>
-	<script src="<?php echo asset('js/frontend/plugins.min.js'); ?>"></script>
-	<script src="<?php echo asset('js/frontend/main.min.js'); ?>"></script>
+<script src="<?php echo asset('js/frontend/bootstrap.bundle.min.js'); ?>"></script>
+<script src="<?php echo asset('js/frontend/plugins.min.js'); ?>"></script>
+<script src="<?php echo asset('js/frontend/main.min.js'); ?>"></script>
 </body>
 
 </html>

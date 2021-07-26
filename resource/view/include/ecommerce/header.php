@@ -1,3 +1,13 @@
+<?php
+
+use App\Http\Controllers\NavigationController;
+
+$ctrl = new NavigationController;
+
+$categories = $ctrl->navbarCategory();
+?>
+
+
 <div class="top-notice text-white bg-primary">
 	<div class="container text-center">
 		<h5 class="d-inline-block mb-0">Get Up to <b>40% OFF</b> New-Season Styles </h5>
@@ -14,28 +24,25 @@
 					<a href="#" class="pl-0"><img src="<?php echo asset('images/ecommerce/flags/en.png'); ?>" alt="England flag">ENG</a>
 					<div class="header-menu">
 						<ul>
-							<li><a href="#"><img src="<?php echo asset('images/ecommerce/flags/en.png'); ?>" alt="England flag">ENG</a></li>
-							<li><a href="#"><img src="<?php echo asset('images/ecommerce/flags/fr.png'); ?>">FRA</a></li>
+							<li><a href="javascript:;"><img src="<?php echo asset('images/ecommerce/flags/en.png'); ?>" alt="England flag">ENG</a></li>
+							<li><a href="javascript:;"><img src="<?php echo asset('images/ecommerce/flags/fr.png'); ?>">FRA</a></li>
 						</ul>
 					</div>
 				</div>
-
 				<div class="header-dropdown ml-4">
-					<a href="#">USD </a>
+					<a href="javascript:;">BDT</a>
 					<div class="header-menu">
 						<ul>
-							<li><a href="#">EUR</a></li>
-							<li><a href="#">USD</a></li>
+							<li><a href="javascript:;">BDT</a></li>
+							<li><a href="javascript:;">EUR</a></li>
+							<li><a href="javascript:;">USD</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-
 			<div class="header-right">
-				<p class="top-message text-uppercase d-none d-sm-block mr-4">Free returns. Standard shipping orders $99+</p>
-
+				<p class="top-message text-uppercase d-none d-sm-block mr-4"><?php echo APP['return']; ?></p>
 				<span class="separator"></span>
-
 				<div class="header-dropdown dropdown-expanded mx-2 px-1">
 					<a href="#">Links</a>
 					<div class="header-menu">
@@ -48,9 +55,7 @@
 						</ul>
 					</div>
 				</div>
-
 				<span class="separator"></span>
-
 				<div class="social-icons">
 					<a href="#" class="social-icon social-facebook fab fa-facebook-f" target="_blank"></a>
 					<a href="#" class="social-icon social-twitter fab fa-twitter" target="_blank"></a>
@@ -149,7 +154,6 @@
 					</form>
 				</div>
 			</div>
-
 			<div class="header-center order-first order-lg-0 ml-0 ml-lg-auto">
 				<button class="mobile-menu-toggler" type="button">
 					<i class="icon-menu"></i>
@@ -158,7 +162,6 @@
 					<img src="<?php echo asset('images/ecommerce/logo.png'); ?>" alt="Porto Logo">
 				</a>
 			</div>
-
 			<div class="header-right w-lg-max ml-0 ml-lg-auto">
 				<div class="header-contact d-none d-lg-flex align-items-center ml-auto pr-xl-4 mr-4">
 					<i class="fas fa-phone"></i>
@@ -278,112 +281,37 @@
 					}
 				]
 			}">
+
+
+
+		<!-- Navigation Bar Content | Start -->
 		<div class="container">
 			<nav class="main-nav d-flex w-lg-max justify-content-center">
 				<ul class="menu">
 					<li class="active">
-						<a href="index.php">Home</a>
+						<a href="index">Home</a>
 					</li>
-					<li>
-						<a href="category-grid.php">Categories</a>
-						<div class="megamenu megamenu-fixed-width megamenu-3cols">
-							<div class="row">
-								<div class="col-lg-4">
-									<a href="#" class="nolink">VARIATION 1</a>
-									<ul class="submenu">
-										<li><a href="category-grid.php">Fullwidth Banner</a></li>
-										<li><a href="category-banner-boxed-slider.php">Boxed Slider Banner</a></li>
-										<li><a href="category-banner-boxed-image.php">Boxed Image Banner</a></li>
-										<li><a href="category-grid.php">Left Sidebar</a></li>
-										<li><a href="category-sidebar-right.php">Right Sidebar</a></li>
-										<li><a href="category-horizontal-filter1.php">Horizontal Filter1</a></li>
-										<li><a href="category-horizontal-filter2.php">Horizontal Filter2</a></li>
+					<?php if (!empty($categories) && is_array($categories)) : ?>
+						<?php foreach ($categories as $category) : ?>
+							<li>
+								<a href="javascript:;"><?php echo $category['title']; ?></a>
+								<?php $subCategories = $ctrl->navbarSubCategory($category['id']); ?>
+								<?php if (!empty($subCategories) && is_array($subCategories)) : ?>
+									<ul>
+										<?php foreach ($subCategories as $subCategory) : ?>
+											<li><a href="category-list?title=<?php echo $subCategory['slug']; ?>"><?php echo $subCategory['title']; ?></a></li>
+										<?php endforeach; ?>
 									</ul>
-								</div>
-								<div class="col-lg-4">
-									<a href="#" class="nolink">VARIATION 2</a>
-									<ul class="submenu">
-										<li><a href="category-list.php">List Types</a></li>
-										<li><a href="category-grid.php">Ajax Infinite Scroll</a></li>
-										<li><a href="category-grid.php">3 Columns Products</a></li>
-
-									</ul>
-								</div>
-								<div class="col-lg-4 p-0" style="background: #f4f4f4 no-repeat center 82%/cover url(<?php echo asset('images/ecommerce/menu-banner.jpg'); ?>)"></div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="#">Products</a>
-						<div class="megamenu megamenu-fixed-width">
-							<div class="row">
-								<div class="col-lg-3">
-									<a href="#" class="nolink">Variations 1</a>
-									<ul class="submenu">
-										<li><a href="product.php">Horizontal Thumbs</a></li>
-										<li><a href="product-full-width.php">Vertical Thumbnails</a></li>
-										<li><a href="product.php">Inner Zoom</a></li>
-										<li><a href="product-sidebar-left.php">Accordion Tabs</a></li>
-									</ul>
-								</div>
-								<div class="col-lg-3">
-									<a href="#" class="nolink">Variations 2</a>
-									<ul class="submenu">
-										<li><a href="product-sticky-tab.php">Sticky Tabs</a></li>
-										<li><a href="product-simple.php">Simple Product</a></li>
-										<li><a href="product-sidebar-left.php">With Left Sidebar</a></li>
-									</ul>
-								</div>
-								<div class="col-lg-3">
-									<a href="#" class="nolink">Product Layout Types</a>
-									<ul class="submenu">
-										<li><a href="product.php">Default Layout</a></li>
-										<li><a href="product-full-width.php">Full Width Layout</a></li>
-										<li><a href="product-grid-layout.php">Grid Images Layout</a></li>
-									</ul>
-								</div>
-
-								<div class="col-lg-3 p-0">
-									<img src="<?php echo asset('images/ecommerce/menu-bg.png'); ?>" alt="Menu banner" class="product-promo">
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="#">Pages</a>
-						<ul>
-							<li><a href="shop-cart.php">Shopping Cart</a></li>
-							<li><a href="#">Checkout</a>
-								<ul>
-									<li><a href="checkout.php">Checkout Shipping</a></li>
-									<li><a href="checkout-shipping-2.php">Checkout Shipping 2</a></li>
-									<li><a href="checkout-review.php">Checkout Review</a></li>
-								</ul>
+								<?php endif; ?>
 							</li>
-							<li><a href="#">Dashboard</a>
-								<ul>
-									<li><a href="dashboard.php">Dashboard</a></li>
-									<li><a href="my-account.php">My Account</a></li>
-								</ul>
-							</li>
-							<li><a href="about.php">About Us</a></li>
-							<li><a href="#">Blog</a>
-								<ul>
-									<li><a href="blog.php">Blog</a></li>
-									<li><a href="blog-post.php">Blog Post</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.php">Contact Us</a></li>
-							<li><a href="login.php" class="">Login</a></li>
-							<li><a href="forgot-password.php">Forgot Password</a></li>
-						</ul>
-					</li>
+						<?php endforeach; ?>
+					<?php endif; ?>
 					<li><a href="blog.php">Blog</a></li>
 					<li><a href="about.php">About Us</a></li>
 					<li class="d-none d-xl-block custom"><a href="#">Special Offer!</a></li>
-
 				</ul>
 			</nav>
 		</div>
+		<!-- Navigation Bar Content | End -->
 	</div>
 </header>

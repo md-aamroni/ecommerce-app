@@ -1,19 +1,19 @@
 <?php
 
 use App\Http\Controllers\SliderController;
-$sdCtrl = new SliderController;
 
+$sdCtrl = new SliderController;
 
 
 // Delete Data
 if (!empty($_SESSION['isDataDeleted'])) {
-   if ($_SESSION['isDataDeleted'] === true) {
-      echo notification('Congratulation! Data is deleted successfully', 'success');
-      unset($_SESSION['isDataDeleted']);
-   } elseif ($_SESSION['isDataDeleted'] === false) {
-      echo notification('Oops! Something went wrong, please retry...', 'warning');
-      unset($_SESSION['isDataDeleted']);
-   }
+	if ($_SESSION['isDataDeleted'] === true) {
+		echo notification('Congratulation! Data is deleted successfully', 'success');
+		unset($_SESSION['isDataDeleted']);
+	} elseif ($_SESSION['isDataDeleted'] === false) {
+		echo notification('Oops! Something went wrong, please retry...', 'warning');
+		unset($_SESSION['isDataDeleted']);
+	}
 }
 
 
@@ -47,7 +47,7 @@ if (isset($_POST['edit_slider_submit'])) {
 	} else {
 		$result = $sdCtrl->update($_POST['sliderHeaderAdmin'], $_POST['sliderExerptAdmin'], $_POST['update_image'], $_POST['update_status'], $_POST['update_id']);
 
-        
+
 		if ($result) {
 			echo notification('Congratulation! Data is updated successfully', 'success');
 		} else {
@@ -80,95 +80,83 @@ if (isset($_POST['submit'])) {
 }
 
 
-// Read Data
-
-$slidersRead = $sdCtrl->allSlider(true);
+// Fetch Data
+$sliders = $sdCtrl->allSlider(true);
 ?>
 
 <div class="page-content-wrapper">
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <div class="card">
-                <div class="card-header font-16 mt-0 bg-light border-success py-2">
-                    <div class="float-left">
-                        <h5>Slider Lists</h5>
-                        <div class="text-muted font-14">
-                            Please make sure that, you have followed the instruction...
-                        </div>
-                    </div>
-                    <div class="float-right pt-3">
-                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#addSlider"> <i class="fas fa-plus"></i> Add Slider</button>
-                    </div>
+	<div class="row">
+		<div class="col-12 col-md-12">
+			<div class="card">
+				<div class="card-header font-16 mt-0 bg-light border-success py-2">
+					<div class="float-left">
+						<h5>Slider Lists</h5>
+						<div class="text-muted font-14">
+							Please make sure that, you have followed the instruction...
+						</div>
+					</div>
+					<div class="float-right pt-3">
+						<button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#addSlider"><i class="fas fa-plus"></i> Add Slider</button>
+					</div>
+				</div>
+				<div class="card-body pb-3">
+					<div class="table-responsive">
+						<table id="datatable-buttons" class="table dt-responsive nowrap table-hover" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+							<thead>
+								<tr>
+									<th scope="col">Id</th>
+									<th scope="col">Title</th>
+									<th scope="col">Preview</th>
+									<th scope="col">Alter Text</th>
+									<th scope="col">Sequence</th>
+									<th scope="col">Status</th>
+									<th scope="col">Date Modified</th>
+									<th scope="col">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+								if (!empty($sliders) && is_array($sliders)) :
+									foreach ($sliders as $n => $slidersList) :
 
-                </div>
-
-                <div class="card-body pb-3">
-                    <div class="table-responsive">
-                        <table id="datatable-buttons" class="table dt-responsive nowrap table-hover" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Sub Title</th>
-                                    <th scope="col">Alter Text</th>
-                                    <th scope="col">Sequence</th>
-                                    <th scope="col">Preview</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Date Created</th>
-                                    <th scope="col">Date Modified</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php if (!empty($slidersRead) && is_array($slidersRead)) : ?>
-									<?php foreach ($slidersRead as $n => $slidersList) : ?>
-
-										<?php
-										if (!empty($slidersList['banner']) && file_exists('./../' . $GLOBALS['upDir']['sliders']  . $slidersList['banner'])) :
-											$bannerImage = './../' . $GLOBALS['upDir']['sliders']  . $slidersList['banner'];
+										if (!empty($slidersList['banner']) && file_exists('./../' . $GLOBALS['upDir']['sliders']  . $slidersList['images'])) :
+											$bannerImage = './../' . $GLOBALS['upDir']['sliders']  . $slidersList['images'];
 										else :
 											$bannerImage = asset('images/placeholder.jpg');
 										endif;
-
-										
-										?>
+								?>
 
 										<tr>
 											<td class="text-center font-weight-bold"><?php echo ++$n; ?></td>
-											
 											<td><?php echo $slidersList['title']; ?></td>
-											<td><?php echo $slidersList['sub_title']; ?></td>
-											
 											<td>
 												<button type="button" class="btn btn-light btn-sm waves-effect waves-light previewBannerImage" data-toggle="modal" data-target="#previewBannerImage" data-image="<?php echo $bannerImage; ?>">
 													<i class="fas fa-eye"></i> View
 												</button>
 											</td>
+											<td><?php echo $slidersList['alt_text']; ?></td>
+											<td><?php echo $slidersList['sequence']; ?></td>
 											<td><?php echo changeStatus($slidersList['id'], $slidersList['status']); ?></td>
 											<td><?php echo dateFormat($slidersList['created_at'], 3); ?></td>
 											<td class="d-flex">
 												<button type="button" class="btn btn-primary btn-sm waves-effect waves-light editData mr-1" data-toggle="modal" data-target="#editSlider" data-eid="<?php echo $slidersList['id']; ?>" data-title="<?php echo $slidersList['title']; ?>" data-sub_title="<?php echo $slidersList['sub_title']; ?>" data-image="<?php echo $slidersList['banner']; ?>" data-filepath="<?php echo $bannerImage; ?>" data-status="<?php echo $slidersList['status']; ?>">
 													<i class="fas fa-pencil-alt mr-1"></i> Edit
 												</button>
-												<?php echo deleteButton($slidersList['id'], 'deleteSlidersList', './../../' . $GLOBALS['upDir']['sliders']  . $slidersList['banner']); ?>
+												<?php echo deleteButton($slidersList['id'], 'deleteSlidersList', './../../' . $GLOBALS['upDir']['sliders']  . $slidersList['images']); ?>
 											</td>
-                                            
 										</tr>
-
 									<?php endforeach; ?>
 								<?php endif; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card-footer text-muted">
-                    Date Modified: <?php echo dateFormat(date('Y-m-d H:i:s'), 6); ?>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="card-footer text-muted">
+					Date Modified: <?php echo dateFormat(date('Y-m-d H:i:s'), 6); ?>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="editSlider" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="editSliderLabel" aria-hidden="true">
@@ -182,16 +170,14 @@ $slidersRead = $sdCtrl->allSlider(true);
 				<input type="hidden" name="update_id" value="">
 				<input type="hidden" name="update_image" value="">
 				<div class="modal-body">
-                <div class="form-group">
-                        <label for="sliderHeaderAdmin">Slider title</label>
-                        <input type="text" class="form-control" name="sliderHeaderAdmin">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="sliderExerptAdmin">Slider sub title</label>
-                        <input type="text" class="form-control" name="sliderExerptAdmin" placeholder="Enter slider exerpt">
-
-                    </div>
+					<div class="form-group">
+						<label for="sliderHeaderAdmin">Slider title</label>
+						<input type="text" class="form-control" name="sliderHeaderAdmin">
+					</div>
+					<div class="form-group">
+						<label for="sliderExerptAdmin">Slider sub title</label>
+						<input type="text" class="form-control" name="sliderExerptAdmin" placeholder="Enter slider exerpt">
+					</div>
 					<div class="form-group">
 						<label for="">Upload Banner</label>
 						<div class="input-group">
@@ -227,29 +213,29 @@ $slidersRead = $sdCtrl->allSlider(true);
 	</div>
 </div>
 
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title mt-0" id="myModalLabel">Add Slider</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-            <form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
+<div id="addSlider" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title mt-0" id="myModalLabel">Add Slider</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<div class="modal-body">
+				<form action="" method="POST" enctype="multipart/form-data" autocomplete="off">
 
-                    <div class="form-group">
-                        <label for="sliderHeaderAdmin">Slider title</label>
-                        <input type="text" class="form-control" name="sliderHeaderAdmin" placeholder="Enter slider title ">
+					<div class="form-group">
+						<label for="sliderHeaderAdmin">Slider title</label>
+						<input type="text" class="form-control" name="sliderHeaderAdmin" placeholder="Enter slider title ">
 
-                    </div>
-                    <div class="form-group">
-                        <label for="sliderExerptAdmin">Slider sub title</label>
-                        <input type="text" class="form-control" name="sliderExerptAdmin" placeholder="Enter slider exerpt">
+					</div>
+					<div class="form-group">
+						<label for="sliderExerptAdmin">Slider sub title</label>
+						<input type="text" class="form-control" name="sliderExerptAdmin" placeholder="Enter slider exerpt">
 
-                    </div>
+					</div>
 
 
-                    <div class="form-group">
+					<div class="form-group">
 						<label for="">Upload Banner</label>
 						<div class="input-group">
 							<div class="input-group-prepend">
@@ -266,7 +252,7 @@ $slidersRead = $sdCtrl->allSlider(true);
 					<div class="form-group my-0">
 						<div id="img"></div>
 					</div>
-                    <div class="form-group">
+					<div class="form-group">
 						<label for="">Status</label>
 						<select class="custom-select" name="status">
 							<option selected disabled>Please Select..</option>
@@ -274,15 +260,14 @@ $slidersRead = $sdCtrl->allSlider(true);
 							<option value="Inactive">Inactive</option>
 						</select>
 					</div>
-
-            </div>
-            <div class="modal-footer text-center" style="text-align: center;">
-                <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary waves-effect waves-light" name="submit">Save changes</button>
-                </form>
-            </div>
-        </div>
-    </div>
+			</div>
+			<div class="modal-footer text-center" style="text-align: center;">
+				<button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary waves-effect waves-light" name="submit">Save changes</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="previewBannerImage" aria-labelledby="previewBannerImageModal" aria-hidden="true">

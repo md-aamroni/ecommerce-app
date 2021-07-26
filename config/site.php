@@ -10,7 +10,8 @@ define('APP', array(
 	'code'		=> '+88',
 	'symbol'		=> '&#2547;',
 	'currency'	=> 'tk/BDT',
-	'tax'			=> 7.5
+	'tax'			=> 7.5,
+	'return'		=> 'Free returns. Standard shipping orders'
 ));
 
 
