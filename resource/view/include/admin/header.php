@@ -8,11 +8,6 @@
 	</div>
 
 	<nav class="navbar-custom">
-		<?php
-		$admin_profile_session= $_SESSION['banner'];
-		$testto='60efe5c4ab219_admin_profile_banner.jpg';
-		
-		?>
 		<ul class="navbar-right d-flex list-inline float-right mb-0">
 			<li class="dropdown notification-list d-none d-sm-block">
 				<form role="search" class="app-search">

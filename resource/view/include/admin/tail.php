@@ -24,10 +24,8 @@
 	<script src="<?php echo asset('plugins/datatable/js/dataTables.responsive.min.js'); ?>"></script>
 	<script src="<?php echo asset('plugins/datatable/js/responsive.bootstrap4.min.js'); ?>"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
 	<script src="<?php echo asset('plugins/peity/jquery.peity.min.js'); ?>"></script>
-	<script src="<?php echo asset('js/backend/app.js'); ?>"></script>
+	<script src="<?php echo asset('js/backend/app.js', true); ?>"></script>
 	<script src="<?php echo asset('js/backend/main.js'); ?>"></script>
 
 	<script src="<?php echo asset('js/custom.js'); ?>"></script>
