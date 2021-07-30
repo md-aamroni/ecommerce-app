@@ -8,5 +8,5 @@ View::layouts('session');
 View::layouts('admin.top');
 View::layouts('admin.header');
 View::layouts('admin.sidebar');
-View::content('admin.terms-and-condition');
+View::content('settings.terms-and-condition');
 View::layouts('admin.tail');

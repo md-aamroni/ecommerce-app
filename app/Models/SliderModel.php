@@ -21,7 +21,7 @@ class SliderModel extends EloquentORM
 		$this->status	= !empty($this->encode($status)) ? $this->encode($status) : 'Active';
 
 		$sqlCode	= "INSERT INTO $this->table (
-							`id`, `title`,`sub_title`, `banner`, `status`, `created_at`
+							`id`, `title`,`sub_title`, `images`, `status`, `created_at`
 						)
 						VALUES (
 							:S_CAT_ID, :TITLE,:S_TITLE,  :S_BANNER, :S_STATUS, :CREATED_AT

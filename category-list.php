@@ -6,5 +6,5 @@ View::init();
 
 View::layouts('ecommerce.top');
 View::layouts('ecommerce.header');
-View::content('ecommerce.category-list');
+View::content('category.category-list');
 View::layouts('ecommerce.tail');

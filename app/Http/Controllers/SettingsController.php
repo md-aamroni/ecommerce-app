@@ -10,6 +10,14 @@ class SettingsController extends SettingsModel
    {
       return $this->findOn($this->table, 'title', '"About Us"');
    }
+   public function getPrivacyPolicy()
+   {
+      return $this->findOn($this->table, 'title', '"Privacy Policy"');
+   }
+   public function getTermsAndCondition()
+   {
+      return $this->findOn($this->table, 'title', '"Terms And Condition"');
+   }
 
    public function create($title, $details)
    {

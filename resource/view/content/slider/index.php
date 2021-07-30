@@ -278,7 +278,7 @@ $sliders = $sdCtrl->allSlider(true);
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
 			</div>
 			<div class="modal-body pb-3 text-center">
-				<img src="" id="slidersListBannerImage" alt="Sub Category Banner Image" class="img-fluid" style="max-height:340px;">
+				<img src="" id="slidersListBannerImage" alt="Slider Image" class="img-fluid" style="max-height:340px;">
 			</div>
 		</div>
 	</div>
