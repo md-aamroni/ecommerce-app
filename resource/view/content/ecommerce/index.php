@@ -35,45 +35,16 @@
 
 	<div class="info-boxes-container bg-gray">
 		<div class="container py-3">
-			<div class="info-boxes-slider owl-carousel owl-theme py-3" data-owl-options="{
-				'dots': false,
-				'margin': 20,
-				'loop': false,
-				'responsive': {
-					'576': {
-						'items': 2
-					},
-					'992': {
-						'items': 3
-					}
-				}
-			}">
-				<div class="info-box info-box-icon-left">
-					<i class="fas fa-shipping-fast"></i>
-
-					<div class="info-box-content">
-						<h4 class="pb-1">FREE SHIPPING & RETURN</h4>
-						<p>Free shipping on all orders over $99</p>
+			<div class="info-boxes-slider owl-carousel owl-theme py-3" data-owl-options="{'dots': false,'margin': 20,'loop': false,'responsive': {'576': {'items': 2},'992': {'items': 3}}}">
+				<?php foreach (POLICY as $i => $each) : ?>
+					<div class="info-box info-box-icon-left">
+						<i class="<?php echo $each['icon']; ?>"></i>
+						<div class="info-box-content">
+							<h4 class="pb-1"><?php echo $each['title']; ?></h4>
+							<p><?php echo $each['subtitle']; ?></p>
+						</div>
 					</div>
-				</div>
-
-				<div class="info-box info-box-icon-left">
-					<i class="fas fa-dollar-sign"></i>
-
-					<div class="info-box-content">
-						<h4 class="pb-1">MONEY BACK GUARANTEE</h4>
-						<p>100% money back guarantee</p>
-					</div>
-				</div>
-
-				<div class="info-box info-box-icon-left">
-					<i class="fas fa-headset"></i>
-
-					<div class="info-box-content">
-						<h4 class="pb-1">ONLINE SUPPORT 24/7</h4>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
@@ -525,44 +496,18 @@
 	<div class="feature-boxes-container">
 		<div class="container mt-6 mb-2">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="feature-box px-md-4 mx-md-3 feature-box-simple text-center">
-						<i class="fas fa-headset"></i>
-
-						<div class="feature-box-content">
-							<h3 class="m-b-1">Customer Support</h3>
-							<h5 class="m-b-3">Need Assistance?</h5>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</p>
+				<?php foreach (FEATURE as $i => $each) : ?>
+					<div class="col-md-4">
+						<div class="feature-box px-md-4 mx-md-3 feature-box-simple text-center">
+							<i class="<?php echo $each['icon']; ?>"></i>
+							<div class="feature-box-content">
+								<h3 class="m-b-1"><?php echo $each['title']; ?></h3>
+								<h5 class="m-b-3"><?php echo $each['subtitle']; ?></h5>
+								<p><?php echo $each['discription']; ?></p>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="feature-box px-md-4 mx-md-3 feature-box-simple text-center">
-						<i class="far fa-credit-card"></i>
-
-						<div class="feature-box-content">
-							<h3 class="m-b-1">Secured Payment</h3>
-							<h5 class="m-b-3">Safe &amp; Fast</h5>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapibus lacus. Lorem ipsum dolor sit amet.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="feature-box px-md-4 mx-md-3 feature-box-simple text-center">
-						<i class="fas fa-undo-alt"></i>
-
-						<div class="feature-box-content">
-							<h3 class="m-b-1">Returns</h3>
-							<h5 class="m-b-3">Easy &amp; Free</h5>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.</p>
-						</div>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
