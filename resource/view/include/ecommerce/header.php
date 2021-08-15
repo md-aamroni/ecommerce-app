@@ -73,7 +73,7 @@ $categories = $ctrl->navbarCategory();
 					<form action="#" method="get">
 						<div class="header-search-wrapper autocomplete">
 							<input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
-							
+							<button class="btn fas fa-search p-0" type="submit"></button>
 						</div>
 						<script>
 							function autocomplete(inp, arr) {
